@@ -9,7 +9,7 @@ This project is for educational porpuses only. Pull request are welcome, but pri
 
 Site published at https://github.com/front-end-by-rimantas/18-grupe-portfolio-neuron
 
-Design: [Neuron portfolio template](http://demo.auburnforest.com/html/neuron/demo/index.html?email=kristinap340%40gmail.com#)
+Design: [Neuron portfolio template](http://demo.auburnforest.com/html/neuron/demo/index.html)
 
 
 ## Project features
