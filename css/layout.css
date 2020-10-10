@@ -16,6 +16,18 @@ body {
 }
     .container > .row {
         grid-column: 2 / 3;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: 
+        "lef rig";
+    }
+    .container > .row > .LeftColumn {
+        background-color: aquamarine;
+        grid-area: lef;
+    }
+    .container > .row > .RightColumn {
+        background-color: blueviolet;
+        grid-area: rig;
     }
 
 @media (max-width: 1300px) {
