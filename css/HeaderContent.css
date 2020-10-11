@@ -1,18 +1,18 @@
 .HeaderConentRow {
-    display: inline-block;
+    display: grid;
+    grid-template-columns: 600px 1400px;
     background-image: url(../img/contact-bg\ \(1\).jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
     padding-top: 80px;
     padding-bottom: 100px;
-    padding-left: 90px;
-    padding-right: 90px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
     .HeaderConentRow > .left-column {
         display: inline-block;
         float: left;
-        width: 50%;
     }
         .left-column > .title {
             display: inline-block;
