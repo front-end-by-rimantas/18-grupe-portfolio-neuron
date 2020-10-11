@@ -17,6 +17,8 @@
     width: 50%;
     float: left;
     background-color: red;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 .mt-100 {
     margin-top: 100px;
@@ -27,10 +29,22 @@
     border-radius: 10px;
     position: relative;
     background-color: crimson;
+    text-align: center;
 }
 .mb-40 {
     margin-bottom: 40px;
 }
 .mb-15 {
     margin-bottom: 15px;
+}
+h1 {
+    margin-left: 15px;
+    color: #333333;
+    margin: 0 0 26px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+p {
+    margin-top: 20px;
+    margin-left: 15px;
 }
