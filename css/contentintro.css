@@ -6,7 +6,6 @@
     "lef rig";
 }
 .container > .row > .LeftColumn {
-    background-color: aquamarine;
     grid-area: lef;
 }
 .container > .row > .RightColumn {
@@ -16,7 +15,6 @@
 .container > .row > .LeftColumn > .twosingleposts  {
     width: 50%;
     float: left;
-    background-color: red;
     padding-right: 10px;
     padding-left: 10px;
 }
@@ -40,7 +38,6 @@
 h1 {
     margin-left: 15px;
     color: #333333;
-    margin: 0 0 26px;
     font-weight: 700;
     line-height: 1.3;
 }
