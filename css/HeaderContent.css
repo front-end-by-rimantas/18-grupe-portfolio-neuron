@@ -1,19 +1,11 @@
-.HeaderContentRow {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        background-image: url(../img/contact-bg\ \(1\).jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: bottom;
-        padding-top: 80px;
-        padding-bottom: 100px;
-    }
-        .HeaderContentRow > .left-column {
-            display: inline-block;
-            float: left;
-        }
+.bg-blue {
+    background-image: url(../img/contact-bg\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
             .left-column > .title {
-                display: inline-block;
+   
                 color: #ffffff;
                 letter-spacing: 1px;
                 font-size: 60px;
@@ -50,85 +42,11 @@
                 font-weight: bold;
                 margin-left: 16px;
             }
-        .HeaderConentRow > .right-column {
-            display: inline-block;
-            float: right;
-        }
+
             .sliderRobo {
-                display: inline-block;
+                width: 50%;
             }
             .sliderMen {
-                display: inline-block;
-                margin-top: 200px;
-                height: auto;
-                width: 280px;
+                width: 50%;
             }
-@media (max-width: 1300px) {
-    .sliderRobo {
-        height: auto;
-        width: 250px;
-    }
-    .sliderMen {
-        height: auto;
-        width: 240px;
-    }
-    .left-column > .title {
-        font-size: 46px;
-        line-height: 60px;
-}
-}
-@media (max-width: 1100px) {
-    .sliderRobo {
-        height: auto;
-        width: 200px;
-    }
-    .sliderMen {
-        height: auto;
-        width: 190px;
-    }
-}
-@media (max-width: 900px) {
-    .HeaderContentRow {
-        padding-top: 40px;
-        padding-bottom: 60px;
-    }
-    /* .HeaderContentRow > .left-column {
-        padding-right: 150px;
-    } */
-    .LearnMore-btn,.JoinNow-btn {
-        display: inline-block;
-    }
-    .sliderRobo {
-        height: auto;
-        width: 150px;
-    }
-    .sliderMen {
-        height: auto;
-        width: 120px;
-    }
-}
-@media (max-width: 700px) {
-    .HeaderContentRow {
-        display: inline-block;
-    }
 
-    .LearnMore-btn {
-        padding: 5px 20px;
-        font-size: 13px;
-    } 
-    .JoinNow-btn {
-        padding: 5px 20px;
-        font-size: 13px;
-        margin-left: 10px;
-    }
-    .left-column > .title {
-        font-size: 30px;
-        line-height: 40px;
-    }
-    .left-column > .subtitle {
-        padding: 10px 0 30px;
-    }
-    .sliderRobo,.sliderMen {
-        display: none;
-    }
-}
