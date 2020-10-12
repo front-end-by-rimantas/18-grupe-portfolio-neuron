@@ -51,7 +51,7 @@ p {
     color: linear-gradient(0deg, #09c778, #01a0f9);
 }
 
-@media (max-width: 990px) {
+@media (max-width: 900px) {
     .container > .row {
         grid-column: 2 / 3;
         display: grid;
@@ -70,7 +70,7 @@ p {
         margin-top: 0px;
     }
 }
-@media (max-width: 760px) {
+@media (max-width: 700px) {
     .container > .row > .LeftColumn > .twosingleposts  {
         width: 100%;
     }
