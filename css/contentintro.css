@@ -1,18 +1,18 @@
-.container > .row {
+.introrow {
     grid-column: 2 / 3;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-areas: 
     "lef rig";
 }
-.container > .row > .LeftColumn {
+.introrow > .LeftColumnintro {
     grid-area: lef;
 }
-.container > .row > .RightColumn {
+.introrow > .RightColumnintro {
     margin-top: 100px;
     grid-area: rig;
 }
-.container > .row > .LeftColumn > .twosingleposts  {
+.introrow > .LeftColumnintro > .twosingleposts  {
     width: 50%;
     float: left;
     padding-right: 10px;
@@ -21,11 +21,10 @@
 .mt-100 {
     margin-top: 100px;
 }
-.container > .row > .LeftColumn > .twosingleposts > .singlepost  {
+.introrow > .LeftColumnintro > .twosingleposts > .singlepost  {
     padding: 40px 25px 25px;
     background: #ffffff;
     border-radius: 10px;
-    position: relative;
     box-shadow: 2px 10px 50px rgba(158, 158, 158, 0.25);
     text-align: center;
 }
@@ -52,7 +51,7 @@ p {
 }
 
 @media (max-width: 900px) {
-    .container > .row {
+    .introrow {
         grid-column: 2 / 3;
         display: grid;
         grid-template-columns: 1fr;
@@ -60,10 +59,10 @@ p {
         "lef"
         "rig";
     }
-    .container > .row > .LeftColumn {
+    .introrow > .LeftColumnintro {
         grid-area: lef;
     }
-    .container > .row > .RightColumn {
+    .introrow > .RightColumnintro {
         grid-area: rig;
     }
     .mt-100 {
@@ -71,7 +70,7 @@ p {
     }
 }
 @media (max-width: 700px) {
-    .container > .row > .LeftColumn > .twosingleposts  {
+    .introrow > .LeftColumnintro > .twosingleposts  {
         width: 100%;
     }
     
