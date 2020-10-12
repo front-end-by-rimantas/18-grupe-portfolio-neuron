@@ -1,0 +1,28 @@
+.bg-footer-image {
+    background-image: url(../img/footer-bg.jpg);
+}
+
+.footerTop {
+   display: grid;
+   grid-template-columns: repeat(12,1fr);
+   grid-column: 2/3;
+   gap: 30px;
+}
+.footercol-12{
+    grid-column: span 3;
+    background-color: rgb(100, 198, 198);
+}
+.footerBottom {
+    
+    
+}
+@media (max-width: 900px) {
+    .footercol-12{
+        grid-column: span 6;
+    }
+}
+@media (max-width: 700px) {
+    .footercol-12{
+        grid-column: span 12;
+    }
+}
