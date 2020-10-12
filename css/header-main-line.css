@@ -1,0 +1,77 @@
+.header-main-line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
+    .logo{
+        flex-grow: 1;
+    }
+        .logo-img{}
+        
+    .main-menu{}
+        .nav-menu{}
+            .menu-bar{
+                display: none;
+            }
+                 .menu-bar > a{} 
+                 .icon-bar{}
+
+                 .nav-menu > ul{
+                    display: flex;
+                    list-style-type: none;
+                    text-transform: uppercase;
+                }
+                .nav-menu-items >li{
+                    padding: 15px 0px;
+                    margin: 0px 10px;
+                    cursor: pointer;
+                    }
+
+                .nav-menu-items{}
+            .home{}
+            .about{}
+            .features{}
+            .pages{}
+            .shop{}
+            .blog{}
+            .contact{}
+            
+    .basket-search{}
+        .basket-search-items{
+            display: flex;
+            list-style-type: none;
+            text-transform: uppercase;     
+        }  
+                a{}
+                    .basket{
+                        margin:0px 10px;
+                        padding: 15px 0px;
+                        cursor: pointer;
+                    }
+            .search{
+                padding: 15px 0px;
+                cursor: pointer;
+            }
+
+@media (max-width: 900px) {
+.nav-menu > ul{
+    display: none;
+}
+
+    .menu-bar{
+        display: flex;
+    }
+    .menu-bar > a{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        /* color: white; */
+    }
+    .menu-bar > a > span{
+                padding:0px 10px;
+            }
+}
+
+
+
