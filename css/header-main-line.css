@@ -17,7 +17,7 @@
                  .menu-bar > a{} 
                  .icon-bar{}
 
-                ul{
+                 .nav-menu > ul{
                     display: flex;
                     list-style-type: none;
                     text-transform: uppercase;
@@ -38,7 +38,11 @@
             .contact{}
             
     .basket-search{}
-        .basket-search-items{}  
+        .basket-search-items{
+            display: flex;
+            list-style-type: none;
+            text-transform: uppercase;     
+        }  
                 a{}
                     .basket{
                         margin:0px 10px;
@@ -51,9 +55,10 @@
             }
 
 @media (max-width: 900px) {
-    .nav-menu-items{
-        display: none;
-    }
+.nav-menu > ul{
+    display: none;
+}
+
     .menu-bar{
         display: flex;
     }
