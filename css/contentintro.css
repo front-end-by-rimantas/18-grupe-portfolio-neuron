@@ -1,16 +1,11 @@
 .introrow {
-    grid-column: 2 / 3;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-areas: 
-    "lef rig";
+   
 }
 .introrow > .LeftColumnintro {
-    grid-area: lef;
+
 }
 .introrow > .RightColumnintro {
     margin-top: 100px;
-    grid-area: rig;
 }
 .introrow > .LeftColumnintro > .twosingleposts  {
     width: 50%;
@@ -34,14 +29,14 @@
 .mb-15 {
     margin-bottom: 15px;
 }
-h1 {
+.bigtitle {
     margin-left: 20px;
     margin-right: 20px;
     color: #333333;
     font-weight: 700;
     line-height: 1.3;
 }
-p {
+.desc {
     margin-top: 20px;
     margin-left: 20px;
     margin-right: 20px;
@@ -50,28 +45,3 @@ p {
     color: linear-gradient(0deg, #09c778, #01a0f9);
 }
 
-@media (max-width: 900px) {
-    .introrow {
-        grid-column: 2 / 3;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        "lef"
-        "rig";
-    }
-    .introrow > .LeftColumnintro {
-        grid-area: lef;
-    }
-    .introrow > .RightColumnintro {
-        grid-area: rig;
-    }
-    .mt-100 {
-        margin-top: 0px;
-    }
-}
-@media (max-width: 700px) {
-    .introrow > .LeftColumnintro > .twosingleposts  {
-        width: 100%;
-    }
-    
-}
