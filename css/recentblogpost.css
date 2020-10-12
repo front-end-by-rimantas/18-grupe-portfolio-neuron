@@ -1,7 +1,5 @@
 .recent-blog-post-box{
-    display: grid;
-    grid-template-rows: 100px minmax(200px, max-content);
-}
+   }
     .recent-blog-post-single{}
         .recent-blog-post-picture{}
             .recent-blog-post-info{}
