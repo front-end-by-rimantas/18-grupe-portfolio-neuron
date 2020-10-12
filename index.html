@@ -1,33 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <!-- reset -->
     <link rel="stylesheet" href="./css/reset.css">
+    <!-- 3rd party -->
+
+    <link rel="stylesheet" href="./css/font-awesome.min.css" />
+    <!-- components -->
     <link rel="stylesheet" href="./css/layout.css">
     <link rel="stylesheet" href="./css/HeaderContent.css">
-    <!-- 3rd party -->
-    <!-- components -->
-    <!-- custom -->
-    <link rel="stylesheet" href="./css/custom.css">
-</head>
+    <link rel="stylesheet" href="./css/header-top.css" />
+      <link rel="stylesheet" href="./css/header-main-line.css">
 
-<body>
+    <!-- custom -->
+    <link rel="stylesheet" href="./css/custom.css" />
+  </head>
+
+  <body>
     <!-- header -->
-    <header class="container-fluid">
-        <div class="row">
-            HEADER TOP
+    <header class="container">
+      <div class="row ht">
+        <div class="ht-left">
+          <div>
+            <i class="fa fa-envelope-o"></i>
+            <a href="mailto:info@yourwebsite.com">info@yourwebsite.com</a>
+          </div>
+          <div>
+            <i class="fa fa-phone"></i>
+            <span>(+123) 456789</span>
+          </div>
         </div>
+        <div class="ht-right">
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-google-plus"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-linkedin"></i>
+        </div>
+      </div>
     </header>
     <!-- hero -->
-    <div class="container-fluid">
-        <div class="row">
-            HEADER MAIN
-        </div>
-    </div>
+        <div class="container">
+        <div class="row header-main-line">
+            <div class="logo">
+                <a href="#">
+                    <img class="logo-img" src="#" alt="Logo-Neuron">
+                </a>
+            </div>
+            <div class="main-menu">
+                <nav class="nav-menu">
+                    <div class="menu-bar">
+                        <a href="">
+                            <i class="fa fa-bars icon-bar"></i>
+                            <span>MENU</span>
+                        </a>
+                    </div>
+                    <ul class="nav-menu-items">
+                        <li class="home">Home</li>
+                        <li class="about">About</li>
+                        <li class="features">Features</li>
+                        <li class="pages">Pages</li>
+                        <li class="shop">Shop</li>
+                        <li class="blog">Blog</li>
+                        <li class="contact">Contact</li>
+                    </ul>    
+                </nav>
+            </div>
+            <div class="basket-search">
+                <ul class="basket-search-items">
+                    <li class="basket">
+                        <a href="#">
+                            <li class="fa fa-shopping-bag basket" aria-hidden="true"></i>                       
+                        </a>
+                    </li>
+                    <li class="search">
+                        <a href="#">
+                            <li class="fa fa-search search" aria-hidden="true"></i>
+                        </a>
+                    </li> 
+                </ul>
+            </div>
+        </div>       
+</div>
+
+
     <!-- header main part -->
     <div class="container">
         <div class="row">
@@ -51,67 +109,49 @@
     </div>
     <!-- intro -->
     <div class="container">
-        <div class="row">
-            CONTENT INTRO
-            Power Your Creativity With Artificial Intelligence
-        </div>
+      <div class="row">
+        CONTENT INTRO Power Your Creativity With Artificial Intelligence
+      </div>
     </div>
     <!-- we create -->
     <div class="container">
-        <div class="row">
-            CONTENT INTRODUCTION
-            We Create The Most Realistic Artificial Intelligence
-        </div>
+      <div class="row">
+        CONTENT INTRODUCTION We Create The Most Realistic Artificial
+        Intelligence
+      </div>
     </div>
     <!-- numbers -->
     <div class="container-fluid">
-        <div class="row">
-            CONTENT NUMBERS
-        </div>
+      <div class="row">CONTENT NUMBERS</div>
     </div>
     <!-- servises -->
     <div class="container-fluid">
-        <div class="row">
-            Our Core Services
-        </div>
+      <div class="row">Our Core Services</div>
     </div>
     <!-- Our Latest Project -->
     <div class="container">
-        <div class="row">
-            Our Latest Project
-        </div>
+      <div class="row">Our Latest Project</div>
     </div>
     <!-- NEWS -->
     <div class="container-fluid">
-        <div class="row">
-            CONTENT NEWS UPDATES
-        </div>
+      <div class="row">CONTENT NEWS UPDATES</div>
     </div>
     <!-- HOW WE WORK + ANIMATIONS -->
     <div class="container">
-        <div class="row">
-            HOW WE WORK
-        </div>
+      <div class="row">HOW WE WORK</div>
     </div>
     <!-- blogs -->
     <div class="container">
-        <div class="row">
-            BLOG
-        </div>
+      <div class="row">BLOG</div>
     </div>
     <!-- contacts -->
     <div class="container-fluid">
-        <div class="row">
-            CONTACT
-        </div>
+      <div class="row">CONTACT</div>
     </div>
     <!-- footer -->
     <footer class="container-fluid">
-        <div class="row">
-            FOOTER
-        </div>
+      <div class="row">FOOTER</div>
     </footer>
     <script src="./js/main.js" type="module"></script>
-</body>
-
+  </body>
 </html>
