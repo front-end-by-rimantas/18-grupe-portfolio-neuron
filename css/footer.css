@@ -3,9 +3,30 @@
 }
 
 .fpost {
-    background-color: rgb(240, 53, 193);
+    /* background-color: rgb(240, 53, 193); */
 }
 .footer-logo{
     margin-bottom: 33px;
     margin-top: 5px;
+}
+.footer-social-links{
+    font-size: 20px;
+    margin-top: 20px;
+}
+.footer-title{
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 20px;
+}
+.footer-text {
+    margin-bottom: 26px;
+}
+.footer-row {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 15px;
+}
+.footer-row > .fcol-6 {
+    grid-column: span 6;
 }
