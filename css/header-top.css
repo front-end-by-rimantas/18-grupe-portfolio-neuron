@@ -1,0 +1,54 @@
+header.container {
+    padding: 10px 0;
+}
+
+    .ht::after{
+        display: block;
+        content: "";
+        height: 0.4px;
+        width: calc(100% - 25px);
+        background: #0494e3;
+        margin: 8px 10px 0 10px;
+    }
+
+        .ht-left {
+        display: inline-block;
+        width: 70%;
+        padding: 10px;
+        }
+
+            .ht-left > div {
+                display: inline-block;
+            }
+
+                .ht-left > div > i {
+                    margin-right: 6px;
+                }
+
+                .ht-left > div > a {
+                    margin-right: 30px;
+                }
+
+        .ht-right {
+        display: inline-block;
+        float: right;
+        width: 30%;
+        text-align: right;
+        padding: 0 15px;
+        }
+
+            .ht-right > .fa {
+            padding: 10px 0;
+            margin-right: 15px;
+            }
+
+            .ht-right > .fa:last-child {
+            margin-right: 0;
+                }
+
+    
+    @media (max-width: 700px) {
+header.container {
+    display: none;
+}
+    }
