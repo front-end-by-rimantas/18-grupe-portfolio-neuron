@@ -37,6 +37,7 @@
 }
 h1 {
     margin-left: 20px;
+    margin-right: 20px;
     color: #333333;
     font-weight: 700;
     line-height: 1.3;
@@ -44,6 +45,7 @@ h1 {
 p {
     margin-top: 20px;
     margin-left: 20px;
+    margin-right: 20px;
 }
 .flaticon {
     color: linear-gradient(0deg, #09c778, #01a0f9);
@@ -64,9 +66,13 @@ p {
     .container > .row > .RightColumn {
         grid-area: rig;
     }
+    .mt-100 {
+        margin-top: 0px;
+    }
 }
 @media (max-width: 760px) {
     .container > .row > .LeftColumn > .twosingleposts  {
         width: 100%;
     }
+    
 }
