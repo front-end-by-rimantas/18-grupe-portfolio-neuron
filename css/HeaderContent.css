@@ -1,4 +1,4 @@
-.HeaderConentRow {
+.HeaderContentRow {
         display: grid;
         grid-template-columns: 1fr 1fr;
         background-image: url(../img/contact-bg\ \(1\).jpg);
@@ -10,7 +10,7 @@
         padding-left: 160px;
         padding-right: 160px;
     }
-        .HeaderConentRow > .left-column {
+        .HeaderContentRow > .left-column {
             display: inline-block;
             float: left;
         }
