@@ -1,0 +1,15 @@
+.bg-grey {
+    background-color: #eff1f7 ;
+    text-align: center;
+}
+        .About-subtitle {
+            display: inline-block;
+            border-radius: 10px;
+            background-color: #ffffff;
+            padding: 62px 30px 60px;
+        }
+        .flaticon-brain {
+            font-size: 70px;
+        }
+
+
