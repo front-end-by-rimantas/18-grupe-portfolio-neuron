@@ -15,7 +15,7 @@ else return (console.log('tuscias'));
     if (Object.keys(onlyposts).length > 0 ) {
         for (let i = 0; i < onlyposts.length; i++) {
             htmlDOM+= 
-`<div class="recent-blog-post-single col-3 col-lg-6 col-sm-12">
+`<div class="recent-blog-post-single col-4 col-lg-6 col-sm-12">
         <img class="recent-blog-post-picture" src="${data.imagepath}${onlyposts[i].image}" alt="${onlyposts[i].imagecounter}">
         <ul class="recent-blog-post-info">
             <li>
