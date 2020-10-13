@@ -5,7 +5,7 @@ function renderrecentblogoposts (data){
     for (let i = 0; i < onlyposts.length; i++) {
     }
  }
-//else return (console.log('tuscias'));
+else return (console.log('tuscias'));
 
     
     // input validation
