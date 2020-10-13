@@ -46,7 +46,8 @@ else return (console.log('tuscias'));
     // post logic validation
 
     // output
-    let feedDOM  = document.getElementById("RecentBlogPost");
+     let feedDOM  = document.getElementById("RecentBlogPost");
+    feedDOM = feedDOM.closest(".row")
     feedDOM.innerHTML = htmlDOM;
 }
 export {renderrecentblogoposts}
