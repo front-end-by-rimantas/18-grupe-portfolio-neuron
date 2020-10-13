@@ -11,12 +11,11 @@ function renderrecentblogoposts (data){
     // input validation
 
     // logic
-
-    let htmlDOM = '';
+ let htmlDOM = '<h1 class="col-12">Recent Blog Post</h1>';
     if (Object.keys(onlyposts).length > 0 ) {
         for (let i = 0; i < onlyposts.length; i++) {
             htmlDOM+= 
-`<div class="recent-blog-post-single">
+`<div class="recent-blog-post-single col-3 col-lg-6 col-sm-12">
         <img class="recent-blog-post-picture" src="${data.imagepath}${onlyposts[i].image}" alt="${onlyposts[i].imagecounter}">
         <ul class="recent-blog-post-info">
             <li>
@@ -42,13 +41,12 @@ function renderrecentblogoposts (data){
     </div>`;
         }
     } else return (console.log('tuscias'));
-    console.log(htmlDOM);
+    // console.log(htmlDOM);
 
     // post logic validation
 
     // output
-    const feedDOM = document.querySelector('.recent-blog-post-box');
-    // console.log(feedDOM);
+    let feedDOM  = document.getElementById("RecentBlogPost");
     feedDOM.innerHTML = htmlDOM;
 }
 export {renderrecentblogoposts}
