@@ -26,7 +26,7 @@ const datarecentblogposts = {
     image: 'image3.jpg',
     date:'Nov 28, 2019',
     user:'Admin',
-    commentscount: 10,
+    commentscount: -11,
     postheading:'Man in Red Plaid Shirt Talking on Phone Terrace',
     postparagraph:'The Tutorial covers examples of identification And Rew Garfield and verifies if a picture',
     active:true
