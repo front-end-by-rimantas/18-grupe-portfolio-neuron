@@ -2,7 +2,7 @@ const datarecentblogposts = {
  imagepath: './img/recentblogposts/',
  posts:[ 
     {
-    imagecounter:'first image',
+    imagealt:'first image',
     image: 'image1.jpg',
     date:'Nov 28, 2019',
     user:'Admin',
@@ -12,7 +12,7 @@ const datarecentblogposts = {
     active:true
 },
 {
-    imagecounter:'second image',
+    imagealt:'second image',
     image: 'image2.jpg',
     date:'Nov 28, 2019',
     user:'Admin',
@@ -22,7 +22,7 @@ const datarecentblogposts = {
     active:true
 },
     {
-    imagecounter:'third image',
+    imagealt:'third image',
     image: 'image3.jpg',
     date:'Nov 28, 2019',
     user:'Admin',
@@ -32,7 +32,7 @@ const datarecentblogposts = {
     active:true
 },
     {
-    imagecounter:'fourth image',
+    imagealt:'fourth image',
     image: 'image1.jpg',
     date:'Nov 28, 2019',
     user:'Admin',
@@ -42,7 +42,7 @@ const datarecentblogposts = {
     active:true
 },
     {
-    imagecounter:'fifth image',
+    imagealt:'fifth image',
     image: 'image2.jpg',
     date:'Nov 28, 2019',
     user:'Admin',

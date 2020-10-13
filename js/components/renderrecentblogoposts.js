@@ -1,6 +1,7 @@
 function renderrecentblogoposts (data){
 
     let onlyposts = data.posts;
+    console.log('nesuprantu ' + onlyposts.length);
     // tikrina ar yra duomenu
     if (Object.keys(onlyposts).length > 0)
         {console.log('yra duomenu')} 
@@ -8,6 +9,12 @@ function renderrecentblogoposts (data){
 
     
     // input validation
+    // tikrinti  ar vartotojas admin
+    // tikrina ar data geliojanti 
+    // reikia tikrinti lauku tipus, naudojama funkcija typeof 
+    // ar laukas nera tuscias ir ne per ilgas
+    
+
 
 
 // isfiltruoju , ar yra duomenų ir ar aktyvūs
@@ -28,7 +35,7 @@ onlyposts = onlyposts.filter(onlypostsfunc)
             // if (onlyposts[i].active){
             htmlDOM+= 
 `<div class="recent-blog-post-single col-4 col-lg-6 col-sm-12">
-        <img class="recent-blog-post-picture" src="${data.imagepath}${onlyposts[i].image}" alt="${onlyposts[i].imagecounter}">
+        <img class="recent-blog-post-picture" src="${data.imagepath}${onlyposts[i].image}" alt="${onlyposts[i].imagealt}">
         <ul class="recent-blog-post-info">
             <li>
                 <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
