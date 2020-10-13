@@ -1,56 +1,23 @@
-.grid_numbers {
-    background-color: yellow;
-    padding: 70px 10px;
-}
-    .gridItem {
 
-        display: grid;
-        box-sizing: border-box;
-        grid-template-columns: 1fr 1fr 1fr 1fr ;
-
-        grid-template-rows: 160px;
-        font-size: 30px;
+    .bg-blue {
+        background: linear-gradient(0deg, #01a0f9, #09c778);
+    }
+    .nr {
+        padding: 70px 10px;
         text-align: center;
-        justify-content: center;
-        /* align-content: center; */
-        /* width: 70%; */
-        /* margin-left: auto;
-        margin-right: auto; */
+        color: #ffffff;
+        background: url(../img/count-shape.png);
+        background-repeat: no-repeat;
+        background-position: center;
         
     }
-        .gridItem1 {
-            padding: 45px 10px;
-            
-        }
-        .gridItem2{
-            padding: 45px 10px;
-            
-        }
-        .gridItem3 {
-            padding: 45px 10px;
-            
-        }
-        .gridItem4 {
-            padding: 45px 10px;
-            
-        }
-@media (max-width: 1300px) {
-    .grid_numbers {
-        grid-template-columns: 250px 250px 250px 250px ;
+        
+    .box > .numbers {
+        font-size: 35px;
+        font-weight: 600;
     }
-}
-@media (max-width: 1100px) {
-    .grid_numbers {
-        grid-template-columns: 250px 250px 250px 250px;
+    .box > h4 {
+        font-size: 22px;
+        font-weight: 600;
     }
-}
-@media (max-width: 900px) {
-    .grid_numbers {
-        grid-template-columns: 250px 250px 250px 250px;
-    }
-}
-@media (max-width: 700px) {
-    .grid_numbers {
-        grid-template-columns: 250px 250px 250px 250px;
-    }
-}
+        
