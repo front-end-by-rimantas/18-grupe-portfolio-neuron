@@ -44,9 +44,10 @@
             }
 
             .sliderRobo {
-                width: 50%;
+                width: 100%;
             }
             .sliderMen {
-                width: 50%;
+                width: 100%;
+                margin-top: 150px;
             }
 
