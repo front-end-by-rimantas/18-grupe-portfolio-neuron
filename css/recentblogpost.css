@@ -1,7 +1,7 @@
-.recent-blog-post-box{
-    
-   }
+    #RecentBlogPost > .h1{}
+
     .recent-blog-post-single{}
+
         .recent-blog-post-picture{
             width: 100%;
             height: 100%;
@@ -12,4 +12,5 @@
                 span{}
         h3{}
         p{}
+    
         .recent-blog-post-button{}
