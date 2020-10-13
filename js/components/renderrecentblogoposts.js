@@ -27,7 +27,7 @@ else return (console.log('tuscias'));
                 <span>${onlyposts[i].user}</span>
             </li>
             <li>
-                <span>${onlyposts[i].commentscount}</span>
+                <i>${onlyposts[i].commentscount}</i>
                 <span>Comments</span>
             </li>
         </ul>
