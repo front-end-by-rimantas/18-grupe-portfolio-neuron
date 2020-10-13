@@ -1,10 +1,6 @@
 header.container {
     padding: 10px 0;
 }
-
-.ht{
-
-}
     .ht::after{
         display: block;
         content: "";
@@ -13,45 +9,32 @@ header.container {
         background: #0494e3;
         margin: 0px 10px 0 10px;
         grid-column: span 12;
+        margin-top: -10px;
     }
-
         .ht-left {
-            display: grid;
+        display: grid;
         grid-template-columns: 50% 50%;
         column-gap: 10px;
         padding: 10px;
         }
-
-            .ht-left > div {
-               
-            }
-
                 .ht-left > div > i {
                     margin-right: 6px;
                 }
 
-                .ht-left > div > a {
-                }
-
         .ht-right {
-       
-        
         text-align: right;
         padding: 0 15px;
         }
-
             .ht-right > .fa {
             padding: 10px 0;
             margin-right: 15px;
             }
-
             .ht-right > .fa:last-child {
             margin-right: 0;
                 }
 
-  
     @media (max-width: 700px) {
-header.container {
+    header.container {
     display: none;
 }
     }
