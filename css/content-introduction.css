@@ -1,0 +1,86 @@
+.cnt-int-left{
+    padding: 25px 10px;
+}
+.cnt-int-right{
+    padding: 0 15px;
+    max-width: 100%;
+    }
+
+    .cnt-int-text{
+    display: grid;
+    grid-template-rows: 0.5fr 0.3fr 0.7fr;
+    gap: 25px;
+    padding-bottom:25px;
+    }
+    .cnt-int-btn-v{
+        height:60px;
+    }
+    .cnt-int-h {
+        position: relative;
+        font-size: 30px;
+        }
+    
+    .cnt-int-h:after{
+            display: block;
+            position: absolute;
+            content: "";
+            height:10px;
+            width:100px;
+            background: red;
+        top: 24px;
+        z-index: -1;
+        }
+    
+        .cnt-int-btn-v{
+            padding: 5px 0;
+        }
+    
+        .cnt-int-btn {
+        height: 50px;
+        margin-right: 30px;
+        }
+    
+        .cnt-int-video {
+        font-size: 50px;
+        text-decoration: none;
+        }
+    
+    .cnt-int-right > .about{
+        max-width:100%;
+        height: auto;
+    }
+
+   
+@media (max-width: 1100px){
+    .cnt-int-left{
+        padding:0 10px;
+            } 
+ .cnt-int-right {
+    align-self: center;
+}
+} 
+ 
+@media (max-width: 900px){
+    .cnt-int {
+grid-template-areas:
+"int-right"
+"int-left";
+    }
+    .cnt-int-left{
+     grid-area: int-left;   
+    }
+    .cnt-int-right{
+    grid-area: int-right;
+    margin-bottom: 40px;
+    }
+    .cnt-int-btn-v{
+       margin-top:10px;
+    }
+
+}
+
+@media(max-width:700px){
+.cnt-int-right{
+    margin-bottom: 25px;
+}
+}
