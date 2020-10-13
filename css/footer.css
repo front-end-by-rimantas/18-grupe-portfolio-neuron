@@ -1,0 +1,32 @@
+.bg-footer-image {
+    background-image: url(../img/footer-bg.jpg);
+}
+
+.fpost {
+    /* background-color: rgb(240, 53, 193); */
+}
+.footer-logo{
+    margin-bottom: 33px;
+    margin-top: 5px;
+}
+.footer-social-links{
+    font-size: 20px;
+    margin-top: 20px;
+}
+.footer-title{
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 20px;
+}
+.footer-text {
+    margin-bottom: 26px;
+}
+.footer-row1 {
+    width: 50%;
+    float: left;
+}
+.footer-row2 {
+    width: 50%;
+    float: right;
+}
