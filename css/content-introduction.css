@@ -8,7 +8,7 @@
 
     .cnt-int-text{
     display: grid;
-    grid-template-rows: 1.5fr 1.3fr 1.7fr;
+    grid-template-rows: 0.5fr 0.3fr 0.7fr;
     gap: 25px;
     padding-bottom:25px;
     }
