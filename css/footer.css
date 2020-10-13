@@ -22,11 +22,11 @@
 .footer-text {
     margin-bottom: 26px;
 }
-.footer-row {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 15px;
+.footer-row1 {
+    width: 50%;
+    float: left;
 }
-.footer-row > .fcol-6 {
-    grid-column: span 6;
+.footer-row2 {
+    width: 50%;
+    float: right;
 }
