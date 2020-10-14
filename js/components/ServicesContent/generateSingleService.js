@@ -1,3 +1,5 @@
+import { ServicesContentData } from './data/ServicesContentData.js';
+
 function generateSingleService (service) {
     // input validation
     // if (!isValidService(service)) {
