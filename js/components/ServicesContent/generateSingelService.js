@@ -1,6 +1,6 @@
 import { servicesContentData } from './data/ServicesContent.js';
 
-function generateSingelService (services, iconPath) {
+function generateSingelService (service) {
     // input validation
     // if (!isValidService(service)) {
     //     return '';
