@@ -4,7 +4,9 @@ function renderServicesContent(data) {
      // input validation
 
     // logic
+    const header = '<div class="ServiceContent-bg col-12"><h2 class="Services title">Our Core Services</h2></div>';
     let HTML = '';
+    let htmlDOM = '';
     let htitle = data.htitle;
     const servicesDOM = document.querySelector(data.selector);
     const servicesCount = data.services.length;
@@ -21,7 +23,7 @@ function renderServicesContent(data) {
     }
 
     // output
-    return servicesDOM.innerHTML = HTML;
+    return servicesDOM.innerHTML = header + HTML;
 }
 
 export { renderServicesContent }

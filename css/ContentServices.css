@@ -8,7 +8,7 @@
             background-color: #ffffff;
             padding: 62px 30px 60px;
         }
-        .fla {
+        #ServiceFlaticon {
             font-family: Flaticon;
             font-size: 80px;
             background-image: linear-gradient(0deg, #09c778, #01a0f9);
