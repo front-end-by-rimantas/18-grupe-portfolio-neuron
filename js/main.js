@@ -11,8 +11,8 @@ import { renderServicesContent } from './components/ServicesContent/renderServic
 // NEWS
 // HOW WE WORK + ANIMATIONS
 // Recent blogo posts
-import { datarecentblogposts } from './data/datarecentblogposts.js';
-import { renderrecentblogoposts } from './components/renderrecentblogoposts.js';
+import { datarecentblogposts } from './data/RecentBlogPosts/datarecentblogposts.js';
+import { renderRecentBlogPosts } from './components/recentblogposts/renderRecentBlogPosts.js';
 // contacts
 // footer
 
@@ -26,6 +26,6 @@ renderServicesContent(ServicesContentData);
 // Our Latest Project
 // NEWS
 // HOW WE WORK + ANIMATIONS
-renderrecentblogoposts(datarecentblogposts);
+renderRecentBlogPosts(datarecentblogposts);
 // contacts
 // footer

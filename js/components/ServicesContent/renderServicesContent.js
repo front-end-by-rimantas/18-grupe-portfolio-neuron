@@ -5,12 +5,13 @@ function renderServicesContent(data) {
 
     // logic
     let HTML = '';
+    let htitle = data.htitle;
     const servicesDOM = document.querySelector(data.selector);
     const servicesCount = data.services.length;
 
     for (let i=0; i< servicesCount; i++) {
         const service = data.services[i];
-        HTML += generateSingleService(service);
+        HTML += generateSingleService(service, htitle);
     }
 
     // post logic validation
