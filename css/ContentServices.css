@@ -8,8 +8,12 @@
             background-color: #ffffff;
             padding: 62px 30px 60px;
         }
-        .flaticon-brain {
-            font-size: 70px;
+        .fla {
+            font-family: Flaticon;
+            font-size: 80px;
+            background-image: linear-gradient(0deg, #09c778, #01a0f9);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
 
