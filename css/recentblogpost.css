@@ -7,10 +7,42 @@
             height: 100%;
             object-fit: cover;
         }
-            .recent-blog-post-info{}
-                li{}
+            .recent-blog-post-info{
+                list-style-type: none;
+                display: flex;
+                justify-content: right;
+                align-items: center;
+                
+            }
+                li{
+                    flex-grow: 0.1;
+                }      
+                    .recent-blog-post-info i{
+                        font-style: normal;
+                        color: #01a0f9;
+                }
                 span{}
-        h3{}
-        p{}
-    
-        .recent-blog-post-button{}
+
+        .recent-blog-post-single > h3{
+            padding: 10px 0px;
+        }
+        .recent-blog-post-single > h3 >a,
+        .recent-blog-post-button > a
+        {
+            text-decoration: none;
+            color: black;
+        }
+
+        .recent-blog-post-button{
+            padding: 15px 0px;
+        }
+
+        .recent-blog-post-button > a{
+            padding: 0px 10px;
+            border-radius: 45px;
+            border: 1px solid #01a0f9;
+        }
+
+        .recent-blog-post-single > p{}
+
+
