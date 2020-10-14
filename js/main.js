@@ -22,7 +22,7 @@ import { renderRecentBlogPosts } from './components/recentblogposts/renderRecent
 // intro
 // we create
 // numbers import
-// renderServicesContent(ServicesContentData);
+renderServicesContent(ServicesContentData);
 // Our Latest Project
 // NEWS
 // HOW WE WORK + ANIMATIONS
