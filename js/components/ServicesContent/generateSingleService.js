@@ -1,6 +1,4 @@
-import { servicesContentData } from './data/ServicesContent.js';
-
-function generateSingelService (service) {
+function generateSingleService (service) {
     // input validation
     // if (!isValidService(service)) {
     //     return '';
@@ -16,7 +14,7 @@ function generateSingelService (service) {
     // image validation
 
     const HTML = `<div class="ServiceContent-bg col-12">
-                    <h2 class="Services title">${ServicesTitle}</h2>
+                    <h2 class="Services title">${ServicesContentData.htitle}</h2>
                 </div>
                 <div class="Services-subtitle col-4 col-lg-6 col-sm-12">
                     <div class="About-subtitle">

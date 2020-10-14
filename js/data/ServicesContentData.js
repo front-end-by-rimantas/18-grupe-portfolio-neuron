@@ -1,7 +1,6 @@
 const ServicesContentData = {
     selector: '#services_block',
-    // flaticonPath
-    ServicesTitle:'Our Core Services',
+    htitle:'Our Core Services',
     services: [
         {
             icon: '',
@@ -51,8 +50,8 @@ const ServicesContentData = {
             description:'Capitalize on low hanging fruit to identify a ball park value added activity to beta test. Override the digital divide with additional',
             link: '#',
             active: true,
-        }
+        },
     ]
 }
 
-export { servicesContentData }
+export { ServicesContentData }

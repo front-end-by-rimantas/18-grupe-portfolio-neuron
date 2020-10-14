@@ -1,4 +1,4 @@
-import { generateSingleService } from './generateSingelService.js';
+import { generateSingleService } from './generateSingleService.js';
 
 function renderServicesContent(data) {
      // input validation
