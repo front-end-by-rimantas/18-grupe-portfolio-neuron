@@ -1,5 +1,6 @@
 const contactsData = {
   path: "#contact-info",
+  mainIcon: "flaticon-gps",
   title: "Contact With Us",
   infoPosts: [
     {

@@ -11,11 +11,10 @@
 // NEWS
 // HOW WE WORK + ANIMATIONS
 // Recent blogo posts
-// import { datarecentblogposts } from "./data/RecentBlogPosts/datarecentblogposts.js";
-// import { renderRecentBlogPosts } from "./components/recentblogposts/renderRecentBlogPosts.js";
+import { datarecentblogposts } from "./data/RecentBlogPosts/datarecentblogposts.js";
+import { renderRecentBlogPosts } from "./components/recentblogposts/renderRecentBlogPosts.js";
 // contacts
 import { contactsData } from "./data/contactsData/contactsData.js";
-import { singlePostContact } from "./components/contacts/singlePostContacts.js";
 import { renderPostsContacts } from "./components/contacts/renderPostContacts.js";
 // console.log(singlePostContact(contactsData));
 // footer
@@ -33,7 +32,7 @@ renderPostsContacts(contactsData);
 // Our Latest Project
 // NEWS
 // HOW WE WORK + ANIMATIONS
-// renderRecentBlogPosts(datarecentblogposts);
+renderRecentBlogPosts(datarecentblogposts);
 // contacts
 
 // footer

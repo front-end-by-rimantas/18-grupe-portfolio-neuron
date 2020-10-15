@@ -4,18 +4,20 @@ function singlePostContact(data) {
   function contactInfo() {
     let allInfo = "";
     for (let i = 0; i < data.info.length; i++) {
-      allInfo += `<div>${data.info[i]}</div>`;
+      allInfo += `<span>${data.info[i]}</span>`;
     }
     return allInfo;
   }
 
-  return `<div> 
-        <i class='${data.icon}'></i>
+  return `<div class='sng-info-post'>
+        <div class= c-icon> 
+        <i class='s-c-icon ${data.icon}'></i>
+        </div>
         <div class='c-info'> 
         <h4>${data.subtitle}</h4>
-        <span>
+        <div>
         ${contactInfo()}
-        </span>
+        </div>
         </div>
         </div>`;
 }
