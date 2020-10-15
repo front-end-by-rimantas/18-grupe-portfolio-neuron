@@ -25,12 +25,12 @@ if (typeof allposts.image !== 'string'){
 if (!Date.parse(allposts.date)){
     errors.push(`Objekto kurio numeris ${i}: Date turi buti Date tipo`)
 } else{
-    if(allposts.date < 'Nov 28, 2019'){
+    if(Date.parse(allposts.date) < Date.parse('Nov 28, 2019')){
     warning.push(`Objekto kurio numeris ${i}: laikas neaktyvus`)    
     }
 }
 
-if (typeof allposts.user !== 'string'){
+if (typeof allposts.user !== 'string' ){
     errors.push(`Objekto kurio numeris ${i}: User turi buti sring tipo`)
 } else{
     if(allposts.user === ''){
@@ -41,7 +41,7 @@ if (typeof allposts.user !== 'string'){
     }
 }
 
-if (isNaN(allposts.commentscount)){
+if (typeof allposts.commentscount !== "number" || allposts.commentscount===Infinity){
     errors.push(`Objekto kurio numeris ${i}: commentscount turi buti Number tipo`)
 } else{
     if(allposts.commentscount === ''){
