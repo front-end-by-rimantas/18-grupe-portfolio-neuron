@@ -1,6 +1,5 @@
 const ServicesContentData = {
     selector: '#services_block',
-    htitle:'Our Core Services',
     services:[
         {
             icon: 'flaticon-brain',

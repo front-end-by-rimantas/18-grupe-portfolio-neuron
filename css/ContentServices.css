@@ -2,18 +2,49 @@
     background-color: #eff1f7 ;
     text-align: center;
 }
-        .About-subtitle {
-            display: inline-block;
-            border-radius: 10px;
-            background-color: #ffffff;
-            padding: 62px 30px 60px;
-        }
-        #ServiceFlaticon {
-            font-family: Flaticon;
-            font-size: 80px;
-            background-image: linear-gradient(0deg, #09c778, #01a0f9);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
+    .services-title {
+        font-size: 42px;
+    }
+    .About-subtitle {
+        display: inline-block;
+        border-radius: 10px;
+        background-color: #ffffff;
+         padding: 62px 50px 60px;
+    }
+    .Single-subtitle {
+        font-size: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    #ServiceFlaticon {
+        text-align: center;
+        font-family: Flaticon;
+        font-size: 60px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        background-image: linear-gradient(0deg, #09c778, #01a0f9);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .About-desc {
+        font-size: 15px;
+        color: #666666;
+    }
 
+@media (max-width: 1300px) {
+    .services-title {
+        font-size: 35px;
+    }
+}
+@media (max-width: 700px) {
+    .services-title {
+        font-size: 30px;
+    }
+}
+
+
+
+
+
+        
 

@@ -1,4 +1,4 @@
-function generateSingleService (service, htitle) {
+function generateSingleService (service) {
     // input validation
     // if (!isValidService(service)) {
     //     return '';
