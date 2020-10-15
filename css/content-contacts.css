@@ -2,22 +2,45 @@
 #contact-info{
     padding: 44px 50px 30px;
     background-color: white;
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: 35px;
 }
 
+.con-icon{
+    margin-bottom: 18px;
+}
 
 .sng-info-post{
-margin-bottom: 35px;    
+display: inline-block;
+width:100%;
 }
 
 .s-c-icon{
-
+height:100%;
+float: left;
 }
 
 .c-icon{
 width:30px;
-
+height:100%;
 }
-
+.c-info{
+    width: calc(100% - 30px);
+    float:left;
+}
+[class^="main-icon"]:before, [class*="main-icon"]:before, [class^="main-icon"]:after, [class*="main-icon"]:after {
+    font-family: Flaticon;
+    display: block;
+    line-height: 1;
+    margin: 6px 0 0;
+     font-size: 100px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(0deg, #09c778, #01a0f9);
+    height: 100%;
+   
+}
 [class^="s-c-icon"]:before, [class*="s-c-icon"]:before, [class^="s-c-icon"]:after, [class*="s-c-icon"]:after {
     font-family: Flaticon;
     display: block;
@@ -32,3 +55,4 @@ width:30px;
     height: 100%;
    
 }
+
