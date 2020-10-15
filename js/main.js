@@ -16,6 +16,7 @@ import { renderRecentBlogPosts } from "./components/recentblogposts/renderRecent
 // contacts
 import { contactsData } from "./data/contactsData/contactsData.js";
 import { renderPostsContacts } from "./components/contacts/renderPostContacts.js";
+import { renderContactForm } from "./components/contacts/renderContactForm.js";
 // console.log(singlePostContact(contactsData));
 // footer
 
@@ -24,6 +25,7 @@ import { renderPostsContacts } from "./components/contacts/renderPostContacts.js
 // about logic
 // contacts logic
 renderPostsContacts(contactsData);
+renderContactForm(contactsData);
 // header main part
 // intro
 // we create
