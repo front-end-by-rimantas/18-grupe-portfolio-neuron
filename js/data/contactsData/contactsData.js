@@ -6,7 +6,9 @@ const contactsData = {
     {
       icon: "flaticon-place",
       subtitle: "Visit Us",
-      info: [`530 Old BUffalo Street Northwest #205, New York - 3087`],
+      info: [
+        `530 Old BUffalo Street <br> Northwest #205, New York - <br> 3087`,
+      ],
       active: true,
     },
     {

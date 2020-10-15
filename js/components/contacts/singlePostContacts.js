@@ -4,7 +4,7 @@ function singlePostContact(data) {
   function contactInfo() {
     let allInfo = "";
     for (let i = 0; i < data.info.length; i++) {
-      allInfo += `<span>${data.info[i]}</span>`;
+      allInfo += `<span class='text-info'>${data.info[i]}</span>`;
     }
     return allInfo;
   }
