@@ -74,12 +74,31 @@
                     .recent-blog-post-button > a{
                         padding: 9px 28px;
                         border-radius: 45px;
-                        background-image: linear-gradient(90deg, #01a0f9, #09c778);
                         color: white;
+                        background-image: linear-gradient(41deg, #09c778, #01a0f9);
+                        z-index: 1;
+                        position: relative;
+
+                    }
+                    
+                    .recent-blog-post-button > a::before{
+                        content: "Read More";
+                        border-radius: 45px;
+                        padding: 5px 28px;
+                        color: white;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        left: 0;
+                        background-image: linear-gradient(41deg, #01a0f9, #09c778);
+                        z-index: -1;
+                        transition: opacity 1s ease-in-out;
+                        opacity: 0;
                     }
 
-                    .recent-blog-post-button > a:hover{
-                        background-image: linear-gradient(270deg, #01a0f9, #09c778);
+                    .recent-blog-post-button > a:hover::before{ 
+                        opacity: 1;
+                        z-index: 1;
                     }
-
 
