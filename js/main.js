@@ -10,7 +10,8 @@ import { renderServicesContent } from "./components/ServicesContent/renderServic
 // Our Latest Project
 // NEWS
 import { NewsUpdateData } from './data/ContentNewsUpdates/ContentNewsUpdatesData.js';
-import { renderContentNewsUpdates } from './components/ContentNewsUpdates/renderContentNewsUpdates.js';
+import { renderPartnersLogo } from './components/ContentNewsUpdates/renderPartnersLogo.js';
+import { generateNewsLetter } from './components/ContentNewsUpdates/generateNewsLetter.js'
 // HOW WE WORK + ANIMATIONS
 // Recent blogo posts
 import { datarecentblogposts } from "./data/RecentBlogPosts/datarecentblogposts.js";
@@ -34,7 +35,8 @@ renderContactForm(contactsData);
 // numbers import
 renderServicesContent(ServicesContentData);
 // Our Latest Project
-renderContentNewsUpdates(NewsUpdateData);
+renderPartnersLogo(NewsUpdateData);
+generateNewsLetter(NewsUpdateData);
 // HOW WE WORK + ANIMATIONS
 renderRecentBlogPosts(datarecentblogposts);
 // contacts

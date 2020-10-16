@@ -1,5 +1,5 @@
 const NewsUpdateData = {
-    selector: '#news_block',
+    selector1: '#news_block',
     selector2: '#partners_logo',
     imagePath: './img/ContentNewsUpdates/',
     services: [
@@ -21,7 +21,7 @@ const NewsUpdateData = {
         },
         {
             imagealt:'fifth image',
-            image: 'image4.png',
+            image: 'image5.png',
         },
     ]
 }
