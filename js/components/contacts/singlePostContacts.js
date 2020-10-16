@@ -9,7 +9,7 @@ function singlePostContact(data) {
     return allInfo;
   }
 
-  return `<div class='sng-info-post'>
+  return `<div class='single-info-post'>
         <div class= c-icon> 
         <i class='s-c-icon ${data.icon}'></i>
         </div>

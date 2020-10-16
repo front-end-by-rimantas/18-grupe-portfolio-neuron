@@ -7,14 +7,17 @@ const contactsData = {
       icon: "flaticon-place",
       subtitle: "Visit Us",
       info: [
-        `530 Old BUffalo Street <br> Northwest #205, New York - <br> 3087`,
+        `530 Old BUffalo Street <br> Northwest #205,<br> New York -<br> 3087`,
       ],
       active: true,
     },
     {
       icon: "flaticon-phone",
       subtitle: "Call Us",
-      info: [`"+1 (123) -456-7890"`, `"+1 (123) -456-7890"`],
+      info: [
+        `<a href="tel:+1(123)-456-7890">+1 (123) -456-7890</a>\n`,
+        `<a href="tel:+1(123)-456-7890">+1 (123) -456-7890</a>`,
+      ],
       active: true,
     },
     {
