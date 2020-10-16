@@ -5,8 +5,8 @@
 // we create
 // numbers import
 // services import
-import { ServicesContentData } from "./data/ServicesContent.js";
-import { renderServicesContent } from "./components/services/renderServicesContent.js";
+import { ServicesContentData } from "./data/ServicesContent/ServicesContentData.js";
+import { renderServicesContent } from "./components/ServicesContent/renderServicesContent.js";
 // Our Latest Project
 // NEWS
 // HOW WE WORK + ANIMATIONS
