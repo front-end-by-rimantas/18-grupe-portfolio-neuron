@@ -1,0 +1,53 @@
+.bg-partner {
+    background: url(../img/ContentNewsUpdates/partner-bg.jpg);
+}
+    .newsletter {
+        border-radius: 20px;
+        background-color: #ffffff;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        margin-top: -210px;
+    }
+        #newsletter-flaticon-mail {
+            -webkit-background-clip: text;
+            color: rgba(0, 0, 0, 0);
+            background-image: linear-gradient(0deg, #09c778, #01a0f9);
+            font-size: 250px;
+            margin-left: 20px;
+            padding-left: 100px;
+            padding-right: 50px;
+        }
+        .newsletter-text {
+            display: inline-block;
+            color: #333333;
+            /* line-height: 80px; */
+            margin-right: 50px;
+            font-size: 30px;
+            margin-left: 10px;
+        }
+            #email {
+                display: inline-block;
+                font-size: 20px;
+                position: absolute;
+                border: none;
+                border-bottom: 1px solid rgba(1, 160, 249, 0.2);
+                outline: none;
+                width: 100%;
+                max-width: 700px;
+                height: 40px;
+                margin-top: 40px;
+            }
+            #newsletter-flaticon-send {
+                display: inline-block;
+                -webkit-transform: rotate(-45deg);
+                background: linear-gradient(#09c778, #01a0f9);
+                font-size: 20px;
+                /* height: 40px;
+                width: 40px; */
+                /* text-align: center; */
+                border-radius: 50px;
+                color: #ffffff;
+                position: relative; 
+                margin-left: 680px;
+                margin-top: 50px;
+            }
