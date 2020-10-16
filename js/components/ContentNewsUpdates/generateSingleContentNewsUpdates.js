@@ -1,4 +1,4 @@
-function generateSingleContentNewsUpdates (service) {
+function generateSingleContentNewsUpdates (service, imagePath,i) {
         // input validation
     // if (!isValidService(service)) {
     //     return '';
@@ -13,13 +13,11 @@ function generateSingleContentNewsUpdates (service) {
 
     // image validatio
 
-    const HTML = `<div id="news_block" class="row partners-logo">
-                    <div class="partners1 col-12">
-                        <a href="#"><img src="${service.image}" alt="${service.imagealt}"></a>
+    const HTML = `<div class="partners1 col-12">
+                        <a href="#"><img src="${imagePath + service.image}" alt="${service.imagealt}"></a>
                     </div>
                     <div class="partners2 col-8">
-                        <a href="#"><img src="${service.image}" alt="${service.imagealt}"></a>
-                    </div>`
+                        <a href="#"><img src="${imagePath + service.image}" alt="${service.imagealt}"></a>`
                     
 
     // output

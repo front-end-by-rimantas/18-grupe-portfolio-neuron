@@ -1,4 +1,5 @@
 import { generateSingleContentNewsUpdates } from './generateSingleContentNewsUpdates.js'
+
 function renderContentNewsUpdates(data) {
          // input validation
 
@@ -10,7 +11,7 @@ function renderContentNewsUpdates(data) {
                         '<input type="email" id="email" placeholder="Enter your Email">'+
                         '<button id="newsletter-flaticon-send" class="flaticon-send"></button></div>'
     let HTML = '';
-    const newsDOM = document.querySelector(data.selector);
+    const newsDOM = document.querySelector(data.selector2);
     const newsCount = data.services.length;
 
     for (let i=0; i < newsCount; i++) {
@@ -25,7 +26,7 @@ function renderContentNewsUpdates(data) {
     
     // output
 
-    return newsDOM.innerHTML = newsletter + HTML;
+    return newsDOM.innerHTML = HTML;
 }
 
 export { renderContentNewsUpdates }
