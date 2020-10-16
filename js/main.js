@@ -3,6 +3,8 @@
 // header main part
 // intro
 // we create
+import { cntIntData } from "./data/ContentIntroduction/contentIntroductionData.js";
+import { renderCntIntroduction } from "./components/contentIntroduction/renderContentIntroduction.js";
 // numbers import
 // services import
 import { ServicesContentData } from "./data/ServicesContent/ServicesContentData.js";
@@ -29,6 +31,7 @@ renderContactForm(contactsData);
 // header main part
 // intro
 // we create
+renderCntIntroduction(cntIntData);
 // numbers import
 renderServicesContent(ServicesContentData);
 // Our Latest Project
