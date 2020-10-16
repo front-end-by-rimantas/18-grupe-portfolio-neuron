@@ -1,5 +1,6 @@
 // header import
-// hero import
+import { menuData } from './data/Menu/menuData.js'; 
+import { renderMenu } from './components/menu/renderMenu.js'
 // header main part
 // intro
 // we create
@@ -17,6 +18,7 @@ import { renderRecentBlogPosts } from './components/recentblogposts/renderRecent
 // footer
 
 // header logic
+ renderMenu (menuData);
 // hero logic
 // header main part
 // intro
