@@ -59,6 +59,7 @@
                 font-size: 100px;
                 margin: 6px 0 0;
             }
+
             [class^="s-c-icon"]:before, [class*="s-c-icon"]:before, [class^="s-c-icon"]:after, [class*="s-c-icon"]:after {
                 font-family: Flaticon;
                 display: block;
@@ -85,14 +86,14 @@
         line-height: 30px;
     }
         .form-input > input {
-        width:100%;
-        padding: 20px;
-        background-color:rgba(255,255,255, 0.3);
-        border-radius: 5px;
-        border: none;
-        /* style */
-        color:white;
-        font-size:16px;
+            width:100%;
+            padding: 20px;
+            background-color:rgba(255,255,255, 0.3);
+            border-radius: 5px;
+            border: none;
+            /* style */
+            color:white;
+            font-size:16px;
         }
 
      .f-text-input {
@@ -100,7 +101,7 @@
         width: 100%;
         grid-column-start: 1;
         grid-column-end: 3;
-        }
+    }
 
     .contact-text {
         width: 100%;
@@ -126,7 +127,7 @@
         width: 100%;
         margin-top: 30px;
         padding: 0 15px;
-    /* style */
+        /* style */
         height: 60px;
         line-height: 60px;
         border-radius: 5px;
