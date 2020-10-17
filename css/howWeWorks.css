@@ -1,0 +1,26 @@
+
+.work-title {
+    text-align: center;
+    font-size: 35px;
+}
+.how {
+    margin: 20px 0 50px;
+    font-size: 22px;
+    font-weight: 600;
+}
+.text-center {
+    text-align: center;
+}
+#workIcons {
+    background: linear-gradient(-41deg, #09c778, #01a0f9);
+    border-radius: 50%;
+    color: #ffffff;
+    display: inline-block;
+    height: 300px;
+    width: 300px;
+    line-height: 300px;
+    font-size: 75px;
+    border: 1px dashed #01a0f9;
+    margin: 25px;
+    
+}
