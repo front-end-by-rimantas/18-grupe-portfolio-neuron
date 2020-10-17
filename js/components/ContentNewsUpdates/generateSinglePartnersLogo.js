@@ -1,7 +1,7 @@
 function generateSinglePartnersLogo (service, imagePath,i) {
 
-    const HTML1 = `<a class = href="#"><img src="${imagePath + service.image}" alt="${service.imagealt}"></a>`
-    const HTML2 = `<a href="#"><img src="${imagePath + service.image}" alt="${service.imagealt}"></a>`
+    const HTML1 = `<a class="single-logo" href="#"><img src="${imagePath + service.image}" alt="${service.imagealt}"></a>`
+    const HTML2 = `<a class="single-logo" href="#"><img src="${imagePath + service.image}" alt="${service.imagealt}"></a>`
                     
 
     // output

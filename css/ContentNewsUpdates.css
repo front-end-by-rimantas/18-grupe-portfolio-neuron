@@ -49,11 +49,54 @@
             }
     .partners-logo {
         margin-top: 50px;
-        margin-bottom: 60px;
+        margin-bottom: 50px;
+        padding: 20px;
     }
-        .partners1 {
+        .partners1, .partners2 {
             text-align: center;
         }
-        .partners2 {
-            text-align: center;
-        }
+            .single-logo {
+                margin-left: 80px;
+            }
+
+@media (max-width: 1300px) {
+    .newsletter-title {
+        font-size: 35px;
+    }
+}   
+
+@media (max-width: 1100px) {
+    .newsletter-title {
+        font-size: 30px;
+    }
+    #newsletter-flaticon-mail {
+        font-size: 200px;
+    }
+    #email {
+        max-width: 525px;
+    }
+}
+
+@media (max-width: 900px) {
+    .newsletter {
+        margin-top: -210px;
+    }
+    #newsletter-flaticon-mail {
+        font-size: 150px;
+        margin-left: 40px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .newsletter-title {
+        margin-left: 40px;
+        margin-top: 0px;
+    }
+    #email {
+        margin-left: 40px;
+    }
+    #newsletter-flaticon-send {
+        margin-left: 530px;
+    }
+}
+
+@media (max-width: 700px) {}

@@ -25,7 +25,7 @@ function renderPartnersLogo (data) {
     
     // output
 
-    return newsDOM.innerHTML = `<div class="partners1 col-12"> ${HTML1} </div> <div class="partners2 col-8"> ${HTML2}`;
+    return newsDOM.innerHTML = `<div class="partners1 col-12 col-md-4"> ${HTML1} </div> <div class="partners2 col-12 col-md-4"> ${HTML2}`;
 }
 
 export { renderPartnersLogo }
