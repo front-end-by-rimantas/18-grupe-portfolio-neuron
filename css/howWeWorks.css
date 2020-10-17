@@ -3,24 +3,108 @@
     text-align: center;
     font-size: 35px;
 }
-.how {
+.how-title {
     margin: 20px 0 50px;
     font-size: 22px;
     font-weight: 600;
 }
-.text-center {
-    text-align: center;
+.workIcons {
+    display: inline-block;
+    border: 1px dashed #01a0f9;
+    border-radius: 50%;
+    position: relative;
 }
-#workIcons {
+.workIcons i:before {
+    height: 210px;
+    width: 210px;
     background: linear-gradient(-41deg, #09c778, #01a0f9);
     border-radius: 50%;
+    line-height: 225px;
+    font-size: 125px;
     color: #ffffff;
     display: inline-block;
-    height: 300px;
-    width: 300px;
-    line-height: 300px;
-    font-size: 75px;
-    border: 1px dashed #01a0f9;
     margin: 25px;
-    
+    transition: all 0.7s ease 0s;
+}
+/* rutuliukas po pavadinimu */
+.work-round-shape {
+    position: relative;
+    height: 40px;
+    width: 40px;
+    border: 1px dashed #01a0f9;
+    border-radius: 50%;
+    /* margin 0 ir auto sucentruoja */
+    margin: 0 auto;
+}
+/* rutuliuko pripildyymas su fonu */
+.work-round-shape:after {
+    content: '';
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background: linear-gradient(-41deg, #09c778, #01a0f9);
+    border-radius: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.single-post-work {
+    position: relative;
+    text-align: center;
+}
+/* tarp rutuliuku rodykles ir linijos uzdejimas */
+.single-post-work:before {
+    content: "\f126";
+    font-family: Flaticon;
+    font-size: 20px;
+    position: absolute;
+    bottom: 7px;
+    left: 58%;
+    color: #09c778;
+  }
+  .single-post-work:after {
+    content: '';
+    position: absolute;
+    width: 80%;
+    border: 1px dashed #01a0f9;
+    left: 70%;
+    bottom: 18px;
+  }
+  /* kad po paskutiniu postu neberodytu rutuliuko ir linijos */
+  .single-post-work:last-child:before,
+  .single-post-work:last-child:after{
+    display: none;
+  }
+  /* pulsavimas ant hoverio */
+  @keyframes pulse-border {
+    0% {
+      transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.2);
+      opacity: 0;
+    }
+  }
+.workHover:hover:before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-41deg, #09c778, #01a0f9);
+    border-radius: 50%;
+    animation: pulse-border 1500ms ease-out infinite;
+}
+/* rutuliukai ir linijos isnyksta */
+@media (max-width: 1100px) {
+    .work-round-shape,
+    .work-round-shape:after,
+    .single-post-work:before,
+    .single-post-work:after {
+       display: none;
+    }
 }
