@@ -1,10 +1,12 @@
 #container-main{
     padding: 0px 0px;
+    
 }
+
 
 .sticky{
     width: 100%; 
-    z-index: 999;
+    z-index: 9;
 }
 
 #logo{
@@ -18,8 +20,10 @@
         font-family: 'Poppins', sans-serif;
         color: white;
         display: flex;
+        /* align-self: center; */
         justify-content: flex-end;
         align-items: center;
+        
     }
 
     .nav-menu-items{
@@ -28,10 +32,12 @@
         justify-content: center;
         align-items: center;
         
+        
         }
             .nav-menu-items i{
                 color: white;
                 margin: 0px 5px;
+                
             }
             
             .nav-menu-items i:hover{
@@ -42,6 +48,7 @@
         .onemenu > a{
             text-decoration: none;
             color: white;
+            
         }
 
             .icon-bar::after {
@@ -55,6 +62,7 @@
                 padding: 15px 0px;
                 margin: 0px 30px;
                 cursor: pointer;
+                
                 }
             
             .nav-menu-items li > a:hover{
@@ -76,7 +84,7 @@
                 width: 370px;
                 max-height: 214px;
                 background-color: white;
-                overflow: hidden;
+                
             } 
                  
             .subcontent > a{
@@ -87,11 +95,14 @@
                 color: black;
                 text-decoration: none;
                 line-height: 30px;
+                
+                
             } 
             
             .subcontent > a:hover{
                 color: #09c778;
                 transition: all 1s;
+                
             }
             
             .onemenu:hover .subcontent{
@@ -99,7 +110,16 @@
                 transition: all 1s;
                 display: flex;
               } 
-              
+                
+            .box-search > a{
+                color: white;
+                margin-left:  30px;
+            }
+            
+                .fa-search{
+                    margin-right:  10px;
+                }
+
 @media (max-width: 1300px) {
     .nav-menu-items li,
     .nav-menu-items > a {
@@ -140,7 +160,23 @@
     .subnav:hover .subnavcontent {
         display: block;
     }
+
+    .nav-menu-items{
+        display: none;
     }
+
+    .item-hide{
+        display: block;
+    }
+
+    .fa-search{
+        display: none;
+        margin-right:  20px;
+    }
+    .box-search > a{
+        color: white;
+    }
+}
         
 
 

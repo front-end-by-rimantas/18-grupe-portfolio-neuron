@@ -9,7 +9,7 @@ function renderMenuSingleGenerate(data,alldata) {
     let href= data.split(" ").join("").toLowerCase().concat('.html')
     if (href==='home.html') {href='index.html'}
     if (alldata.length!=0){
-        subhtml=`<li class="onemenu item-hide"><a href="${href}">${data.toUpperCase()}</a><div class = "subcontent">`;
+        subhtml=`<li class="onemenu item-hide"><a href="./${href}">${data.toUpperCase()}</a><div class = "subcontent">`;
         for (let i = 0; i < alldata.length; i++) {
             subhtml+=renderSUBmenuSingleGenerate(data, alldata[i]);
         }
@@ -17,7 +17,7 @@ function renderMenuSingleGenerate(data,alldata) {
     return subhtml;
     } else{
         console.log();
-        return `<li class="onemenu item-hide"> <a href="${href}">${data.toUpperCase()}</a></li>`
+        return `<li class="onemenu item-hide"> <a href="./${href}">${data.toUpperCase()}</a></li>`
     }
 }
 export {renderMenuSingleGenerate}
