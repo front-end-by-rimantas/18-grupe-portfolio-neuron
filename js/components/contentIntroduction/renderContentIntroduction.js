@@ -1,7 +1,10 @@
 import validation from "../../components/contentIntroduction/dataValidation.js";
 
 function renderCntIntroduction(data) {
-  validation.cntIntroduction(data);
+  if (!validation.cntIntroduction(data)) {
+    console.error("validacija nepraėjo");
+    return;
+  }
   const cntIntroTextDom = document.querySelector(`${data.path}`);
   const cntIntroImageDom = document.querySelector(`${data.path2}`);
   let allCntIntroText = "";
