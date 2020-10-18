@@ -5,6 +5,7 @@
 
 .sticky{
     width: 100%; 
+    z-index: 999;
 }
 
 #logo{
@@ -29,37 +30,37 @@
         justify-content: center;
         align-items: center;
         }
-                .nav-menu-items i{
-                    color: white;
-                    margin: 0px 5px;
-                }
+            .nav-menu-items i{
+                color: white;
+                margin: 0px 5px;
+            }
+            
+            .nav-menu-items i:hover{
+                color: #63635f;
+                transition: color 1s;
+            }
+
+            .icon-bar::after {
+                content: 'MENU';
+                font-family: 'Poppins', sans-serif;
+                padding-left: 9px;
+                cursor: pointer;
                 
-                .nav-menu-items i:hover{
-                    color: #63635f;
-                    transition: color 1s;
+            }
+            .nav-menu-items li,
+            .nav-menu-items a {
+                padding: 15px 0px;
+                margin: 0px 10px;
+                cursor: pointer;
                 }
 
-                .icon-bar::after {
-                    content: 'MENU';
-                    font-family: 'Poppins', sans-serif;
-                    padding-left: 9px;
-                    cursor: pointer;
-                  
-                }
-                .nav-menu-items li,
-                .nav-menu-items a {
-                    padding: 15px 0px;
-                    margin: 0px 10px;
-                    cursor: pointer;
-                    }
-
-                .nav-menu-items li:hover{
-                    color: #cccccc;
-                    transition: color 1s;
-                }    
-                .bar-hide{
-                    display: none;
-                }
+            .nav-menu-items li:hover{
+                color: #cccccc;
+                transition: color 1s;
+            }    
+            .bar-hide{
+                display: none;
+            }
 
                 
 @media (max-width: 900px) {
