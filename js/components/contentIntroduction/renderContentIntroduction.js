@@ -1,4 +1,4 @@
-import validation from "../../components/contentIntroduction/validationData.js";
+import validation from "../../components/contentIntroduction/dataValidation.js";
 
 function renderCntIntroduction(data) {
   validation.cntIntroduction(data);
