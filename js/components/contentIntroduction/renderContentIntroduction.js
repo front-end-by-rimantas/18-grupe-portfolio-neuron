@@ -17,7 +17,7 @@ function renderCntIntroduction(data) {
   }
   let cntLeft = `<div class="cnt-int-text">${cIntTitle}${allCntIntroText}</div><div class="cnt-int-btn-v">${cIntButton}${cIntVideo}</div>`;
   cntIntroTextDom.innerHTML = cntLeft;
-  cntIntroImageDom.innerHTML = `${cIntImage}`;
+  cntIntroImageDom.innerHTML = cIntImage;
 }
 
 export { renderCntIntroduction };
