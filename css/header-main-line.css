@@ -79,9 +79,6 @@
         margin-right: 15px;
     }
 
-    .sticky{
-        position: relative;
-    }
 }
 
 @media (max-width: 700px) {
