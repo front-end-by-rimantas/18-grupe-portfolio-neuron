@@ -5,14 +5,22 @@ import {menuPosition} from './menuPosition.js'
 function renderMenu(data) {
     // variables declaration
     const  main = data.main;
+    const alldata = data;
     let html = '';
 
     // input validation
 
     // logic
-    for (let i = 0; i < main.length; i++) {
-        html += renderMenuSingleGenerate(main[i]);
-    }
+
+    html += renderMenuSingleGenerate(main[0],alldata.home);
+    html += renderMenuSingleGenerate(main[1],alldata.about);
+    html += renderMenuSingleGenerate(main[2],alldata.features);
+    html += renderMenuSingleGenerate(main[3],alldata.pages);
+    html += renderMenuSingleGenerate(main[4],alldata.shop);
+    html += renderMenuSingleGenerate(main[5],alldata.blog);
+    html += renderMenuSingleGenerate(main[6],alldata.contact);
+
+
     // logic validation
     if (html ==='') {
         console.error('nera sukurta menu');

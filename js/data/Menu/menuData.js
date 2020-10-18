@@ -1,6 +1,7 @@
 const menuData = {
     main:['home','about', 'features','pages','shop','blog','contact'],
     home:[ 'Home one', 'Home two', 'Home three'],
+    about:[],
     features:[],
     pages:['software demo','mobile app', 'team page','privacy policy page','pricing plan','chatbot','login','register','download','coming soon','404 error'],
     shop:['shop','shop single','cart','checkout'],
@@ -16,6 +17,7 @@ export {menuData}
 //         {name:'Home One',link:'homeone.html'},
 //         {name:'Home two',link:'hometwo.html'},
 //         {name:'Home three',link:'homethree.html'}],
+//     about:[],
 //     features:[],
 //     pages:[
 //         {name:'software demo', link:'softwaredemo.html'},{name:'mobile app', link:'mobileapp.html'},
