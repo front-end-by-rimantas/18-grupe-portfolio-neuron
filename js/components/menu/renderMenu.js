@@ -1,5 +1,6 @@
 // import
 import {renderMenuSingleGenerate} from './renderMenuSingleGenerate.js'
+import {menuPosition} from './menuPosition.js'
 
 function renderMenu(data) {
     // variables declaration
@@ -12,15 +13,18 @@ function renderMenu(data) {
     for (let i = 0; i < main.length; i++) {
         html += renderMenuSingleGenerate(main[i]);
     }
-    console.log(html);
     // logic validation
     if (html ==='') {
         console.error('nera sukurta menu');
     }
+    
+    // output
     let menuDOM = document.querySelector('.nav-menu-items');
     menuDOM.insertAdjacentHTML('afterbegin',html)
-    console.log(menuDOM);
-    // output
+
+    //function - on scrollin menu poistion fixed 
+    window.onscroll = function() {menuPosition()};
+            
 }
 
 export {renderMenu}

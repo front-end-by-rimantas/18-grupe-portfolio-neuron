@@ -4,13 +4,7 @@
 }
 
 .sticky{
-    position: sticky;
-    top: 0px;
-    /* top: 60px; 
-      left:0px;
-    left: 0px;
-    width: 100%; */
-    background: linear-gradient(0deg, #08C291, #09c67f);
+    width: 100%; 
 }
 
 #logo{
