@@ -7,7 +7,6 @@ function renderSUBmenuSingleGenerate(data, alldata) {
         alldata = words.join(" ");
     // creating href to hml files 
         const href= alldata.split(" ").join("").toLowerCase().concat('.html')
-
-    return  `<a href="${href}">${alldata}</a>`
+        return  `<a href="${href}">${alldata}</a>`
 }
 export {renderSUBmenuSingleGenerate }

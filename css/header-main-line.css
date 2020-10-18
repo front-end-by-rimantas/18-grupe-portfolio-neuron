@@ -1,4 +1,3 @@
-/* https://www.w3schools.com/howto/howto_custom_select.asp */
 #container-main{
     padding: 0px 0px;
 }
@@ -28,6 +27,7 @@
         list-style-type: none;
         justify-content: center;
         align-items: center;
+        
         }
             .nav-menu-items i{
                 color: white;
@@ -38,6 +38,11 @@
                 color: #63635f;
                 transition: color 1s;
             }
+        
+        .onemenu > a{
+            text-decoration: none;
+            color: white;
+        }
 
             .icon-bar::after {
                 content: 'MENU';
@@ -46,14 +51,13 @@
                 cursor: pointer;
                 
             }
-            .nav-menu-items li,
-            .nav-menu-items > a {
+            .nav-menu-items li{
                 padding: 15px 0px;
                 margin: 0px 30px;
                 cursor: pointer;
                 }
-
-            .nav-menu-items li:hover{
+            
+            .nav-menu-items li > a:hover{
                 color: #cccccc;
                 transition: color 1s;
             }    
@@ -61,48 +65,46 @@
             .bar-hide{
                 display: none;
             }
-
+            
             .subcontent{
-                /* display: block; */
                 display: none;
+                /* display: flex; */
+                flex-wrap: wrap;  
+                flex-direction: column;
                 position: absolute;
                 top: 130px; 
-                width: 420px;
+                width: 370px;
+                max-height: 214px;
                 background-color: white;
-                
+                overflow: hidden;
             } 
-     
+                 
             .subcontent > a{
-                display: block;
+                min-width: 33%;
                 background-color: white;
-                width: 48%;
-                float: left;
-                padding: 10px 10px 10px 10px; 
+                flex-grow: 2;
+                padding: 10px 5px 10px 5px; 
                 color: black;
                 text-decoration: none;
+                line-height: 30px;
             } 
             
             .subcontent > a:hover{
                 color: #09c778;
                 transition: all 1s;
             }
-
-            .home:hover .subcontent,
-            .pages:hover .subcontent,
-            .shop:hover .subcontent,
-            .blog:hover .subcontent{
+            
+            .onemenu:hover .subcontent{
                 /* neveikai transition kodel? */
                 transition: all 1s;
-                display: block;
+                display: flex;
               } 
               
 @media (max-width: 1300px) {
-
     .nav-menu-items li,
     .nav-menu-items > a {
         margin: 0px 15px;
         }
-
 }
 
 @media (max-width: 1100px) {
@@ -135,11 +137,11 @@
         padding: 20px 0px 0px 0px;
     }
 
-.subnav:hover .subnavcontent {
-    display: block;
-  }
-}
-     
+    .subnav:hover .subnavcontent {
+        display: block;
+    }
+    }
+        
 
 
 
