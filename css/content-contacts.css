@@ -106,6 +106,7 @@
     .contact-text {
         width: 100%;
         background-color:rgba(255,255,255, 0.3);
+        resize: none;
         /* style */
         padding: 20px;
         line-height: 30px;
@@ -113,6 +114,10 @@
         font-size:16px;
         border-radius: 5px;
         border: none;
+    }
+
+    .contact-text:focus, .form-input input:focus{
+        outline: none;
     }
 
         .contact-text::placeholder,
