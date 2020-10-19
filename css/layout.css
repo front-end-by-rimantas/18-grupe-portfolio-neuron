@@ -4,7 +4,7 @@ body {
 }
 .container {
     display: grid;
-    grid-template-columns: 1fr 1300px 1fr;
+    grid-template-columns: 1fr 1400px 1fr;
     row-gap: 20px;
     padding: 60px 0;
 }
