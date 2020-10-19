@@ -4,7 +4,7 @@ body {
 }
 .container {
     display: grid;
-    grid-template-columns: 40px 1fr 40px;
+    grid-template-columns: 1fr 1300px 1f;
     row-gap: 20px;
     padding: 60px 0;
 }
@@ -51,7 +51,7 @@ body {
         grid-column: span 1;
     }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
     .container {
         grid-template-columns: 1fr 1100px 1fr;
     }
@@ -95,7 +95,7 @@ body {
         grid-column: span 1;
     }
 }
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
     .container {
         grid-template-columns: 1fr 900px 1fr;
     }
@@ -139,7 +139,7 @@ body {
         grid-column: span 1;
     }
 }
-@media (max-width: 800px) {
+@media (max-width: 900px) {
     .container {
         grid-template-columns: 1fr 700px 1fr;
     }
@@ -183,7 +183,7 @@ body {
         grid-column: span 1;
     }
 }
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     .container {
         grid-template-columns: 15px 1fr 15px;
     }
