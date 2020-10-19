@@ -4,7 +4,7 @@ function generateNewsLetter(data) {
                     '<div class="newsletter-text col-8 col-md-12">'+
                         '<h1 class="newsletter-title">Don’t Miss Our News<br>And Updates!</h1>'+
                         '<input type="email" id="email" placeholder="Enter your Email">'+
-                        '<button id="newsletter-flaticon-send" class="flaticon-send"></button></div>'
+                        '<ul id="newsletter-flaticon-send" class="flaticon-send"></ul></div>'
 
    const newsletterDOM = document.querySelector(data.selector1);
 

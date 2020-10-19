@@ -7,7 +7,7 @@
         border-radius: 20px;
         background-color: #ffffff;
         position: relative;
-        /* box-shadow: 5px 5px 5px 5px #888888; */
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         margin-top: -210px;
     }
         #newsletter-flaticon-mail {
@@ -49,6 +49,12 @@
                 position: relative; 
                 margin-left: 690px;
                 margin-top: 70px;
+                text-align: center;
+            }
+            #newsletter-flaticon-send:hover {
+                background-color: transparent;
+                cursor: pointer;
+                opacity: 0.8;
             }
     .partners-logo {
         margin-top: 50px;
