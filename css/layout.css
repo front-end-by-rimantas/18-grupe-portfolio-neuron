@@ -53,7 +53,7 @@ body {
 
 @media (max-width: 1200px) {
     .container {
-        grid-template-columns: 1fr 900px 1fr;
+        grid-template-columns: 1fr 1100px 1fr;
     }
     .container > .row {
         gap: 25px;
@@ -97,7 +97,7 @@ body {
 }
 @media (max-width: 1000px) {
     .container {
-        grid-template-columns: 1fr 700px 1fr;
+        grid-template-columns: 1fr 900px 1fr;
     }
     .container > .row {
         gap: 20px;
@@ -141,7 +141,7 @@ body {
 }
 @media (max-width: 800px) {
     .container {
-        grid-template-columns: 1fr 500px 1fr;
+        grid-template-columns: 1fr 700px 1fr;
     }
     .container > .row {
         gap: 15px;
