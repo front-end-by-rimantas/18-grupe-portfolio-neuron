@@ -5,7 +5,8 @@
         border-radius: 20px;
         background-color: #ffffff;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        margin-top: -210px;
+        position: relative;
+        /* margin-bottom: -214px; */
     }
         #newsletter-flaticon-mail {
             -webkit-background-clip: text;
@@ -21,7 +22,7 @@
             margin-left: 10px;
             margin-top: 70px;
         }
-            #FormEmail {
+            #formEmail {
                 display: inline-block;
                 font-size: 20px;
                 position: absolute;
@@ -74,7 +75,7 @@
         font-size: 35px;
         margin-top: 30px;
     }
-    #email {
+    #formEmail {
         max-width: 550px;
         margin-top: 40px;
     }
@@ -98,7 +99,7 @@
     .newsletter-title {
         font-size: 30px;
     }
-    #email {
+    #formEmail {
         max-width: 450px;
     }
     #newsletter-flaticon-send {
@@ -108,7 +109,7 @@
 
 @media (max-width: 900px) {
     .newsletter {
-        margin-top: -210px;
+        margin-top: -10px;
     }
     #newsletter-flaticon-mail {
         font-size: 150px;
@@ -120,7 +121,7 @@
         margin-left: 40px;
         margin-top: 0px;
     }
-    #email {
+    #formEmail {
         margin-left: 40px;
     }
     #newsletter-flaticon-send {
