@@ -132,7 +132,7 @@
 
     .nav-menu-items li,
     .nav-menu-items > a {
-        margin: 0px 8px;
+        margin: 0px 7px;
         }
 }
 
@@ -149,7 +149,7 @@
         display: flex;
         align-items: center;
         font-size: 15px;
-        margin-right: 15px;
+        padding-right: 15px;
     }
 }
 
