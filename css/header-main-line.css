@@ -112,10 +112,14 @@
                 display: flex;
               } 
                 
-            .box-search > a{
-                color: white;
-                margin-left:  30px;
-            }
+              .box-search{
+                  display: inline-block;
+              }
+
+                .box-search > a{
+                    color: white;
+                    margin-left:  30px;
+                }
             
                 .fa-search{
                     margin-right:  10px;
