@@ -1,5 +1,6 @@
 // header import
-// hero import
+import { menuData } from './data/Menu/menuData.js'; 
+import { renderMenu } from './components/menu/renderMenu.js'
 // header main part
 // intro
 // we create
@@ -21,6 +22,7 @@ import { renderContactForm } from "./components/contacts/renderContactForm.js";
 // footer
 
 // header logic
+ renderMenu (menuData);
 // hero logic
 // about logic
 // contacts logic

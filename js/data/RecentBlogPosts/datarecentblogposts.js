@@ -1,17 +1,7 @@
 const datarecentblogposts = {
  imagepath: './img/recentblogposts/',
  posts:[ 
-    {
-    imagealt:'first image',
-    image: 'image1.jpg',
-    date:'2019-08-27',
-    user:'Admin',
-    commentscount: Infinity,
-    postheading:'Man in Red Plaid Shirt Talking on Phone Terrace',
-    postparagraph:'The Tutorial covers examples of identification And Rew Garfield and verifies if a picture',
-    active:true
-},
-{
+   {
     imagealt:'second image',
     image: 'image2.jpg',
     date:'Nov 28, 2019',
@@ -53,17 +43,15 @@ const datarecentblogposts = {
 },
 ]
 }
-
 /*
-const datarecentblogposts = {
  imagepath: './img/recentblogposts/',
  posts:[ 
     {
     imagealt:'first image',
     image: 'image1.jpg',
-    date:'Nov 28, 2019',
+    date:'2019-12-28',
     user:'Admin',
-    commentscount: 10,
+    commentscount: 15,
     postheading:'Man in Red Plaid Shirt Talking on Phone Terrace',
     postparagraph:'The Tutorial covers examples of identification And Rew Garfield and verifies if a picture',
     active:true
