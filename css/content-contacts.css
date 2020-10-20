@@ -35,13 +35,8 @@
             float:right;
         }
 
-            .text-info  {
-                width:100%;
-                float:right;
-            }
-
             .text-info > a {
-                width:100%;
+                display: block;
                 text-decoration: none;
                 color:black;
             }

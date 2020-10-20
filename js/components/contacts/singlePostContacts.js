@@ -1,10 +1,19 @@
 "use script";
+function diferentInfo(data, infoType) {
+  if (infoType === "address") {
+    return `${data} <br>`;
+  }
+
+  if (infoType === "number" || infoType === "email") {
+    return `<a href="${data.href}">${data.text}</a>`;
+  }
+}
 
 function singlePostContact(data) {
   function contactInfo() {
     let allInfo = "";
     for (let i = 0; i < data.info.length; i++) {
-      allInfo += `<span class='text-info'>${data.info[i]}</span>`;
+      allInfo += diferentInfo(data.info[i], data.type);
     }
     return allInfo;
   }
@@ -15,7 +24,7 @@ function singlePostContact(data) {
         </div>
         <div class='c-info'> 
         <h4>${data.subtitle}</h4>
-        <div>
+        <div class='text-info'>
         ${contactInfo()}
         </div>
         </div>

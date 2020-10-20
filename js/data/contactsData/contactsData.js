@@ -1,4 +1,3 @@
-// pataisyti info data.
 const contactsData = {
   selector: "#contact-info",
   mainIcon: "flaticon-gps",
@@ -7,26 +6,39 @@ const contactsData = {
     {
       icon: "flaticon-place",
       subtitle: "Visit Us",
-      info: [
-        `530 Old BUffalo Street <br> Northwest #205,<br> New York -<br> 3087`,
-      ],
+      type: "address",
+      info: ["530 Old BUffalo Street", "Northwest #205,", "New York -", "3087"],
       active: true,
     },
     {
       icon: "flaticon-phone",
       subtitle: "Call Us",
+      type: "number",
       info: [
-        `<a href="tel:+1(123)-456-7890">+1 (123) -456-7890</a>\n`,
-        `<a href="tel:+1(123)-456-7890">+1 (123) -456-7890</a>`,
+        {
+          href: "tel:+1(123)-456-7890",
+          text: "+1 (123) -456-7890",
+        },
+        {
+          href: "tel:+1(123)-456-7890",
+          text: "+1 (123) -456-7890",
+        },
       ],
       active: true,
     },
     {
       icon: "flaticon-mail-1",
       subtitle: "Email Us",
+      type: "email",
       info: [
-        `<a href="mailto:infoname@gmail.com">infoname@gmail.com</a>\n`,
-        `<a href="#">www.yourname.com</a>`,
+        {
+          href: "mailto:infoname@gmail.com",
+          text: "infoname@gmail.com",
+        },
+        {
+          href: "#",
+          text: "www.yourname.com",
+        },
       ],
       active: true,
     },
