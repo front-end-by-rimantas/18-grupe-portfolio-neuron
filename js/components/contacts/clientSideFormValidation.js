@@ -1,7 +1,7 @@
-function ValidateEmail(mail) {
+function validateEmail(mail) {
   if (
     /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(
-      myForm.emailAddr.value
+      form.emailAddr.value
     )
   ) {
     return true;
@@ -9,3 +9,5 @@ function ValidateEmail(mail) {
   alert("You have entered an invalid email address!");
   return false;
 }
+
+export { validateEmail };

@@ -112,7 +112,7 @@
         border: none;
     }
 
-    .contact-text:focus, .form-input input:focus{
+    .contact-text:focus, .form-input input:focus, .data-button:focus{
         outline: none;
     }
 
@@ -135,9 +135,9 @@
         font-weight: 500;
         font-size: 18px;
         text-transform: uppercase;
+        cursor: pointer;
     }
-
-
+    
 /* responsive */
 
 @media (max-width: 900px){

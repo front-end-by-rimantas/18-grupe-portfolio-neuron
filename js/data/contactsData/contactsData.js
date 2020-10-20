@@ -1,5 +1,6 @@
+// pataisyti info data.
 const contactsData = {
-  path: "#contact-info",
+  selector: "#contact-info",
   mainIcon: "flaticon-gps",
   title: "Contact With Us",
   infoPosts: [
@@ -30,15 +31,38 @@ const contactsData = {
       active: true,
     },
   ],
-  pathForm: "",
+  pathForm: "#contact-form",
   form: [
-    ` <input type="text" placeholder="Name" id="name" name="name" required>`,
-    `<input type="email" placeholder="E-Mail" id="email" name="email" required>`,
-    `<input type="text" placeholder="Phone Number" id="phone_number" name="phone_number" required>`,
-    `<input type="text" placeholder="Subject" id="subject" name="subject" required>`,
+    {
+      type: "text",
+      placeholder: "Name",
+      id: "name",
+      name: "name",
+      active: true,
+    },
+    {
+      type: "email",
+      placeholder: "E-Mail",
+      id: "email",
+      name: "email",
+      active: true,
+    },
+    {
+      type: "text",
+      placeholder: "Phone Number",
+      id: "phone_number",
+      name: "phone_number",
+      active: true,
+    },
+    {
+      type: "text",
+      placeholder: "Subject",
+      id: "subject",
+      name: "subject",
+      active: true,
+    },
   ],
-  formText: `<textarea class ="contact-text" placeholder="Your Message Here" rows="5" id="message" name="message" required=""></textarea>`,
-  formButton: `<div><button class="data-button">SUBMIT NOW!</button></div>`,
+  formButton: "SUBMIT NOW!",
 };
 
 export { contactsData };
