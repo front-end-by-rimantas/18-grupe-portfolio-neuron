@@ -1,8 +1,8 @@
-const NewsUpdateData = {
+const newsUpdateData = {
     selector1: '#news_block',
     selector2: '#partners_logo',
     imagePath: './img/ContentNewsUpdates/',
-    services: [
+    singleImg: [
         {
             imagealt:'first image',
             image: 'image1.png',
@@ -23,7 +23,22 @@ const NewsUpdateData = {
             imagealt:'fifth image',
             image: 'image5.png',
         },
-    ]
+    ],
+    icon: {
+        flaMail: 'flaticon-mail',
+        visible: true
+    },
+    form: [
+        {
+            text: 'Don’t Miss Our News And Updates!',
+            placeholder: 'Enter Your Email',
+            icon: {
+                flaSend: 'flaticon-send',
+                visible: true
+            },
+        },
+    ],
+    
 }
 
-export { NewsUpdateData }
+export { newsUpdateData }
