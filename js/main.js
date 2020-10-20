@@ -3,7 +3,8 @@ import { menuData } from './data/Menu/menuData.js';
 import { renderMenu } from './components/menu/renderMenu.js'
 // header main part
 // intro
-import { introPosts } from './data/ContentIntro/introPosts.js'
+import { introPostsOne } from './data/ContentIntro/introPosts.js'
+import { introPostsTwo } from './data/ContentIntro/introPosts.js'
 import { renderContentIntro } from './components/introContent/renderContentIntro.js'
 // we create
 // numbers import
@@ -32,7 +33,8 @@ renderPostsContacts(contactsData);
 renderContactForm(contactsData);
 // header main part
 // intro
-renderContentIntro(introPosts);
+renderContentIntro(introPostsOne);
+renderContentIntro(introPostsTwo);
 // we create
 // numbers import
 renderServicesContent(ServicesContentData);

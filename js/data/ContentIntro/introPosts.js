@@ -1,5 +1,5 @@
-let introPosts = {
-    selector: '#intro_block1',
+const introPostsOne = {
+    selector: '#intro_block-one',
     posts:[
         {
             icon: 'flaticon-artificial-intelligence',
@@ -16,18 +16,20 @@ let introPosts = {
             active: true
         },
     ],
-    selector: '#intro_block2',
+}
+const introPostsTwo = {
+    selector: '#intro_block-two',
     posts:[
         {
             icon: 'flaticon-artificial-intelligence',
-            title: 'Cloud AI intergration',
+            title: 'Virtual Personal AssistantAdvanced Programings',
             description:'Find out what is working and what is not Dig your data to find',
             link: '#',
             active: true
         },
         {
-            icon: 'flaticon-robotic-arm',
-            title: 'Robotic Arm',
+            icon: 'flaticon-ai',
+            title: 'AI Chippest',
             description:'Find out what is working and what is not Dig your data to find',
             link: '#',
             active: true
@@ -35,4 +37,5 @@ let introPosts = {
     ],
 }
 
-export { introPosts }
+export { introPostsOne }
+export { introPostsTwo }
