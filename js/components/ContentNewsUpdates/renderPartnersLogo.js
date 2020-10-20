@@ -22,10 +22,14 @@ function renderPartnersLogo (data) {
         console.error('ERROR: nera nei vienos normalios veikiancios paslaugos!');
         return;
     } 
+    if(HTML2 === '') {
+        console.error('ERROR: nera nei vienos normalios veikiancios paslaugos!');
+        return;
+    } 
     
     // output
 
-    return newsDOM.innerHTML = `<div class="partners1 col-12 col-md-4"> ${HTML1} </div> <div class="partners2 col-12 col-md-4"> ${HTML2}`;
+    return newsDOM.innerHTML = `${HTML1}` + `${HTML2}`;
 }
 
 export { renderPartnersLogo }
