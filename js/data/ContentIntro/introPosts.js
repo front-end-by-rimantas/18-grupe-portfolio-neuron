@@ -1,5 +1,5 @@
 const introPostsOne = {
-    selector: '#intro_block-one',
+    selector: '#intro-block-one',
     posts:[
         {
             icon: 'flaticon-artificial-intelligence',
@@ -18,7 +18,7 @@ const introPostsOne = {
     ],
 }
 const introPostsTwo = {
-    selector: '#intro_block-two',
+    selector: '#intro-block-two',
     posts:[
         {
             icon: 'flaticon-artificial-intelligence',
