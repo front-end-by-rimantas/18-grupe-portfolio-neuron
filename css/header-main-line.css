@@ -1,8 +1,6 @@
 #container-main{
     padding: 0px 0px;
-    
 }
-
 
 .sticky{
     width: 100%; 
@@ -71,6 +69,10 @@
             }    
             
             .bar-hide{
+                display: none;
+            }
+
+            .expand{
                 display: none;
             }
             
@@ -142,7 +144,7 @@
 
 @media (max-width: 900px) {
     .item-hide{
-        display: none;
+        /* display: none; */
     }
 
     .bar-hide{
@@ -155,6 +157,80 @@
         font-size: 15px;
         padding-right: 15px;
     }
+
+    .nav-menu-items{
+        display: block;
+        background-color: tomato;
+        position: absolute;
+        top: 110px;
+        width: 690px;
+        /* margin-right: 5%; */
+        margin-left: 5%;
+        /* height: 100vh; */
+    }
+
+    .nav-menu-items > li{
+        margin: 0px;
+        padding: 0;
+        width: 100%;
+        border-bottom: 1px solid saddlebrown;
+    }
+
+    .nav-menu-items > li > a{
+        margin: 10px;
+        line-height: 50px;
+    }
+    
+    .expand{
+        display: inline-block;
+        float: right;
+        line-height: 50px;
+        width: 50px;
+        background-color: greenyellow;
+        
+
+    }
+
+    .expand > i{
+        display: flex;
+        justify-content: center;
+        line-height: 50px;
+        margin: 0;
+        width: 100%;
+        background-color: hotpink;
+
+    }
+    
+    .subcontent{
+        /* display: block; */
+        width: 100%;
+        max-height: none;
+        position: relative;
+        top: 0px;
+        background-color: chartreuse;
+        
+    }
+    .subcontent > a{
+        display: block;
+        width: 100%;
+        border-bottom: 1px solid green;
+        background-color: blue;
+        
+        /* position: absolute; */
+        /* top: 110px; */
+
+    }
+
+    .header-main-font {
+
+        display: flex;
+        /* align-self: center; */
+        justify-content: flex-end;
+        align-items: center;
+        
+    }
+
+
 }
 
 @media (max-width: 700px) {
@@ -166,13 +242,19 @@
         display: block;
     }
 
-    .nav-menu-items{
-        display: none;
-    }
+       .nav-menu-items{
+            /* display: none; */
+            display: block;
+            width: 90%;
+            margin: 0;
+            left:50%;
+            top: 60px; 
+            transform: translate(-50%);
+        }
 
-    .item-hide{
-        display: block;
-    }
+            .item-hide{
+                display: block;
+            }
 
     .fa-search{
         display: none;
