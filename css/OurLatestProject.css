@@ -4,7 +4,7 @@
 .latestProjectImg {
 }
     .singleImg {
-
+        width: 100%;
     }
 
     .singleImg:hover {
