@@ -184,8 +184,6 @@
     .expand{
         display: inline-block;
         float: right;
-        line-height: 50px;
-        width: 50px;
         background-color: greenyellow;
         
 
@@ -195,8 +193,8 @@
         display: flex;
         justify-content: center;
         line-height: 50px;
+        width: 50px;
         margin: 0;
-        width: 100%;
         background-color: hotpink;
 
     }
@@ -222,14 +220,11 @@
     }
 
     .header-main-font {
-
         display: flex;
         /* align-self: center; */
         justify-content: flex-end;
         align-items: center;
-        
     }
-
 
 }
 
