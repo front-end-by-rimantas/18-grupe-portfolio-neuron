@@ -1,5 +1,5 @@
 const howWeWorksData = {
-    selector: '#howweworks_block',
+    selector: '#how_weworks_block',
     works:[
         {
             icon: 'flaticon-code',
