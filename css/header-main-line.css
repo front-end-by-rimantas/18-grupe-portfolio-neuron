@@ -48,14 +48,17 @@
             color: white;
             
         }
-
-            .icon-bar::after {
-                content: 'MENU';
-                font-family: 'Poppins', sans-serif;
-                padding-left: 9px;
-                cursor: pointer;
-                
+            .icon-bar{
+            cursor: pointer;
             }
+
+                .icon-bar::after {
+                    content: 'MENU';
+                    font-family: 'Poppins', sans-serif;
+                    padding-left: 9px;
+                    cursor: pointer;
+                }
+                
             .nav-menu-items li{
                 padding: 15px 0px;
                 margin: 0px 30px;
@@ -203,10 +206,9 @@
         /* display: block; */
         width: 100%;
         max-height: none;
-        position: relative;
-        top: 0px;
+        position: absolute;
+        top: 10px;
         background-color: chartreuse;
-        
     }
     .subcontent > a{
         display: block;
@@ -215,9 +217,32 @@
         background-color: blue;
         
         /* position: absolute; */
+        /* top: 100px;  */
+         /* left: 0; */
         /* top: 110px; */
 
     }
+
+    .close-hide{
+        background-color: white;
+    }
+
+        .close-hide > i{
+            display: flex;
+            justify-content: center;
+            line-height: 50px;
+            width: 100%;
+            margin: 0;
+            color: black;
+        }
+
+        .close-hide > i::after{
+            content: 'Close';
+            display: inline-block;
+            text-align: center;
+            padding: 0 0 0 5px;
+            font-size: 22px;
+        }    
 
     .header-main-font {
         display: flex;
