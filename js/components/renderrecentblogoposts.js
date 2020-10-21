@@ -50,4 +50,4 @@ else return (console.log('tuscias'));
     feedDOM = feedDOM.closest(".row")
     feedDOM.innerHTML = htmlDOM;
 }
-export {renderrecentblogoposts}
+export {renderrecentblogoposts};
