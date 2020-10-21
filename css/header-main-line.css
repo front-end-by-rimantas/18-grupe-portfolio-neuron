@@ -58,7 +58,7 @@
                     padding-left: 9px;
                     cursor: pointer;
                 }
-                
+
             .nav-menu-items li{
                 padding: 15px 0px;
                 margin: 0px 30px;
@@ -113,7 +113,7 @@
             
             .onemenu:hover .subcontent{
                 /* neveikai transition kodel? */
-                transition: all 1s;
+                /* transition: all 1s; */
                 display: flex;
               } 
                 
@@ -146,9 +146,6 @@
 }
 
 @media (max-width: 900px) {
-    .item-hide{
-        /* display: none; */
-    }
 
     .bar-hide{
         display: flex;
@@ -167,12 +164,10 @@
         position: absolute;
         top: 110px;
         width: 690px;
-        /* margin-right: 5%; */
-        margin-left: 5%;
-        /* height: 100vh; */
+
     }
 
-    .nav-menu-items > li{
+     .nav-menu-items > li{
         margin: 0px;
         padding: 0;
         width: 100%;
@@ -201,27 +196,31 @@
         background-color: hotpink;
 
     }
-    
+
     .subcontent{
         /* display: block; */
         width: 100%;
         max-height: none;
         position: absolute;
-        top: 10px;
+        top: 403px;
         background-color: chartreuse;
+        
     }
     .subcontent > a{
         display: block;
         width: 100%;
         border-bottom: 1px solid green;
         background-color: blue;
-        
-        /* position: absolute; */
-        /* top: 100px;  */
-         /* left: 0; */
-        /* top: 110px; */
-
+   
+        cursor: none;
     }
+
+    .show{
+        display: none;
+    
+    }
+        
+
 
     .close-hide{
         background-color: white;
@@ -251,7 +250,7 @@
         align-items: center;
     }
 
-}
+  }
 
 @media (max-width: 700px) {
     #container-main{
@@ -283,6 +282,7 @@
     .box-search > a{
         color: white;
     }
+
 }
         
 
