@@ -15,16 +15,16 @@
     position: relative;
 }
 .workIcons i::before {
-    height: 210px;
-    width: 210px;
-    background: linear-gradient(-41deg, #09c778, #01a0f9);
-    border-radius: 50%;
-    line-height: 225px;
-    font-size: 125px;
-    color: #ffffff;
-    display: inline-block;
-    margin: 25px;
-    transition: all 0.7s ease 0s;
+  height: 200px;
+  width: 200px;
+  background: linear-gradient(-41deg, #09c778, #01a0f9);
+  border-radius: 50%;
+  line-height: 225px;
+  font-size: 115px;
+  color: #ffffff;
+  display: inline-block;
+  margin: 25px;
+  transition: all 0.7s ease 0s;
 }
 /* rutuliukas po pavadinimu */
 .work-round-shape {
