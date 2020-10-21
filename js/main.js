@@ -9,9 +9,14 @@ import { renderMenu } from './components/menu/renderMenu.js'
 import { ServicesContentData } from "./data/ServicesContent/ServicesContentData.js";
 import { renderServicesContent } from "./components/ServicesContent/renderServicesContent.js";
 // Our Latest Project
+import { latestProjectData } from './data/OurLatestProject/LatestProjectData.js';
+import { LatestProjectSection } from './components/OurLatestProject/LatestProjectSection.js';
 // NEWS
-import { newsUpdateData } from './data/ContentNewsUpdates/ContentNewsUpdatesData.js'
-import { ContentNewsUpdates } from './components/ContentNewsUpdates/ContentNewsUpdates.js';
+import { newsLetterData } from './data/NewsLetter/NewsLetterData.js';
+import { NewsLetterSection } from './components/NewsLetter/NewsLetterSection.js';
+import { partnersLogoData } from './data/partnersLogo/partnersLogoData.js';
+import { PartnersLogoSection } from './components/PartnerLogo/PartnersLogoSection.js';
+// import { ContentNewsUpdates } from './components/NewsLetter/ContentNewsUpdates.js';
 // HOW WE WORK + ANIMATIONS
 // Recent blogo posts
 import { datarecentblogposts } from "./data/RecentBlogPosts/datarecentblogposts.js";
@@ -34,8 +39,12 @@ renderContactForm(contactsData);
 // intro
 // we create
 // numbers import
-// Our Latest Project
-new ContentNewsUpdates(newsUpdateData);
+renderServicesContent(ServicesContentData);
+new LatestProjectSection(latestProjectData);
+new NewsLetterSection(newsLetterData);
+new PartnersLogoSection(partnersLogoData);
+// renderPartnersLogo(NewsUpdateData);
+// generateNewsLetter(NewsUpdateData);
 // HOW WE WORK + ANIMATIONS
 renderRecentBlogPosts(datarecentblogposts);
 // contacts
