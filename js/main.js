@@ -6,14 +6,12 @@ import { numbersData } from './data/contentNumbersData.js';
 // hero import
 // about import
 import { renderContentNumbers, addEventListenerContentNumbersOnScroll } from './components/renderContentNumbers.js';
-// import { renderContentNumbers } from './components/renderContentNumbers.js';
 renderrecentblogoposts(datarecentblogposts);
 // header logic
 // hero logic
 // about logic
-
-//execute
-// const { numbersData } = data;
-                                          
 renderContentNumbers('#numbers', numbersData);
 addEventListenerContentNumbersOnScroll();
+
+
+                                          
