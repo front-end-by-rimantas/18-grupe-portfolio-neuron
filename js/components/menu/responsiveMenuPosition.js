@@ -5,33 +5,23 @@ function responsiveMenuPosition() {
     const iconbar = document.querySelector('.bar-hide');
     const menuitems = document.querySelector('.nav-menu-items');
     iconbar.addEventListener('click', () => {
-        menuitems.classList.toggle('item-hide');
+            menuitems.classList.toggle('hide');
     });
 
-    /**
-     * responsive postion set 
-     */
+    const allExpand = document.querySelectorAll('.nav-menu-items .expand')
+    for (let exp of allExpand) {
+        exp.addEventListener('click', ()=>{
+            exp.closest('.onemenu').classList.toggle('expanded');
+        })
+    }
 
-    clickas('.home');
-    clickas('.pages');
-    clickas('.shop');
-    clickas('.blog');
+    const allClose = document.querySelectorAll('.nav-menu-items .close-hide')
+    for (let close of allClose) {
+        close.addEventListener('click', ()=>{
+            close.closest('.onemenu').classList.toggle('expanded');
+        })
+    }
 
-    function clickas(position) {
-        const queryposition = document.querySelector(position);
-
-        queryposition.addEventListener('click', () => {
-        queryposition.closest('.onemenu').querySelector('.subcontent').style.top = queryposition.closest('.onemenu').offsetTop+ 50+'px';
-        
-        console.log(queryposition.closest('.onemenu').offsetTop+ 50+'px');
-        console.log(position);  
-
-        queryposition.closest('.onemenu').querySelector('.subcontent').classList.toggle('show');
-
-    })
-}
-    
- 
 }
 
 export {responsiveMenuPosition}

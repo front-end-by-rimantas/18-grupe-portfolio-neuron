@@ -13,7 +13,7 @@ function renderMenuSingleGenerate(data,alldata) {
         <div class="expand ${data}">
            <i class="fa fa-angle-down" aria-hidden="true"></i>
         </div>
-        <div class = "subcontent show">`;
+        <div class = "subcontent">`;
         for (let i = 0; i < alldata.length; i++) {
             subhtml+=renderSUBmenuSingleGenerate(data, alldata[i]);
         }

@@ -147,6 +147,10 @@
 
 @media (max-width: 900px) {
 
+    .onemenu:hover .subcontent{
+        display: none;
+      } 
+
     .bar-hide{
         display: flex;
     }
@@ -160,96 +164,85 @@
 
     .nav-menu-items{
         display: block;
-        background-color: tomato;
+        background-color: #09c778;
         position: absolute;
         top: 110px;
         width: 690px;
+    }
 
+    .hide{
+        display: none;
     }
 
      .nav-menu-items > li{
         margin: 0px;
         padding: 0;
         width: 100%;
-        border-bottom: 1px solid saddlebrown;
+        border-bottom: 1px solid #07AE9C;
     }
-
-    .nav-menu-items > li > a{
-        margin: 10px;
-        line-height: 50px;
-    }
-    
-    .expand{
-        display: inline-block;
-        float: right;
-        background-color: greenyellow;
-        
-
-    }
-
-    .expand > i{
-        display: flex;
-        justify-content: center;
-        line-height: 50px;
-        width: 50px;
-        margin: 0;
-        background-color: hotpink;
-
-    }
-
-    .subcontent{
-        /* display: block; */
-        width: 100%;
-        max-height: none;
-        position: absolute;
-        top: 403px;
-        background-color: chartreuse;
-        
-    }
-    .subcontent > a{
-        display: block;
-        width: 100%;
-        border-bottom: 1px solid green;
-        background-color: blue;
-   
-        cursor: none;
-    }
-
-    .show{
-        display: none;
-    
-    }
-        
-
-
-    .close-hide{
-        background-color: white;
-    }
-
-        .close-hide > i{
-            display: flex;
-            justify-content: center;
-            line-height: 50px;
-            width: 100%;
-            margin: 0;
-            color: black;
+        .nav-menu-items > li.expanded .subcontent{
+            display: block;
         }
 
-        .close-hide > i::after{
-            content: 'Close';
-            display: inline-block;
-            text-align: center;
-            padding: 0 0 0 5px;
-            font-size: 22px;
-        }    
-
-    .header-main-font {
-        display: flex;
-        /* align-self: center; */
-        justify-content: flex-end;
-        align-items: center;
+            .nav-menu-items > li > a{
+                margin: 10px;
+                line-height: 50px;
+            }
+   
+    .onemenu{
+        position: relative;
     }
 
+        .expand{
+            display: inline-block;
+            float: right;
+        }
+
+            .expand > i{
+                display: flex;
+                justify-content: center;
+                line-height: 50px;
+                width: 50px;
+                margin: 0;
+                background-color: #07AE9C;
+            }
+
+        .subcontent{
+            position: absolute;
+            top: 50px;
+            width: 100%;
+            max-height: none;
+            z-index: 4;
+            
+        }
+            .subcontent > a{
+                display: block;
+                width: 100%;
+                border-bottom: 1px solid    #067abd;
+                background-color: #01a0f9;
+                color: white;
+            }
+
+        .close-hide{
+            background-color: #ccc;
+        }
+
+            .close-hide > i{
+                display: flex;
+                justify-content: center;
+                line-height: 50px;
+                width: 100%;
+                margin: 0;
+                color: black;
+            }
+
+                .close-hide > i::after{
+                    content: 'Close';
+                    display: inline-block;
+                    text-align: center;
+                    padding: 0 0 0 5px;
+                    font-size: 22px;
+                }    
   }
 
 @media (max-width: 700px) {
@@ -263,7 +256,7 @@
 
        .nav-menu-items{
             /* display: none; */
-            display: block;
+            /* display: block; */
             width: 90%;
             margin: 0;
             left:50%;
@@ -271,10 +264,7 @@
             transform: translate(-50%);
         }
 
-            .item-hide{
-                display: block;
-            }
-
+  
     .fa-search{
         display: none;
         margin-right:  20px;
