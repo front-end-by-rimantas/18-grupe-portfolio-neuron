@@ -6,7 +6,8 @@ import { renderMenu } from './components/menu/renderMenu.js'
 // we create
 import { cntIntData } from "./data/ContentIntroduction/contentIntroductionData.js";
 import { renderCntIntroduction } from "./components/contentIntroduction/renderContentIntroduction.js";
-// numbers import
+import { renderContentNumbers, addEventListenerContentNumbersOnScroll } from './components/contentNumbers/renderContentNumbers.js';
+import { numbersData } from './data/contentNumbersData/contentNumbersData.js';
 // services import
 import { ServicesContentData } from "./data/ServicesContent/ServicesContentData.js";
 import { renderServicesContent } from "./components/ServicesContent/renderServicesContent.js";
@@ -34,7 +35,8 @@ renderContactForm(contactsData);
 // intro
 // we create
 renderCntIntroduction(cntIntData);
-// numbers import
+renderContentNumbers('#numbers', numbersData);
+addEventListenerContentNumbersOnScroll();
 renderServicesContent(ServicesContentData);
 // Our Latest Project
 // NEWS
