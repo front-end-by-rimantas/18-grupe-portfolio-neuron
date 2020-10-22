@@ -23,6 +23,7 @@ import { renderPostsContacts } from "./components/contacts/renderPostContacts.js
 import { renderContactForm } from "./components/contacts/renderContactForm.js";
 // console.log(singlePostContact(contactsData));
 // footer
+import { Footer } from './components/Footer/Footer.js'
 
 // header logic
  renderMenu (menuData);
@@ -45,3 +46,7 @@ renderRecentBlogPosts(datarecentblogposts);
 // contacts
 
 // footer
+new Footer({
+    selector: '#main_footer'
+});
+
