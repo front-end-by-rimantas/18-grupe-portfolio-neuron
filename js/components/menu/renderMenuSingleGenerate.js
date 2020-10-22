@@ -7,7 +7,10 @@ function renderMenuSingleGenerate(data,alldata) {
 
     let subhtml='';
     let href= data.split(" ").join("").toLowerCase().concat('.html')
-    if (href==='home.html') {href='index.html'}
+    if (href==='home.html') {href='index.html'};
+    
+    console.log(href)
+
     if (alldata.length!=0){
         subhtml=`<li class="onemenu"><a href="./${href}">${data.toUpperCase()}</a>
         <div class="expand ${data}">

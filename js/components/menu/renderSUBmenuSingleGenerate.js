@@ -10,11 +10,13 @@ alldata = words.join(" ");
 /**  
  * creating href to hml files 
  */
-const href= alldata.split(" ").join("").toLowerCase().concat('.html')
+let href= alldata.split(" ").join("").toLowerCase().concat('.html')
+if (href==='hometwo.html') {href='homePageTwo/index.html'};
 
 /**
  * creating submenu and close items
  */
+
 const submenuHtml= `<a href="./${href}">${alldata}</a>`;
 return submenuHtml;
 }
