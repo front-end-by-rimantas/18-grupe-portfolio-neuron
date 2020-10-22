@@ -1,10 +1,12 @@
 // import
 import {renderMenuSingleGenerate} from './renderMenuSingleGenerate.js'
 import {menuPosition} from './menuPosition.js'
+import {responsiveMenuPosition} from './responsiveMenuPosition.js'
+
 
 function renderMenu(data) {
     // variables declaration
-    const  main = data.main;
+    const main = data.main;
     const alldata = data;
     let html = '';
 
@@ -32,7 +34,13 @@ function renderMenu(data) {
 
     //function - on scrollin menu poistion fixed 
     window.onscroll = function() {menuPosition()};
-            
+
+    /**
+     * icon bar toglle on responsive 
+     */
+    
+    responsiveMenuPosition ();
+
 }
 
 export {renderMenu}

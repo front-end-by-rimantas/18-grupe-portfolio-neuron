@@ -1,8 +1,6 @@
 #container-main{
     padding: 0px 0px;
-    
 }
-
 
 .sticky{
     width: 100%; 
@@ -50,14 +48,17 @@
             color: white;
             
         }
-
-            .icon-bar::after {
-                content: 'MENU';
-                font-family: 'Poppins', sans-serif;
-                padding-left: 9px;
-                cursor: pointer;
-                
+            .icon-bar{
+            cursor: pointer;
             }
+
+                .icon-bar::after {
+                    content: 'MENU';
+                    font-family: 'Poppins', sans-serif;
+                    padding-left: 9px;
+                    cursor: pointer;
+                }
+
             .nav-menu-items li{
                 padding: 15px 0px;
                 margin: 0px 30px;
@@ -71,6 +72,10 @@
             }    
             
             .bar-hide{
+                display: none;
+            }
+
+            .expand{
                 display: none;
             }
             
@@ -108,7 +113,7 @@
             
             .onemenu:hover .subcontent{
                 /* neveikai transition kodel? */
-                transition: all 1s;
+                /* transition: all 1s; */
                 display: flex;
               } 
                 
@@ -141,9 +146,10 @@
 }
 
 @media (max-width: 900px) {
-    .item-hide{
+
+    .onemenu:hover .subcontent{
         display: none;
-    }
+      } 
 
     .bar-hide{
         display: flex;
@@ -155,7 +161,89 @@
         font-size: 15px;
         padding-right: 15px;
     }
-}
+
+    .nav-menu-items{
+        display: block;
+        background-color: #09c778;
+        position: absolute;
+        top: 110px;
+        width: 690px;
+    }
+
+    .hide{
+        display: none;
+    }
+
+     .nav-menu-items > li{
+        margin: 0px;
+        padding: 0;
+        width: 100%;
+        border-bottom: 1px solid #07AE9C;
+    }
+        .nav-menu-items > li.expanded .subcontent{
+            display: block;
+        }
+
+            .nav-menu-items > li > a{
+                margin: 10px;
+                line-height: 50px;
+            }
+   
+    .onemenu{
+        position: relative;
+    }
+
+        .expand{
+            display: inline-block;
+            float: right;
+        }
+
+            .expand > i{
+                display: flex;
+                justify-content: center;
+                line-height: 50px;
+                width: 50px;
+                margin: 0;
+                background-color: #07AE9C;
+            }
+
+        .subcontent{
+            position: absolute;
+            top: 50px;
+            width: 100%;
+            max-height: none;
+            z-index: 4;
+            
+        }
+            .subcontent > a{
+                display: block;
+                width: 100%;
+                border-bottom: 1px solid    #067abd;
+                background-color: #01a0f9;
+                color: white;
+            }
+
+        .close-hide{
+            background-color: #ccc;
+        }
+
+            .close-hide > i{
+                display: flex;
+                justify-content: center;
+                line-height: 50px;
+                width: 100%;
+                margin: 0;
+                color: black;
+            }
+
+                .close-hide > i::after{
+                    content: 'Close';
+                    display: inline-block;
+                    text-align: center;
+                    padding: 0 0 0 5px;
+                    font-size: 22px;
+                }    
+  }
 
 @media (max-width: 700px) {
     #container-main{
@@ -166,14 +254,17 @@
         display: block;
     }
 
-    .nav-menu-items{
-        display: none;
-    }
+       .nav-menu-items{
+            /* display: none; */
+            /* display: block; */
+            width: 90%;
+            margin: 0;
+            left:50%;
+            top: 60px; 
+            transform: translate(-50%);
+        }
 
-    .item-hide{
-        display: block;
-    }
-
+  
     .fa-search{
         display: none;
         margin-right:  20px;
@@ -181,6 +272,7 @@
     .box-search > a{
         color: white;
     }
+
 }
         
 
