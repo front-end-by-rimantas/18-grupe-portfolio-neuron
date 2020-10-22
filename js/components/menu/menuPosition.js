@@ -1,4 +1,7 @@
 function menuPosition() {
+    /**
+     * iskau top pozicijos prie 900 rezoliucijos
+     */
     if (window.innerWidth>900 && (document.body.scrollTop > document.querySelector('.nav-menu-items').offsetTop + 70 || document.documentElement.scrollTop > document.querySelector('.nav-menu-items').offsetTop + 70)) 
     {
             document.getElementById("container-main").style.top = "0";
