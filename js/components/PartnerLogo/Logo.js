@@ -1,21 +1,20 @@
 class Logo {
     constructor(params) {
+        this.data = params.singleImg;
         this.imgPath = params.imgPath;
-        this.imagealt = params.imagealt;
-        this.image = params.image;
-
     }
 
     generateHTML() {
-        return `   <div class="partners1 col-2 col-md-4">
-                    <img class="single-logo" src="./img/PartnersLogo/image1.png" alt="pirmas">
-                </div>
-                </div> <div class="partners2 col-3 col-md-4">
-                    <img class="single-logo" src="./img/PartnersLogo/image1.png" alt="pirmas">
+        let HTML = '';
+        for (let item of this.data) {
+
+        HTML += `<div class="partners1 col-2 col-md-4">
+                    <img class="single-logo" src="${this.imgPath + item.image}" alt="${item.imagealt}">
                 </div>`
-    }
+ }
+    return HTML;
 
 }
-
+}
 
 export { Logo }

@@ -3,21 +3,27 @@ import { Logo } from './Logo.js'
 class PartnersLogoSection {
     constructor(params) {
         this.selector = params.selector;
+        this.imgPath = params.imgPath
         this.singleImg = params.singleImg;
 
-        this.singleImgObj = new Logo(this.singleImg);
+        this.singleImgObj = new Logo(params);
 
         this.DOM = null;
+        
+
 
         this.render();
         // this.addEvents();
+
+
+
     }
 
     generateHTML() {
         const singleImgHTML = this.singleImgObj.generateHTML();
 
 
-        return `${singleImgHTML}`;
+        return singleImgHTML;
     }
 
     isValidSelector() {
@@ -36,6 +42,7 @@ class PartnersLogoSection {
             return false;
         }
         this.DOM.innerHTML = this.generateHTML();
+
     }
 }
 
