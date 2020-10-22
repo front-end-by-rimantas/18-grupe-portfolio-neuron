@@ -11,7 +11,7 @@ alldata = words.join(" ");
  * creating href to hml files 
  */
 let href= alldata.split(" ").join("").toLowerCase().concat('.html')
-if (href==='hometwo.html') {href='index2.html'};
+if (href==='hometwo.html') {href='/homePageTwo/index2.html'};
 
 /**
  * creating submenu and close items
