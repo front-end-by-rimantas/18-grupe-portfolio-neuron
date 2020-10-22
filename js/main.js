@@ -14,6 +14,8 @@ import { renderServicesContent } from "./components/ServicesContent/renderServic
 // Our Latest Project
 // NEWS
 // HOW WE WORK + ANIMATIONS
+import { howWeWorksData } from "./data/howWeWorksData/howWeWorksData.js";
+import { renderHowWeWorks } from "./components/howWeWorks/renderHowWeWorks.js"
 // Recent blogo posts
 import { datarecentblogposts } from "./data/RecentBlogPosts/datarecentblogposts.js";
 import { renderRecentBlogPosts } from "./components/recentblogposts/renderRecentBlogPosts.js";
@@ -41,6 +43,7 @@ renderServicesContent(ServicesContentData);
 // Our Latest Project
 // NEWS
 // HOW WE WORK + ANIMATIONS
+renderHowWeWorks(howWeWorksData);
 renderRecentBlogPosts(datarecentblogposts);
 // contacts
 
