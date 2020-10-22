@@ -21,6 +21,6 @@ class ProjectImage {
                 <div class="row latestProjectImg col-4 col-md-6 col-sm-12">
                     <img class="singleImg" src="./img/OurLatestProject/image3.jpg" alt="image3">
                 </div>`
-    }
+    } 
 }
 export { ProjectImage }
