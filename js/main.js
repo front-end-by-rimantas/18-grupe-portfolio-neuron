@@ -1,6 +1,6 @@
 // header top import
 import { headerTopData } from "./data/headerTop/dataHeaderTop.js";
-import { HTrender } from "./components/headerTop/renderHt.js";
+import { HeaderTopRender } from "./components/headerTop/HeaderTopRender.js";
 // header import
 import { menuData } from "./data/Menu/menuData.js";
 import { renderMenu } from "./components/menu/renderMenu.js";
@@ -27,7 +27,7 @@ import { renderContactForm } from "./components/contacts/renderContactForm.js";
 // footer
 
 // header top logic
-new HTrender(headerTopData);
+new HeaderTopRender(headerTopData);
 // header logic
 renderMenu(menuData);
 // hero logic

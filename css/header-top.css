@@ -36,8 +36,17 @@ header.container {
             padding: 10px 0;
             margin-right: 15px;
             }
+            
             .ht-right > .fa:last-child {
             margin-right: 0;
+                }
+
+                .ht-right > .fa:hover,
+                .ht-left > div > span:hover,
+                .ht-left > div > a:hover {
+                    cursor: pointer;
+                    color:rgba(255, 255, 255, 0.7);
+                    transition: all 0.5s ease 0s;
                 }
 
     @media (max-width: 700px) {
