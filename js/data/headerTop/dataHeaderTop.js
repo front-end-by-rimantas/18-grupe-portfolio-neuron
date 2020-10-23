@@ -1,14 +1,14 @@
 const headerTopData = {
-  selector: "",
+  selector: ".ht",
   htLeft: {
     mail: {
-      favicon: "",
-      href: "",
-      text: "",
+      favicon: "fa fa-envelope-o",
+      href: "info@yourwebsite.com",
+      text: "info@yourwebsite.com",
     },
     phone: {
-      favicon: "",
-      text: "",
+      favicon: "fa fa-phone",
+      text: "(+123) 456789",
     },
   },
   htRight: [
@@ -18,3 +18,4 @@ const headerTopData = {
     "fa fa-linkedin",
   ],
 };
+export { headerTopData };

@@ -1,6 +1,9 @@
+// header top import
+import { headerTopData } from "./data/headerTop/dataHeaderTop.js";
+import { HTrender } from "./components/headerTop/renderHt.js";
 // header import
-import { menuData } from './data/Menu/menuData.js'; 
-import { renderMenu } from './components/menu/renderMenu.js'
+import { menuData } from "./data/Menu/menuData.js";
+import { renderMenu } from "./components/menu/renderMenu.js";
 // header main part
 // intro
 // we create
@@ -23,8 +26,10 @@ import { renderContactForm } from "./components/contacts/renderContactForm.js";
 // console.log(singlePostContact(contactsData));
 // footer
 
+// header top logic
+new HTrender(headerTopData);
 // header logic
- renderMenu (menuData);
+renderMenu(menuData);
 // hero logic
 // about logic
 // contacts logic
