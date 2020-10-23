@@ -13,7 +13,7 @@
     <!-- components -->
     <link rel="stylesheet" href="./css/layout.css">
     <link rel="stylesheet" href="./css/header-top.css" />
-     <link rel="stylesheet" href="./css/header-main-line.css">
+    <link rel="stylesheet" href="./css/header-main-line.css">
     <link rel="stylesheet" href="./css/HeaderContent.css">
     <link rel="stylesheet" href="./css/contentintro.css">
     <link rel="stylesheet" href="./css/ContentServices.css">
@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="./css/OurLatestProject.css">
     <link rel="stylesheet" href="./css/NewsLetterSection.css">
     <link rel="stylesheet" href="./css/PartnersLogoSection.css">
+    <link rel="stylesheet" href="./css/howWeWorks.css">
     <link rel="stylesheet" href="./css/recentblogpost.css">
     <link rel="stylesheet" href="./css/content_numbers.css">
     <link rel="stylesheet" href="./css/footer.css">
@@ -61,7 +62,7 @@
               </div>
             <div class="col-10 .col-md-9 col-md-9 col-sm-9 header-main-font">
               <div><i class="fa fa-bars icon-bar bar-hide"></i></div>
-              <nav class="nav-menu-items">
+              <nav class="nav-menu-items hide">
                 <ul>
                     <!-- Java script sugeneruoja menu -->
                 </ul>
@@ -149,41 +150,10 @@
   </div>
     <!-- we create -->
     <div class="container">
-    <div class="row">
-      <div class="cnt-int-left col-6 col-md-12 col-sm-12">
-        <div class="cnt-int-text">
-          <h2 class="cnt-int-h">
-            We Create The Most Realistic Artificial Intelligence
-          </h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
-            dictum risus, non suscipit arcu. Quisque aliquam posuere tortor,
-            sit amet convallis nunc scelerisque in.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore
-            eius molesti ae facere, natus reprehenderit eaque eum, autem
-            ipsam. Magni, error. Tem pora odit laborum iure inventore possimus
-            laboriosam qui nam. Fugit!
-          </p>
-        </div>
-        <div class="cnt-int-btn-v">
-          <button class="cnt-int-btn">LEARN MORE</button>
-          <a
-            class="cnt-int-video flaticon-play-button"
-            href="https://www.youtube.com/watch?v=2PFVhej26BE&feature=emb_logo&ab_channel=Impresstraining"
-            aria-hidden="true"
-          ></a>
-        </div>
-      </div>
-      <div class="cnt-int-right col-6 col-md-12 col-sm-12">
-        <img
-          class="about"
-          src="./img/about-video-part.png"
-          alt="About video"
-        />
-      </div>
-    </div>
+    <div class="row cnt-int">
+      <div id="cnt-int-left-id" class="cnt-int-left col-6 col-md-12 col-sm-12"></div>
+     <div class="cnt-int-right col-6 col-md-12 col-sm-12"></div>
+    </div> 
   </div>
     <!-- numbers -->
     <div class="container bg-blue">
@@ -217,6 +187,18 @@
     <!-- Servises Section Start -->
     <div class="container bg-grey">
       <div id="services_block" class="row"></div>
+    <div class="bg-blue container">
+      <div id="numbers" class="row">
+        <div  class="numbers-list"></div>
+      </div>    
+    </div> 
+    <!-- servises -->
+<div class="container bg-grey">
+  <div id="services_block" class="row"></div>
+</div>
+    <!-- Our Latest Project -->
+    <div class="container">
+      <div class="row">Our Latest Project</div>
     </div>
     <!-- Servises Section End -->
     <!-- Our Latest Project Start -->
@@ -239,7 +221,8 @@
     <!-- Partners Logo Section End -->
     <!-- HOW WE WORK + ANIMATIONS -->
     <div class="container">
-      <div class="row">HOW WE WORK</div>
+      <div id="how_weworks_block" class="row">
+      </div>
     </div>
     <!-- Recent Blog Post -->
     <div class="container blogpost-bgcolor">
