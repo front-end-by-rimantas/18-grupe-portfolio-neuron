@@ -6,8 +6,9 @@
 // pose estimation
 // image segmentation
 // computer vision AI
-import { datacomputervisionai } from '../js/data/datacomputervisionai.js'
-import { RenderComputerVisionAi } from '../js/components/renderComputerVisionAi.js'
+
+import { MainVision } from './components/MainVision.js';
+import { datacomputervisionai } from '../js/data/datacomputervisionai.js';
 // testimonials - clients reviews
 // recent blogs and news
 // contacts
@@ -20,7 +21,7 @@ import { RenderComputerVisionAi } from '../js/components/renderComputerVisionAi.
 // pose estimation
 // image segmentation
 // computer vision AI
- new  RenderComputerVisionAi(datacomputervisionai);
+ new  MainVision( datacomputervisionai );
 // testimonials - clients reviews
 // recent blogs and news
 // contacts
