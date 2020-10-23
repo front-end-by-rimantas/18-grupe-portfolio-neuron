@@ -9,11 +9,9 @@
     .partners_logot{
         display: flex;
         flex-wrap: wrap;
-        width: 100%;
         justify-content: center;
         line-height: 60px;
     }
-
         .single-logo {
             width: 250px;
             padding: 0 40px;
