@@ -9,13 +9,10 @@ class PartnersLogoSection {
         this.singleImgObj = new Logo(params);
 
         this.DOM = null;
-        
-
+    
 
         this.render();
         // this.addEvents();
-
-
 
     }
 
