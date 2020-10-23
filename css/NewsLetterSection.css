@@ -27,12 +27,10 @@
         #formEmail {
             display: inline-block;
             font-size: 20px;
-            position: relative;
             border: none;
             border-bottom: 1px solid rgba(1, 160, 249, 0.2);
             outline: none;
-            width: 100%;
-            max-width: 700px;
+            width:80%;
             height: 40px;
             margin-top: 70px;
             margin-left: 10px;
@@ -46,7 +44,6 @@
             width: 40px;
             border-radius: 50px;
             color: #ffffff;
-            position: absolute; 
             margin-top: 70px;
             margin-left: 10px;
             border: none;
@@ -60,28 +57,18 @@
 
 @media (max-width: 1300px) {
 .newsletter {
-    /* margin-top: -110px; */
+    padding: 60px 0;
     }
 .newsletter-title {
     font-size: 35px;
-    margin-top: 30px;
-    }
-#formEmail {
-    /* max-width: 550px;
-    margin-top: 40px; */
+    margin-top: 80px;
     }
 #newsletter-flaticon-mail {
-    font-size: 200px;
+    font-size: 275px;
     margin-left: 10px;
-    padding-left: 80px;
+    padding-left: 50px;
     }
-#newsletter-flaticon-send {
-    /* display: inline-block; */
-    /* margin-left: 535px;
-    margin-top: 40px; */
-    }
-}   
-        
+    
 @media (max-width: 1100px) {
 #newsletter-flaticon-mail {
     font-size: 200px;
@@ -89,24 +76,24 @@
     }
 .newsletter-title {
     font-size: 30px;
+    margin-top: 40px;
     }
-#formEmail {
-    max-width: 450px;
-}
 #newsletter-flaticon-send {
-    margin-left: 440px;
+    right: 130px;
     }
 }
         
 @media (max-width: 900px) {
+.bg-News {
+    height: 550px;
+    }
 .newsletter {
-    margin-top: -10px;
+
     }
 #newsletter-flaticon-mail {
     font-size: 150px;
     margin-left: 40px;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding: 0px 0px;
     }
 .newsletter-title {
     margin-left: 40px;
@@ -114,9 +101,15 @@
     }
 #formEmail {
     margin-left: 40px;
+    max-width: 90%;
 }
 #newsletter-flaticon-send {
-    margin-left: 530px;
+    right: 100px;
     }
 }
-@media (max-width: 700px) {}
+@media (max-width: 700px) {
+    #formEmail {
+        max-width: 70%;
+    }
+
+}

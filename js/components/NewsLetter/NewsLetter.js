@@ -12,8 +12,10 @@ class NewsLetter {
                 </div> 
                 <div class="newsletter-text col-8 col-md-12">
                     <h1 class="newsletter-title">Don’t Miss Our News And Updates!</h1>
-                    <input type="email" id="formEmail" placeholder="Enter Your Email">
-                    <button id="newsletter-flaticon-send" class="flaticon-send"></button>
+                        <div class="formEmail col-8 col-md-12">
+                            <input type="email" id="formEmail" placeholder="Enter Your Email">
+                            <button id="newsletter-flaticon-send" class="flaticon-send"></button>
+                    </div>
                 </div>`
     }
 }
