@@ -6,6 +6,7 @@
     color: black;
     font-size: 20px;
     background-color: whitesmoke;
+    margin: 20px;
 }
 
     .visionTopLeft{
@@ -34,14 +35,15 @@
     }
 
         .visionTopRight > a{
-            /* line-height: 40px; */
             padding: 15px 30px;
             border-radius: 45px;
             background-image: linear-gradient(90deg, #28a5eed5, #0680c7);;
-            /* background-color: #01a0f9; */
             text-decoration: none;
             color: white;
+            width: 150px;
+            
         }
+
     .visionBottom{
         font-family: 'Poppins', sans-serif;
 
@@ -128,3 +130,32 @@
             background-color: white;
             color: black;
         }
+
+@media (max-width:1100px){
+    .visionSingleBox{
+        width: calc(100% / 2);
+    }
+
+}
+
+@media (max-width:700px){
+    .visionTopLeft{
+        width: 100%;
+    }    
+
+    .visionTopRight {
+        display: block;
+        float: left;
+    }
+
+        .visionTopRight > a{
+            display: block;
+            align-items: flex-start;
+        }
+        
+    .visionSingleBox{
+        width: calc(100% / 1);
+    }
+
+
+}
