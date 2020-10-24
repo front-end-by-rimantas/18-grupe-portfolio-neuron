@@ -11,7 +11,7 @@ class RenderHtml{
                             <h2>Computer Vision AI</h2>
                         </div>
                         <div class="visionTopRight">
-                            <a href="#">Check out</a>
+                            <a href="#">Check it Out</a>
                         </div>`;
         placeHtml.insertAdjacentHTML('afterbegin',topHtml);
         // console.log(placeHtml);
@@ -20,22 +20,26 @@ class RenderHtml{
     renderBottom(){
         let bottomHtml = '';
         for (const item of this.allBoxData ){
-            bottomHtml +=   `<div class="visionPrimaryBox">
-                                <div class="visionSingleBox">
-                                    <div class="visionIcon">
-                                       <i class="flaticon-brain"></i>
-                                    </div>
-                                    <div class="visionHeader">
-                                      <h3 ${item.header}</h3>
-                                    </div>
-                                    <div class="visionParagraph">
-                                       <p ${item.paragraph}</p>
-                                    </div>
-                                </div>
-                            </div>`;
+            bottomHtml +=   `<div class="visionSingleBox">
+                <div class="singleBox">
+                    <div class="visionIconMargin">
+                        <div class="visionIcon">
+                            <i class="flaticon-brain"></i>
+                        </div>
+                    </div>
+                    <div class="visionHeader">
+                        <h3> ${item.header}</h3>
+                    </div>
+                    <div class="visionParagraph">
+                        <p> ${item.paragraph}</p>
+                    </div>
+                </div>
+            </div>`;
+                            console.log(item.header);
 
         }
-        const placeHtml = document.querySelector('.visionBottom');
+        const placeHtml = document.querySelector('.visionPrimaryBox');
+        console.log(placeHtml);
         placeHtml.insertAdjacentHTML('afterbegin',bottomHtml);
     }
 }

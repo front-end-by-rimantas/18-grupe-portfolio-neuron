@@ -1,6 +1,130 @@
-.AItop {
-    background-color: red;
+
+.visionTop {
+    display: block;
+    /* width: 1000px; */
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    background-color: whitesmoke;
 }
-.aibottom{
-    background-color: black;
-}
+
+    .visionTopLeft{
+        display: inline-block;
+        width: 70%;
+    }    
+
+        .visionTopLeft > span{
+            color: #01a0f9;
+            text-transform: uppercase;
+        }
+        
+        .visionTopLeft > h2{
+            font-size: 35px;
+            font-weight: 700;
+            margin: 15px 0 0 0 ;
+        }
+    .visionTopRight{
+        display: inline-block;
+        float: right;
+        width: 30%;
+        text-align: center;
+        margin: 50px 0px 20px 0px;
+        text-transform: uppercase;
+
+    }
+
+        .visionTopRight > a{
+            /* line-height: 40px; */
+            padding: 15px 30px;
+            border-radius: 45px;
+            background-image: linear-gradient(90deg, #28a5eed5, #0680c7);;
+            /* background-color: #01a0f9; */
+            text-decoration: none;
+            color: white;
+        }
+    .visionBottom{
+        font-family: 'Poppins', sans-serif;
+
+    }
+
+        .visionPrimaryBox{
+            display: flex;
+            flex-wrap: wrap;
+            background-color: whitesmoke;
+        }
+
+            .visionSingleBox{
+                width: calc(100% / 3);
+    
+            }
+
+            .singleBox{
+               margin: 30px; 
+               background-color: white;
+            }
+
+            .singleBox:hover,
+            .visionHeader >  h3:hover
+            {
+                background: #01a0f9;
+                color: white;
+                transition: all 0.7s;
+                cursor: pointer;
+             }
+            
+      
+                .visionIconMargin{
+                    padding: 50px 30px 30px 30px;
+                }
+
+                    .visionIcon{
+                        background-image: linear-gradient(90deg, #6ac5fad5, #01a0f9);
+                        /* background-color: #01a0f9; */
+                        width: 100px;
+                        height: 100px;
+                        padding: 15px 15px 0 0;
+                        border-radius: 50%;
+                    }
+
+                    .visionIcon > i{
+                        padding: 75px 15px 25px 0px ;
+                        border-radius: 50%;
+                    }
+         
+                    .singleBox:hover .visionIcon > i{
+                        background: white;
+                        color: #01a0f9;
+                        transition: all 0.7s;
+                    }
+                    
+                        .flaticon-brain{
+                            color: white;
+                        }
+
+
+                .visionHeader{
+                    margin-left: 30px;
+                    }
+
+                    .visionHeader >  h3{
+                        font-size: 20px;
+                        opacity: 0.8;
+                    
+                    } 
+                .visionParagraph{
+                    margin: 30px 80px 30px 30px;
+                }
+                
+                    .visionParagraph >  p {
+                        font-size: 18px;
+                        line-height: 25px;
+                        opacity: 0.6;
+                        text-align: justify;
+                        padding-bottom: 50px;
+                    }
+
+        .visionBottom {
+            display: block;
+            background-color: white;
+            color: black;
+        }
