@@ -3,12 +3,14 @@ import { breakPointWidth } from '../data/datacomputervisionai.js';
 
 class RenderHtml{
     constructor(allBoxData){
-        this.allBoxData = allBoxData;
         this.ObjCalculateStyle = new CalculateStyle(); 
+        
+        this.allBoxData = allBoxData;
         this.breakPointWidth = breakPointWidth;
         this.width = 0;
 
     }
+    
     renderTop(){
         const placeHtml = document.querySelector('.visionTop');
         let topHtml = `<div class="visionTopLeft">
