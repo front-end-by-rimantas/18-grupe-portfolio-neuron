@@ -10,7 +10,7 @@ class RenderHtml{
         this.width = 0;
 
     }
-    
+
     renderTop(){
         const placeHtml = document.querySelector('.visionTop');
         let topHtml = `<div class="visionTopLeft">

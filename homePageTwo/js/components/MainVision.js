@@ -1,16 +1,24 @@
 import { RenderHtml } from '../components/RenderHtml.js';
-
+import { Validation } from '../components/computervisionai/Validation.js'
 
 class MainVision{
 constructor (datacomputervisionai){
+
     this.allBoxData = datacomputervisionai;
-    // this.breakPointWidth = breakPointWidth;
     this.ObjRenderHtml = new RenderHtml(this.allBoxData);
+    this.ObjValidation = new Validation();
+
     this.init();
 }
 init(){
-    this.ObjRenderHtml.renderTop();
-    this.ObjRenderHtml.renderBottom();
+    if (this.ObjValidation.isValidate()){
+        this.ObjRenderHtml.renderTop();
+        this.ObjRenderHtml.renderBottom();
+    } else{
+        return '';
+    }
+    
+    
 };
 
 }
