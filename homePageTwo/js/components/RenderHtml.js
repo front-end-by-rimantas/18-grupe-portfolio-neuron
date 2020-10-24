@@ -1,7 +1,12 @@
-class RenderHtml{
+import { CalculateStyle } from '../components/computervisionai/CalculateStyle.js';
+import { breakPointWidth } from '../data/datacomputervisionai.js';
 
+class RenderHtml{
     constructor(allBoxData){
         this.allBoxData = allBoxData;
+        this.ObjCalculateStyle = new CalculateStyle(); 
+        this.breakPointWidth = breakPointWidth;
+        this.width = 0;
 
     }
     renderTop(){
@@ -14,13 +19,13 @@ class RenderHtml{
                             <a href="#">Check it Out</a>
                         </div>`;
         placeHtml.insertAdjacentHTML('afterbegin',topHtml);
-        // console.log(placeHtml);
     }
 
     renderBottom(){
+        this.width = this.ObjCalculateStyle.calculateWidth(this.breakPointWidth);
         let bottomHtml = '';
         for (const item of this.allBoxData ){
-            bottomHtml +=   `<div class="visionSingleBox">
+            bottomHtml +=   `<div class="visionSingleBox"  style="width: ${this.width}">
                 <div class="singleBox">
                     <div class="visionIconMargin">
                         <div class="visionIcon">
@@ -35,12 +40,14 @@ class RenderHtml{
                     </div>
                 </div>
             </div>`;
-                            console.log(item.header);
-
         }
         const placeHtml = document.querySelector('.visionPrimaryBox');
-        console.log(placeHtml);
         placeHtml.insertAdjacentHTML('afterbegin',bottomHtml);
+        window.addEventListener('resize',() => {
+            this.width = this.ObjCalculateStyle.calculateWidth(this.breakPointWidth);
+            const placeHtml = document.querySelectorAll('.visionSingleBox');
+            this.ObjCalculateStyle.changeWidth(this.width, placeHtml);
+        })
     }
 }
 

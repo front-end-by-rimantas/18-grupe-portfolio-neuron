@@ -22,7 +22,10 @@ const datacomputervisionai = [
     header: 'Image Processing',
     paragraph: 'Capitalize on low hanging fruit to identify a ball park value added activity to beta test. Override the digital divide with additional',
     },
-]
+];
+
+const breakPointWidth = [700,1100];
+
 
 // const datacomputervisionai = [
 //     {logo:'flaticon-brain',
@@ -52,4 +55,4 @@ const datacomputervisionai = [
 // ]
 
 
-export { datacomputervisionai }
+export { datacomputervisionai, breakPointWidth }

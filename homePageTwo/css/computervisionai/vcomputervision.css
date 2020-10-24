@@ -55,11 +55,6 @@
             background-color: whitesmoke;
         }
 
-            .visionSingleBox{
-                width: calc(100% / 3);
-    
-            }
-
             .singleBox{
                margin: 30px; 
                background-color: white;
@@ -81,7 +76,6 @@
 
                     .visionIcon{
                         background-image: linear-gradient(90deg, #6ac5fad5, #01a0f9);
-                        /* background-color: #01a0f9; */
                         width: 100px;
                         height: 100px;
                         padding: 15px 15px 0 0;
@@ -131,13 +125,6 @@
             color: black;
         }
 
-@media (max-width:1100px){
-    .visionSingleBox{
-        width: calc(100% / 2);
-    }
-
-}
-
 @media (max-width:700px){
     .visionTopLeft{
         width: 100%;
@@ -153,9 +140,4 @@
             align-items: flex-start;
         }
         
-    .visionSingleBox{
-        width: calc(100% / 1);
-    }
-
-
 }
