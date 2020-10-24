@@ -15,6 +15,10 @@ const latestProjectData = {
             imagealt:'third image',
             image: 'image3.jpg',
         },
+        {
+            imagealt:'first image',
+            image: 'image1.jpg',
+        },
     ],
 } 
 
