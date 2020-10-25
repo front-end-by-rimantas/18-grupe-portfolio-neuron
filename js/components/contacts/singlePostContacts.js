@@ -1,5 +1,6 @@
-"use script";
-function diferentInfo(data, infoType) {
+import { isValidContact } from "./isValidContact.js";
+
+function generateInfo(data, infoType) {
   if (infoType === "address") {
     return `${data} <br>`;
   }
@@ -10,10 +11,14 @@ function diferentInfo(data, infoType) {
 }
 
 function singlePostContact(data) {
+  if (!isValidContact(data, true)) {
+    return "";
+  }
+
   function contactInfo() {
     let allInfo = "";
     for (let i = 0; i < data.info.length; i++) {
-      allInfo += diferentInfo(data.info[i], data.type);
+      allInfo += generateInfo(data.info[i], data.type);
     }
     return allInfo;
   }

@@ -1,7 +1,12 @@
+import { isValidForm } from "./isValidForm.js";
+
 function renderContactForm(data) {
   const contactformDom = document.querySelector(data.pathForm);
   let fullform = "";
   for (let i = 0; i < data.form.length; i++) {
+    if (!isValidForm(data.form[i], data.formButton, true)) {
+      break;
+    }
     fullform += `<div class='form-input'><input type="${data.form[i].type}" placeholder="${data.form[i].placeholder}" id="${data.form[i].id}" name="${data.form[i].type}" required></div>`;
   }
 
