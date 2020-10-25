@@ -1,9 +1,8 @@
-function isValidContact(contacts, showErrors = false) {
-  const cIPosts = contacts.infoPosts;
+function isValidContact(contact, showErrors = false) 
   let errors = [];
 
   //   data
-  if (typeof contacts !== "object") {
+  if (typeof contact !== "object") {
     if (showErrors === true) {
       console.error("ERROR: paslauga turi buti objektas.");
     }
@@ -12,32 +11,32 @@ function isValidContact(contacts, showErrors = false) {
   //   status active
   if (
     typeof cIPosts.active !== "boolean" ||
-    typeof contacts.form.active !== "boolean"
+    typeof contact.form.active !== "boolean"
   ) {
     errors.push("ERROR: paslaugos aktyvumo statusas turi buti boolean tipo.'");
   }
   // selector and pathForm
   if (
-    typeof contacts.selector !== "string" ||
-    typeof contacts.pathForm !== "string"
+    typeof contact.selector !== "string" ||
+    typeof contact.pathForm !== "string"
   ) {
     errors.push("ERROR: paslaugos pavadinimas turi buti tekstinis.");
   } else {
-    if (contacts.selector === "" || contacts.pathForm === "") {
+    if (contact.selector === "" || contact.pathForm === "") {
       errors.push("ERROR: paslaugos pavadinimas negali buti tuščias.");
     }
-    if (contacts.selector.length > 30 || contacts.pathForm.length > 30) {
+    if (contact.selector.length > 30 || contact.pathForm.length > 30) {
       errors.push("ERROR: paslaugos pavadinimas yra per ilgas.");
     }
   }
   // title
-  if (typeof contacts.title !== "string") {
+  if (typeof contact.title !== "string") {
     errors.push("ERROR: paslaugos pavadinimas turi buti tekstinis ");
   } else {
-    if (contacts.title === "") {
+    if (contact.title === "") {
       errors.push("ERROR: paslaugos pavadinimas negali buti tuščias.");
     }
-    if (contacts.title.length > 30) {
+    if (contact.title.length > 30) {
       errors.push("ERROR: paslaugos pavadinimas yra per ilgas.");
     }
   }
@@ -74,58 +73,7 @@ function isValidContact(contacts, showErrors = false) {
       errors.push("ERROR: paslaugos aprasymas yra per ilgas.");
     }
   }
-  /**
-   * formos validacija
-   */
-  // form array
-  if (typeof contacts.form !== "array") {
-    errors.push("ERROR: paslaugos aprasymas turi buti masyvas.");
-  } else {
-    if (contacts.form === "") {
-      errors.push("ERROR: paslaugos aprasymas negali buti tuscias.");
-    }
-    if (contacts.form.length > 5) {
-      errors.push("ERROR: paslaugos aprasymas yra per ilgas.");
-    }
-  }
-  // objects in form
-  if (
-    typeof form.type !== "string" ||
-    typeof form.placeholder !== "string" ||
-    typeof form.id !== "string" ||
-    typeof form.name !== "string"
-  ) {
-    errors.push("ERROR: paslaugos pavadinimas turi buti tekstinis.");
-  } else {
-    if (
-      form.type === "" ||
-      form.placeholder === "" ||
-      form.id === "" ||
-      form.name === ""
-    ) {
-      errors.push("ERROR: paslaugos pavadinimas negali buti tuscias.");
-    }
-    if (
-      form.type > 30 ||
-      form.placeholder > 30 ||
-      form.id > 30 ||
-      form.name > 30
-    ) {
-      errors.push("ERROR: paslaugos pavadinimas yra per ilgas.");
-    }
-  }
 
-  // button
-  if (typeof contacts.formButton !== "string") {
-    errors.push("ERROR: paslaugos pavadinimas turi buti tekstinis.");
-  } else {
-    if (contacts.formButton.length < 5) {
-      errors.push("ERROR: paslaugos pavadinimas negali buti per trumpas.");
-    }
-    if (contacts.image.length > 20) {
-      errors.push("ERROR: paslaugos pavadinimas yra per ilgas.");
-    }
-  }
   // visų error išloginimas
   if (errors.length > 0) {
     if (showErrors === true) {
@@ -141,5 +89,6 @@ function isValidContact(contacts, showErrors = false) {
   }
 
   return true;
-}
+
+
 export { isValidContact };
