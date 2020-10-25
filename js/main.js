@@ -1,15 +1,21 @@
 // header import
-// hero import
+import { menuData } from './data/Menu/menuData.js'; 
+import { renderMenu } from './components/menu/renderMenu.js'
 // header main part
 // intro
 // we create
-// numbers import
+import { cntIntData } from "./data/ContentIntroduction/contentIntroductionData.js";
+import { renderCntIntroduction } from "./components/contentIntroduction/renderContentIntroduction.js";
+import { renderContentNumbers, addEventListenerContentNumbersOnScroll } from './components/contentNumbers/renderContentNumbers.js';
+import { numbersData } from './data/contentNumbersData/contentNumbersData.js';
 // services import
 import { ServicesContentData } from "./data/ServicesContent/ServicesContentData.js";
 import { renderServicesContent } from "./components/ServicesContent/renderServicesContent.js";
 // Our Latest Project
 // NEWS
 // HOW WE WORK + ANIMATIONS
+import { howWeWorksData } from "./data/howWeWorksData/howWeWorksData.js";
+import { renderHowWeWorks } from "./components/howWeWorks/renderHowWeWorks.js"
 // Recent blogo posts
 import { datarecentblogposts } from "./data/RecentBlogPosts/datarecentblogposts.js";
 import { renderRecentBlogPosts } from "./components/recentblogposts/renderRecentBlogPosts.js";
@@ -21,6 +27,7 @@ import { renderContactForm } from "./components/contacts/renderContactForm.js";
 // footer
 
 // header logic
+ renderMenu (menuData);
 // hero logic
 // about logic
 // contacts logic
@@ -29,11 +36,14 @@ renderContactForm(contactsData);
 // header main part
 // intro
 // we create
-// numbers import
+renderCntIntroduction(cntIntData);
+renderContentNumbers('#numbers', numbersData);
+addEventListenerContentNumbersOnScroll();
 renderServicesContent(ServicesContentData);
 // Our Latest Project
 // NEWS
 // HOW WE WORK + ANIMATIONS
+renderHowWeWorks(howWeWorksData);
 renderRecentBlogPosts(datarecentblogposts);
 // contacts
 
