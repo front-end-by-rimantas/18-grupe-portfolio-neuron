@@ -1,0 +1,54 @@
+.bg-partner {
+    background: url(../img/PartnersLogo/partner-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 100px;
+    padding-top: 300px; 
+    
+}
+    .partners_logot{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        line-height: 60px;
+    }
+        .single-logo {
+            width: 250px;
+            padding: 0 40px;
+        }
+        .single-logo:hover {
+            cursor: pointer;
+        }
+
+@media (max-width: 1300px) {
+    .single-logo {
+        width: 200px;
+        padding: 0px 30px;
+    }
+
+}
+@media (max-width: 1100px) {
+    .bg-partner {
+        padding-top: 200px;
+    }
+    .single-logo {
+        width: 170px;
+        padding: 0px 20px;
+    }
+}
+@media (max-width: 900px) {
+    .bg-partner {
+        padding-top: 70px;
+        padding-bottom: 50px;
+    }
+    .single-logo {
+        width: 180px;
+        padding: 0px 10px;
+    }
+}
+@media (max-width: 700px) {
+    .single-logo {
+        padding: 0px 10px;
+    }
+}
+
