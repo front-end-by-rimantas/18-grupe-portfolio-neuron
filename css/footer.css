@@ -1,7 +1,10 @@
 .bg-footer-image {
     background-image: url(../img/footer-bg.jpg);
 }
-
+.fpost{
+    color: #666666;
+    font-size: 15px;
+}
 .footer-logo{
     margin-bottom: 33px;
     margin-top: 5px;
@@ -44,6 +47,7 @@
     text-transform: uppercase;
     font-weight: 600;
     font-size: 20px;
+    color: black;
 }
 .footer-text {
     margin-bottom: 26px;
@@ -55,4 +59,23 @@
 .footer-row2 {
     width: 50%;
     float: right;
+}
+li {
+    list-style-type: none;
+    margin-bottom: 12px;
+}
+a{
+    text-decoration: none;
+    color: #666666;
+    font-size: 15px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+.footer_bottom {
+    padding: 24px 0;
+    border-top: 1px solid #e3e5ea;
+    text-align: center;
+}
+.footer_bottom > p > a {
+    color: black;
 }

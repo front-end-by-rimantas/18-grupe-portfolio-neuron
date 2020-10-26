@@ -2,8 +2,10 @@
 import socialsData from './../../data/socialsData/socials.js';
 import { renderSocials } from '../Socials/renderSocials.js';
 import listData from './../../data/footerData/footerList.js';
-import { renderList_One } from './renderList_One.js';
-import { renderList_Two } from './renderList_Two.js';
+import { List_One } from './List_One.js';
+import { List_Two } from './List_Two.js';
+import { List_Three } from './List_Three.js';
+
 
 class Footer {
     constructor(params) {
@@ -51,25 +53,21 @@ class Footer {
                                 <p class="footer-text">Our Support and Sales team is available 24 * 7 to answer your queries</p>
                             </div>
                             <div class="fpost col-3 col-lg-6 col-sm-12">
-                            ${renderList_One(listData)}
+                            <div class="footer-title">NAVIGATE</div>
+                            <div class="footer-row1">
+                                <ul id="list_block">${(new List_One(listData)).render()}</ul>
                             </div>
                             <div class="footer-row2">
-                                <ul>${renderList_Two(listData)}</ul>
+                                <ul id="list_block">${(new List_Two(listData)).render()}</ul>
                             </div>
                         </div>
                         <div class="fpost col-3 col-lg-6 col-sm-12">
                         <div class="footer-title">PRIVACY & TOS</div>
-                         <ul>
-                            <li><a href="privacy.html">Privacy</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                            <li><a href="login.html">Login</a></li>
-                            <li><a href="register.html">Register</a></li>
-                        </ul>
+                         <ul id="list_block">${(new List_Three(listData)).render()}</ul>
                     </div>
-                    <div class="fpost col-12">
-                        <div class="copyright text-center">
+                    <div class="footer_bottom col-12">
                         <p>Copyrights &copy;2019 <a href="#" target="_blank">AuburnForest</a></p>
-                    </div>
+                    
                 </div>`;
     }
 }

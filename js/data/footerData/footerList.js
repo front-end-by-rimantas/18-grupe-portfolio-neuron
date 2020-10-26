@@ -1,4 +1,6 @@
-export default [
+export default {
+selector: '#list_block', 
+data :[
     {
         name: 'About Us',
         link: '#'
@@ -47,4 +49,5 @@ export default [
         name: 'Register',
         link: '#'
     },
-];
+]
+}
