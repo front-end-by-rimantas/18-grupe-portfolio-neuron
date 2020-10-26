@@ -4,18 +4,20 @@ class LatestProjectSection {
     constructor(params) {
         this.selector = params.selector;
         this.title = params.title;
+        this.imgPath = params.imgPath;
         this.singleImg = params.singleImg;
+
+        this.titleObj = new ProjectImage(params);
+        this.singleImgObj = new ProjectImage(params);
 
         this.DOM = null;
 
         this.render();
     }
     generateHTML() {
-        const title = new ProjectImage(this.title);
-        const titleHTML = title.generateHED();
 
-        const singleImg = new ProjectImage(this.singleImg);
-        const singleImgHTML = singleImg.generateHTML();
+        const titleHTML = this.titleObj.generateHED();
+        const singleImgHTML = this.singleImgObj.generateHTML();
          
         
         return titleHTML + singleImgHTML;

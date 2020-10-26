@@ -12,7 +12,6 @@ class PartnersLogoSection {
     
 
         this.render();
-        // this.addEvents();
 
     }
 

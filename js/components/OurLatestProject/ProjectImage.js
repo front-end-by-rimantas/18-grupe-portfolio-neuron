@@ -1,32 +1,30 @@
 class ProjectImage {
     constructor(params) {
         this.data = params.singleImg;
-        this.imagePath = params.imagePath;
+        this.imgPath = params.imgPath;
+        this.title = params.title;
 
     }
 
     generateHED(){
         return `<div class="ourLatestPoject col-12">
-                    <h2 class="LatestProjectTitle">Our Latest Project</h2>
+                    <h2 class="LatestProjectTitle">${this.title}</h2>
                 </div>`
     }
 
     generateHTML(){
-        return `<div class="row latestProjectImg">
-                    <div class="spacingImg">
-                        <img class="singleImg" src="./img/OurLatestProject/image1.jpg" alt="image1">
-                    </div> 
-                </div> 
-                <div class="row latestProjectImg">
-                    <div class="spacingImg">
-                        <img class="singleImg" src="./img/OurLatestProject/image2.jpg" alt="image2">
-                    </div>
-                </div> 
-                <div class="row latestProjectImg">
-                    <div class="spacingImg">
-                        <img class="singleImg" src="./img/OurLatestProject/image3.jpg" alt="image3">
-                    </div>
-                </div> `
+
+        let HTML = '';
+        for (let item of this.data) {
+
+            HTML +=`<div class="row latestProjectImg">
+                        <div class="spacingImg"> 
+                            <img class="singleImg" src="./img/OurLatestProject/${item.image}" alt="${item.imagealt}">
+                        </div>
+                    </div>`
+
+        }
+        return HTML;
     } 
 }
 export { ProjectImage }
