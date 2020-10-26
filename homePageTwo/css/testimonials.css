@@ -1,5 +1,46 @@
+.testimonials{
+    text-align: center;
+    line-height: 26px;
+}
+.testimonials-title{
+    margin: 0 0 10px;
+}
+.testimonials-review{
+margin: 0 0 26px;
+}
 .single-testimonial{
     background-color: aqua;
     padding:50px 30px 40px;
     border-radius: 5px;
+}
+
+.st-author-top{
+display: flex;
+margin-bottom: 20px;
+}
+
+.st-author-top > img {
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.test-client-name, 
+.test-client-position {
+    font-size: 20px;
+    text-transform: capitalize;
+    
+    margin:0;
+    margin-bottom: 5px;
+}
+.st-author-bottom{
+    text-align:left;
+}
+.test-review{
+    margin-bottom:26px;
+    font-size: 15px;
+    font-weight: 400;
+}
+.author-rating > .fa {
+color: #e8c506;
 }
