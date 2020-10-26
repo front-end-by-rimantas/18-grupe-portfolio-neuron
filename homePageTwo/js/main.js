@@ -2,7 +2,8 @@
 // <----------DATA ---------------->
 // Header top
 // header content +
-
+// Partners logo
+import {partnersLogoData} from './data/partnersLogo/partnersLogoData.js'
 // object detection
 // pose estimation
 // image segmentation
@@ -20,7 +21,7 @@ import { datacomputervisionai } from '../js/data/datacomputervisionai.js';
 // header content 
 // + Partner slider!
     import {PartnersLogo} from './components/partnersLogo/PartnersLogo.js'
-    new PartnersLogo();
+    new PartnersLogo(partnersLogoData);
 // object detection
 // pose estimation
 // image segmentation
