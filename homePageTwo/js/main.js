@@ -1,7 +1,8 @@
 
 // <----------DATA ---------------->
 // Header top
-// header content + Partner slider!
+// header content +
+
 // object detection
 // pose estimation
 // image segmentation
@@ -16,12 +17,16 @@ import { datacomputervisionai } from '../js/data/datacomputervisionai.js';
 
 // <----------------LOGIC------------->
 // Header top
-// header content + Partner slider!
+// header content 
+// + Partner slider!
+    import {PartnersLogo} from './components/partnersLogo/PartnersLogo.js'
+    new PartnersLogo();
 // object detection
 // pose estimation
 // image segmentation
 // computer vision AI
  new  MainVision( datacomputervisionai );
+ 
 // testimonials - clients reviews
 // recent blogs and news
 // contacts
