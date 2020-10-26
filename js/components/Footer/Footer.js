@@ -1,3 +1,4 @@
+import socialsData from './../../data/socialsData/socials.js';
 import { renderSocials } from '../Socials/renderSocials.js';
 
 class Footer {
@@ -37,7 +38,8 @@ class Footer {
                                     <img src="img/footerlogo.png" alt="Footer Logo"></img>
                                 </div>
                                  <p class="footer-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, totam.</p>
-                                <div class = "footer-social-links">${renderSocials()}</div>
+                                <ul class = "footer-social-links">${renderSocials(socialsData)}
+                                </div>
                             </div>
                             <div class="fpost col-3 col-lg-6 col-sm-12">
                                 <div class="footer-title">WORK HOURS</div>

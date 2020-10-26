@@ -4,12 +4,11 @@ function renderSocials(data) {
     let HTML = '';
     const size = data.length;
     for (let i=0; i<size; i++) {
-        HTML += 
+        const network = data[i];
+        HTML += `<li><a href="${network.link}" class="fa fa-${network.icon}" target="_blank"></a></li>`
     }
 
-    return `<i class="fa fa-facebook"></i>
-            <i class="fa fa-instagram"></i>
-            <i class="fa fa-twitter"></i>`;
+    return HTML;
 }
 
 export { renderSocials };
