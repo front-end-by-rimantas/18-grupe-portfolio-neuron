@@ -1,5 +1,9 @@
+
 import socialsData from './../../data/socialsData/socials.js';
 import { renderSocials } from '../Socials/renderSocials.js';
+import listData from './../../data/footerData/footerList.js';
+import { renderList_One } from './renderList_One.js';
+import { renderList_Two } from './renderList_Two.js';
 
 class Footer {
     constructor(params) {
@@ -47,22 +51,10 @@ class Footer {
                                 <p class="footer-text">Our Support and Sales team is available 24 * 7 to answer your queries</p>
                             </div>
                             <div class="fpost col-3 col-lg-6 col-sm-12">
-                            <div class="footer-title">NAVIGATE</div>
-                            <div class="footer-row1">
-                                <ul>
-                                    <li><a href="about.html">About Us</a></li>
-                                    <li><a href="features.html">Features</a></li>
-                                    <li><a href="mobile-app.html">Mobile App</a></li>
-                                    <li><a href="software-demo.html">Software Demo</a></li>
-                                    <li><a href="software-download.html">Software Download</a></li>
-                                </ul>
-                             </div>
+                            ${renderList_One(listData)}
+                            </div>
                             <div class="footer-row2">
-                                <ul>
-                                    <li><a href="blog.html">Blog</a></li>
-                                    <li><a href="team.html">Team</a></li>
-                                    <li><a href="chatbot.html">ChatBot</a></li>
-                                </ul>
+                                <ul>${renderList_Two(listData)}</ul>
                             </div>
                         </div>
                         <div class="fpost col-3 col-lg-6 col-sm-12">
