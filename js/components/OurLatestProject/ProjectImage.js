@@ -17,9 +17,11 @@ class ProjectImage {
         let HTML = '';
         for (let item of this.data) {
 
-            HTML +=`<div class="row latestProjectImg">
-                        <div class="spacingImg"> 
-                            <img class="singleImg" src="./img/OurLatestProject/${item.image}" alt="${item.imagealt}">
+            HTML +=`<div class="carousel">
+                        <div class="row latestProjectContent">
+                            <div class="spacingImg"> 
+                                <img class="singleImg" src="./img/OurLatestProject/${item.image}" alt="${item.imagealt}">
+                            </div>
                         </div>
                     </div>`
 

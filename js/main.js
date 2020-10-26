@@ -13,6 +13,7 @@ import { ServicesContentData } from "./data/ServicesContent/ServicesContentData.
 import { renderServicesContent } from "./components/ServicesContent/renderServicesContent.js";
 // Our Latest Project
 import { latestProjectData } from './data/OurLatestProject/LatestProjectData.js';
+import { Carousel } from './components/OurLatestProject/Carousel.js';
 import { LatestProjectSection } from './components/OurLatestProject/LatestProjectSection.js';
 // NEWS
 import { newsLetterData } from './data/NewsLetter/NewsLetterData.js';
@@ -47,7 +48,10 @@ renderCntIntroduction(cntIntData);
 renderContentNumbers('#numbers', numbersData);
 addEventListenerContentNumbersOnScroll();
 renderServicesContent(ServicesContentData);
-new LatestProjectSection(latestProjectData);
+new Carousel({
+    data: latestProjectData,
+    renderEngine: LatestProjectSection,
+});
 new NewsLetterSection(newsLetterData);
 new PartnersLogoSection(partnersLogoData);
 // renderPartnersLogo(NewsUpdateData);
