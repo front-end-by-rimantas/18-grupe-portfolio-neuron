@@ -1,44 +1,80 @@
 const contactsData = {
-  path: "#contact-info",
+  selector: "#contact-info",
   mainIcon: "flaticon-gps",
   title: "Contact With Us",
   infoPosts: [
     {
       icon: "flaticon-place",
       subtitle: "Visit Us",
-      info: [
-        `530 Old BUffalo Street <br> Northwest #205,<br> New York -<br> 3087`,
-      ],
+      type: "address",
+      info: ["530 Old BUffalo Street", "Northwest #205,", "New York -", "3087"],
       active: true,
     },
     {
       icon: "flaticon-phone",
       subtitle: "Call Us",
+      type: "number",
       info: [
-        `<a href="tel:+1(123)-456-7890">+1 (123) -456-7890</a>\n`,
-        `<a href="tel:+1(123)-456-7890">+1 (123) -456-7890</a>`,
+        {
+          href: "tel:+1(123)-456-7890",
+          text: "+1 (123) -456-7890",
+        },
+        {
+          href: "tel:+1(123)-456-7890",
+          text: "+1 (123) -456-7890",
+        },
       ],
       active: true,
     },
     {
       icon: "flaticon-mail-1",
       subtitle: "Email Us",
+      type: "email",
       info: [
-        `<a href="mailto:infoname@gmail.com">infoname@gmail.com</a>\n`,
-        `<a href="#">www.yourname.com</a>`,
+        {
+          href: "mailto:infoname@gmail.com",
+          text: "infoname@gmail.com",
+        },
+        {
+          href: "#",
+          text: "www.yourname.com",
+        },
       ],
       active: true,
     },
   ],
-  pathForm: "",
+  pathForm: "#contact-form",
   form: [
-    ` <input type="text" placeholder="Name" id="name" name="name" required="">`,
-    `<input type="email" placeholder="E-Mail" id="email" name="email" required="">`,
-    `<input type="text" placeholder="Phone Number" id="phone_number" name="phone_number" required="">`,
-    `<input type="text" placeholder="Subject" id="subject" name="subject" required="">`,
+    {
+      type: "text",
+      placeholder: "Name",
+      id: "name",
+      name: "name",
+      active: true,
+    },
+    {
+      type: "email",
+      placeholder: "E-Mail",
+      id: "email",
+      name: "email",
+      active: true,
+    },
+    {
+      type: "text",
+      placeholder: "Phone Number",
+      id: "phone_number",
+      name: "phone_number",
+      active: true,
+    },
+    {
+      type: "text",
+      placeholder: "Subject",
+      id: "subject",
+      name: "subject",
+      active: true,
+    },
   ],
-  formText: `<textarea class ="contact-text" placeholder="Your Message Here" rows="5" id="message" name="message" required=""></textarea>`,
-  formButton: `<div><button class="data-button">SUBMIT NOW!</button></div>`,
+  formButton: "SUBMIT NOW!",
 };
 
 export { contactsData };
