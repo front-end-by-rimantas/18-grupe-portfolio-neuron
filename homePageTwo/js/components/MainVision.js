@@ -11,7 +11,7 @@ constructor (datacomputervisionai){
     this.init();
 }
 init(){
-    if (this.ObjValidation.isValidate()){
+    if (this.ObjValidation.isValidate(true)){
         this.ObjRenderHtml.renderTop();
         this.ObjRenderHtml.renderBottom();
     } else{

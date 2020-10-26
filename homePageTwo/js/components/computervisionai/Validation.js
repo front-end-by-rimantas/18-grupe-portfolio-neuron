@@ -7,7 +7,7 @@ class Validation {
         this.datacomputervisionai = datacomputervisionai;
     }
 
-    isValidate(){
+    isValidate(showErrors = false){
         this.ObjVerify.isDefined(this.breakPointWidth)
         this.ObjVerify.isDefined(this.datacomputervisionai)
         
@@ -30,7 +30,7 @@ class Validation {
             }
     }
 
-        if (this.ObjVerify.errors.length > 0) {
+        if (this.ObjVerify.errors.length > 0 && showErrors === true) {
                 for (const iterator of this.ObjVerify.errors) {
                     console.log(iterator);
                 }
