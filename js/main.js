@@ -12,7 +12,14 @@ import { numbersData } from './data/contentNumbersData/contentNumbersData.js';
 import { ServicesContentData } from "./data/ServicesContent/ServicesContentData.js";
 import { renderServicesContent } from "./components/ServicesContent/renderServicesContent.js";
 // Our Latest Project
+import { latestProjectData } from './data/OurLatestProject/LatestProjectData.js';
+import { LatestProjectSection } from './components/OurLatestProject/LatestProjectSection.js';
 // NEWS
+import { newsLetterData } from './data/NewsLetter/NewsLetterData.js';
+import { NewsLetterSection } from './components/NewsLetter/NewsLetterSection.js';
+import { partnersLogoData } from './data/partnersLogo/partnersLogoData.js';
+import { PartnersLogoSection } from './components/PartnerLogo/PartnersLogoSection.js';
+// import { ContentNewsUpdates } from './components/NewsLetter/ContentNewsUpdates.js';
 // HOW WE WORK + ANIMATIONS
 import { howWeWorksData } from "./data/howWeWorksData/howWeWorksData.js";
 import { renderHowWeWorks } from "./components/howWeWorks/renderHowWeWorks.js"
@@ -40,8 +47,11 @@ renderCntIntroduction(cntIntData);
 renderContentNumbers('#numbers', numbersData);
 addEventListenerContentNumbersOnScroll();
 renderServicesContent(ServicesContentData);
-// Our Latest Project
-// NEWS
+new LatestProjectSection(latestProjectData);
+new NewsLetterSection(newsLetterData);
+new PartnersLogoSection(partnersLogoData);
+// renderPartnersLogo(NewsUpdateData);
+// generateNewsLetter(NewsUpdateData);
 // HOW WE WORK + ANIMATIONS
 renderHowWeWorks(howWeWorksData);
 renderRecentBlogPosts(datarecentblogposts);
