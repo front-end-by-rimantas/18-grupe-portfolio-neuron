@@ -11,9 +11,8 @@ class RenderClientTestimonial {
 
     this.SngClientObj = new SingleClient(this.data, this.clientPost);
 
-    this.DOM = null;
-    const DOM = document.querySelector(this.path);
-    this.DOM = DOM;
+    // this.DOM = null;
+    this.DOM = document.querySelector(this.path);
 
     this.render();
   }

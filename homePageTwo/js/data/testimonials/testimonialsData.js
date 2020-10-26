@@ -6,12 +6,12 @@ const testimonialsData = {
   subtitle: "Happy Clients Reviews",
   clientPost: [
     {
-      imgSrc: "",
+      imgSrc: "7.jpg",
       name: "Liza Hyden",
       position: "Developer",
       review:
         "When an unknown printer took a galley of type and scram bledit to make a type specimen book. Lorem Ipsum has been the industry’s standard to dummy text ever since the 1500s, when an thish unknown printer took a galley of type and scram bled specimen book.",
-      rating: [],
+      rating: 5,
       active: true,
     },
     {
@@ -20,7 +20,7 @@ const testimonialsData = {
       position: "CEO & Founder",
       review:
         "When an unknown printer took a galley of type and scram bled it to make a type specimen book. Lorem Ipsum has been the industry’s standard to dummy text ever since the 1500s, when an thish unknown printer took a galley of type and scram bled specimen book.",
-      rating: [],
+      rating: 5,
       active: true,
     },
     {
@@ -29,7 +29,7 @@ const testimonialsData = {
       position: "CTO & Co-Founder",
       review:
         "When an unknown printer took a galley of type and scram bled it to make a type specimen book. Lorem Ipsum has been the industry’s standard to dummy text ever since the 1500s, when an thish unknown printer took a galley of type and scram bled specimen book.",
-      rating: [],
+      rating: 5,
       active: true,
     },
     {
@@ -38,7 +38,7 @@ const testimonialsData = {
       position: "Manager",
       review:
         "When an unknown printer took a galley of type and scram bled it to make a type specimen book. Lorem Ipsum has been the industry’s standard to dummy text ever since the 1500s, when an thish unknown printer took a galley of type and scram bled specimen book.",
-      rating: [],
+      rating: 5,
       active: false,
     },
     {
@@ -47,7 +47,7 @@ const testimonialsData = {
       position: "Designer",
       review:
         "When an unknown printer took a galley of type and scram bled it to make a type specimen book. Lorem Ipsum has been the industry’s standard to dummy text ever since the 1500s, when an thish unknown printer took a galley of type and scram bled specimen book.",
-      rating: [],
+      rating: 5,
       active: false,
     },
   ],
