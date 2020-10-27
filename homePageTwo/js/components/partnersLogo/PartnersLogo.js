@@ -11,8 +11,6 @@ class PartnersLogo{
         this.ObjgenerateHtml.setWidth();
         this.addEvents();
         this.ObjgenerateHtml.setAnimation();
-
-
         
     }
 
@@ -25,6 +23,14 @@ class PartnersLogo{
         logoPartnerContainer.addEventListener('click',() => {
             this.ObjgenerateHtml.setTransform();
         })
+        
+        logoPartnerContainer.addEventListener('mouseenter',() => {
+            this.ObjgenerateHtml.canAnimation = false;
+        })
+        logoPartnerContainer.addEventListener('mouseleave',() => {
+            this.ObjgenerateHtml.canAnimation = true;
+        })
+
 
     }
 
