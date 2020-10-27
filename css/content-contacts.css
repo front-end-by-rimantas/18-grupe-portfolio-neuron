@@ -1,5 +1,7 @@
 .contact-bg{
-    background: url('../../img/contact-bg\ \(1\).jpg');    
+    background: url('../../img/contact-bg\ \(1\).jpg');   
+    background-repeat: no-repeat; 
+    background-size: cover;
     padding-top: 0;
     margin-top: 100px;
     font-size: 18px;
@@ -35,12 +37,8 @@
             float:right;
         }
 
-            .text-info  {
-                width:100%;
-                float:right;
-            }
-
             .text-info > a {
+                display: block;
                 width:100%;
                 text-decoration: none;
                 color:black;
@@ -102,12 +100,17 @@
     .contact-text {
         width: 100%;
         background-color:rgba(255,255,255, 0.3);
+        resize: none;
         padding: 20px;
         line-height: 30px;
         color:white;
         font-size:16px;
         border-radius: 5px;
         border: none;
+    }
+
+    .contact-text:focus, .form-input input:focus, .data-button:focus{
+        outline: none;
     }
 
         .contact-text::placeholder,
@@ -129,9 +132,9 @@
         font-weight: 500;
         font-size: 18px;
         text-transform: uppercase;
+        cursor: pointer;
     }
-
-
+    
 /* responsive */
 
 @media (max-width: 900px){
