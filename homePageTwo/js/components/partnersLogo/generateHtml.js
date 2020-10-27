@@ -40,6 +40,38 @@ class GenerateHtml{
             logoPartnerContainer.dataset.index = 0;
           }
     }
+
+    setAnimation(){
+
+        let currentValue = 0;
+        const stepSize = 200;
+        let diff = this.diff
+        const logoPartnerContainer = document.querySelector('.partnerslogolist');
+
+        const timer = setInterval(() => {
+            this.setTransform();
+            
+           /**
+            *  veikia nesikreipiant i funkcija.
+            *  */ 
+    /*
+            if (diff !== this.diff ){
+                diff = this.diff;
+                currentValue = 200;
+            }
+            currentValue += (-stepSize);
+            console.log(currentValue);
+            logoPartnerContainer.style.transform = `translate3d(${currentValue}px, 0px,0px)`;
+            if(currentValue === -diff*stepSize){
+                console.log('pasieke');
+                currentValue = 200;
+            }
+    */
+        }, 4000);
+    }
 }
+
+
+
 
 export {GenerateHtml}

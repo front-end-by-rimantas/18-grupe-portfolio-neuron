@@ -10,6 +10,8 @@ class PartnersLogo{
         this.ObjgenerateHtml.generateHtml();
         this.ObjgenerateHtml.setWidth();
         this.addEvents();
+        this.ObjgenerateHtml.setAnimation();
+
 
         
     }
