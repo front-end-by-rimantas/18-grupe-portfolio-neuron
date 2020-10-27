@@ -43,8 +43,10 @@ class Intro_Content {
                                 <div class = "ContentRow col-6 col-md-12 mt-100"> 
                                     <h1 class="bigtitle"> Power Your Creativity With Artificial Intelligence</h1>
                                     <p class = "desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at dictum risus, non suscipit arcu. Quisque aliquam posuere tortor, sit amet convallis nunc scelerisque in.</p>
-                                    <p class = "desc mb-40">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore eius molesti ae facere, natus reprehenderit eaque eum, autem ipsam. Magni, error. Tem pora odit laborum iure inventore possimus laboriosam qui nam. Fugit!</p>
-                                    <div class="btn">LEARN MORE</div>
+                                    <p class = "desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore eius molesti ae facere, natus reprehenderit eaque eum, autem ipsam. Magni, error. Tem pora odit laborum iure inventore possimus laboriosam qui nam. Fugit!</p>
+                                    <div class="btn">
+                                    <a href="#">LEARN MORE</a>
+                                    </div>
                                 </div>`;
     }
 }
