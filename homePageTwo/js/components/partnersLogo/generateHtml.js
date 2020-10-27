@@ -1,8 +1,8 @@
 class GenerateHtml{
     constructor(partnersLogoData){
         this.partnersLogoData = partnersLogoData;
-        this.numberlist = 1;
-        this.diff = 1;
+        this.numberlist = 0;
+        this.diff = 0;
         this.marginleft = 0;
     }
 
@@ -31,13 +31,13 @@ class GenerateHtml{
 
     setTransform(){
         const logoPartnerContainer = document.querySelector('.partnerslogolist');
-        logoPartnerContainer.dataset.run = true;
+        // logoPartnerContainer.dataset.run = true;
         const index = parseInt(logoPartnerContainer.dataset.index);
         logoPartnerContainer.style.transform = `translate3d(${index*-200}px, 0px,0px)`;
         if (index <this.diff) {
             logoPartnerContainer.dataset.index = index + 1;
         } else{ 
-            logoPartnerContainer.dataset.index = 1;
+            logoPartnerContainer.dataset.index = 0;
           }
     }
 }
