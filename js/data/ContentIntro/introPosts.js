@@ -1,6 +1,6 @@
-const introPostsOne = {
+export default {
     selector: '#intro-block-one',
-    posts:[
+    data:[
         {
             icon: 'flaticon-artificial-intelligence',
             title: 'Virtual Personal AssistantAdvanced Programings',
@@ -15,27 +15,19 @@ const introPostsOne = {
             link: '#',
             active: true
         },
-    ],
-}
-const introPostsTwo = {
-    selector: '#intro-block-two',
-    posts:[
         {
-            icon: 'flaticon-artificial-intelligence',
-            title: 'Virtual Personal AssistantAdvanced Programings',
+            icon: 'flaticon-artificial-intelligence-1',
+            title: 'Cloud AI intergration',
             description:'Find out what is working and what is not Dig your data to find',
             link: '#',
             active: true
         },
         {
-            icon: 'flaticon-ai',
-            title: 'AI Chippest',
+            icon: 'flaticon-robotic-arm',
+            title: 'Robotic Arm',
             description:'Find out what is working and what is not Dig your data to find',
             link: '#',
             active: true
         },
     ],
 }
-
-export { introPostsOne }
-export { introPostsTwo }

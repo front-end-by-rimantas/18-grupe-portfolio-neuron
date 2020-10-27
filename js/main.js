@@ -3,9 +3,7 @@ import { menuData } from './data/Menu/menuData.js';
 import { renderMenu } from './components/menu/renderMenu.js'
 // header main part
 // intro
-import { introPostsOne } from './data/ContentIntro/introPosts.js'
-import { introPostsTwo } from './data/ContentIntro/introPosts.js'
-import { renderContentIntro } from './components/introContent/renderContentIntro.js'
+import { Intro_Content } from "./components/Intro_Content/Intro_Content.js"
 // we create
 import { cntIntData } from "./data/ContentIntroduction/contentIntroductionData.js";
 import { renderCntIntroduction } from "./components/contentIntroduction/renderContentIntroduction.js";
@@ -39,8 +37,9 @@ renderPostsContacts(contactsData);
 renderContactForm(contactsData);
 // header main part
 // intro
-renderContentIntro(introPostsOne);
-renderContentIntro(introPostsTwo);
+new Intro_Content({
+    selector: '#content_intro_block'
+});
 // we create
 renderCntIntroduction(cntIntData);
 renderContentNumbers('#numbers', numbersData);
