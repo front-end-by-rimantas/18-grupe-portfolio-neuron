@@ -1,57 +1,26 @@
 .logoPartnerContainer{
-    display:inline-block;
-    /* wif=dth isskaiciuoti */
-    /* width: 600px; */
     overflow: hidden;
-    /* Margin-left reikia isskaiciuoti */
-    /* margin-left: 3.45%; */
-    
 }
 
 .partnerslogolist{
     width: 1800px;
     display:inline-block;
-    background-color: chartreuse;
     margin: 0px;
     float: left;
-    /* transform: translateX(-200px); */
     transition: all 2s;
-    /* margin-left: 100px; */
     }
         .singlelogoPartner{
             display:inline-block;
         }
-        .singlelogoPartner:nth-child(1){
-            background-color: red;
-            
-        }
-
-        /* .singlelogoPartner + .singlelogoPartner {
-            margin-left: 10px;
-        } */
 
             .logoPartner{
                 width: 200px;
-                /* width: 20%; */
-                /* width: calc(100% / 6); */
                 display: inline-block;
                 justify-items: center;
                 text-align: center;
-                color: black;
+                background-color: blueviolet;
+                border-radius: 30px;
                 margin: 0px;
                 float: left;
             }
             
-
-                a{
-                    display: inline-block;
-                    color: black;
-                    cursor: pointer;
-                }
-                
-                    img {
-                    display: inline-block;
-                    color: black;
-                    background-color: blueviolet;
-                }
-

@@ -1,11 +1,13 @@
 class GenerateHtml{
     constructor(partnersLogoData){
         this.partnersLogoData = partnersLogoData;
+        this.numberlist = 1;
+        this.diff = 1;
+        this.marginleft = 0;
     }
 
     generateHtml(){
         let generateHtml = ''; 
-        let count = 1;
         const imgPath = this.partnersLogoData.imgPath; 
         for (const iterator of this.partnersLogoData.singleImg) {
             generateHtml += `<div class="singlelogoPartner"> 
@@ -14,46 +16,30 @@ class GenerateHtml{
         }
         const placeHtml = document.querySelector('.partnerslogolist');
         placeHtml.insertAdjacentHTML('afterbegin',generateHtml)
-        console.log(window.screen.width);
-        
+
     }
 
     setWidth(){
-        console.log('innerWidth'+innerWidth);
-        let numberlist = (((innerWidth-110) / 200)-((innerWidth-110) / 200)%1)
-        console.log('skaicius:'+ numberlist);
-        const logoPartnerContainer = document.querySelector('.logoPartnerContainer') ;
-        logoPartnerContainer.style.width = numberlist*200 + 'px';;
+        this.numberlist = (((innerWidth-110) / 200)-((innerWidth-110) / 200)%1)
+        let logoPartnerContainer = document.querySelector('.logoPartnerContainer') ;
+        logoPartnerContainer.style.width = this.numberlist*200 + 'px';;
+        this.diff = this.partnersLogoData.singleImg.length - this.numberlist;
+        this.marginleft = Math.ceil(((innerWidth-60)-200*this.numberlist)/2);
+        logoPartnerContainer.style.marginLeft = `${this.marginleft}px`; 
+        this.setTransform();
     }
 
     setTransform(){
-   
         const logoPartnerContainer = document.querySelector('.partnerslogolist');
         logoPartnerContainer.dataset.run = true;
         const index = parseInt(logoPartnerContainer.dataset.index);
         logoPartnerContainer.style.transform = `translate3d(${index*-200}px, 0px,0px)`;
-
-            // if (logoPartnerContainer.dataset.run) {
-            //     continue;
-            // }
-        console.log(logoPartnerContainer);
-        if (index <5) {
+        if (index <this.diff) {
             logoPartnerContainer.dataset.index = index + 1;
-          
         } else{ 
             logoPartnerContainer.dataset.index = 1;
           }
-
-       
-        console.log('veikia');
-
-
-       
-
     }
-
-
-
 }
 
 export {GenerateHtml}
