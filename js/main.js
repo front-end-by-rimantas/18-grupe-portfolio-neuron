@@ -13,8 +13,8 @@ import { ServicesContentData } from "./data/ServicesContent/ServicesContentData.
 import { renderServicesContent } from "./components/ServicesContent/renderServicesContent.js";
 // Our Latest Project
 import { latestProjectData } from './data/OurLatestProject/LatestProjectData.js';
-import { Carousel } from './components/OurLatestProject/Carousel.js';
 import { LatestProjectSection } from './components/OurLatestProject/LatestProjectSection.js';
+import { Carousel } from './components/OurLatestProject/Carousel.js';
 // NEWS
 import { newsLetterData } from './data/NewsLetter/NewsLetterData.js';
 import { NewsLetterSection } from './components/NewsLetter/NewsLetterSection.js';
@@ -51,6 +51,7 @@ renderServicesContent(ServicesContentData);
 new Carousel({
     data: latestProjectData,
     renderEngine: LatestProjectSection,
+    breakpoints: [800, 1100]
 });
 new NewsLetterSection(newsLetterData);
 new PartnersLogoSection(partnersLogoData);

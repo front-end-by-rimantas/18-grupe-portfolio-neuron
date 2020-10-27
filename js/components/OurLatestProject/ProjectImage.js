@@ -6,23 +6,19 @@ class ProjectImage {
 
     }
 
-    generateHED(){
-        return `<div class="ourLatestPoject col-12">
-                    <h2 class="LatestProjectTitle">${this.title}</h2>
-                </div>`
-    }
+    // generateHED(){
+    //     return `<div class="ourLatestPoject">
+    //                 <h2 class="LatestProjectTitle">${this.title}</h2>
+    //             </div>`
+    // }
 
     generateHTML(){
 
         let HTML = '';
         for (let item of this.data) {
 
-            HTML +=`<div class="carousel">
-                        <div class="row latestProjectContent">
-                            <div class="spacingImg"> 
-                                <img class="singleImg" src="./img/OurLatestProject/${item.image}" alt="${item.imagealt}">
-                            </div>
-                        </div>
+            HTML +=`<div class="spacingImg"> 
+                        <img class="singleImg" src="./img/OurLatestProject/${item.image}" alt="${item.imagealt}">
                     </div>`
 
         }

@@ -16,11 +16,11 @@ class LatestProjectSection {
     }
     generateHTML() {
 
-        const titleHTML = this.titleObj.generateHED();
+        // const titleHTML = this.titleObj.generateHED();
         const singleImgHTML = this.singleImgObj.generateHTML();
          
         
-        return titleHTML + singleImgHTML;
+        return singleImgHTML;
     }
     isValidSelector() {
         const DOM = document.querySelector(this.selector);
