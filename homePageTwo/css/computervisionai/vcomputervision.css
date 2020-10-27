@@ -83,7 +83,9 @@
                     }
 
                     .visionIcon > i{
-                        padding: 75px 15px 25px 0px ;
+                        padding: 16px 22px 20px 24px;
+                        color: white;
+                        font-size: 70px;
                         border-radius: 50%;
                     }
          
@@ -91,12 +93,9 @@
                         background: white;
                         color: #01a0f9;
                         transition: all 0.7s;
+                 
                     }
-                    
-                        .flaticon-brain{
-                            color: white;
-                        }
-
+        
 
                 .visionHeader{
                     margin-left: 30px;

@@ -1,0 +1,26 @@
+.logoPartnerContainer{
+    overflow: hidden;
+}
+
+.partnerslogolist{
+    width: 1800px;
+    display:inline-block;
+    margin: 0px;
+    float: left;
+    transition: all 2s;
+    }
+        .singlelogoPartner{
+            display:inline-block;
+        }
+
+            .logoPartner{
+                width: 200px;
+                display: inline-block;
+                justify-items: center;
+                text-align: center;
+                background-color: blueviolet;
+                border-radius: 30px;
+                margin: 0px;
+                float: left;
+            }
+            
