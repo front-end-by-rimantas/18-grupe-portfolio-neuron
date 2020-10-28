@@ -1,28 +1,33 @@
-.LatestProjectTitle {
+/* .LatestProjectTitle {
     text-align: center;
     font-size: 35px;
-}
+} */
 .carousel {
-    display: inline-block;
-    width: 100%;
-    background-color: red;
+    /* width: 100%; */
+    /* background-color: red; */
 }
     .spacingImg {
-        display: inline-block;
-        width: 50%;
-        padding: 100px 40px;
+        width: 100%;
+        padding: 80px 0;
         text-align: center; 
     }
         .content {
-            display: inline-block;
+            
         }
         .list {
-            display: inline-block;
-            width: 100%;
+            display: flex;
+            overflow: hidden;
+
         }
             .singleImg {
-                display: inline-block;
+                margin-right: 30px;
+                width: 413px;
+                border-radius: 10px;
                 
+            }
+            .singleImg:hover {
+                background: linear-gradient(-41deg, #09c778, #01a0f9);
+                cursor: pointer;
             }
 
 @media (max-width: 1300px) {
