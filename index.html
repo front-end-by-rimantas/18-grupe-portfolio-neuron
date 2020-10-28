@@ -1,99 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <!-- reset -->
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/layout.css">
     <!-- 3rd party -->
+    <link rel="stylesheet" href="./css/flaticon.css">
     <!-- components -->
+    <link rel="stylesheet" href="./css/font-awesome.min.css" />
+    <!-- components -->
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/header-top.css" />
+    <link rel="stylesheet" href="./css/header-main-line.css">
+    <link rel="stylesheet" href="./css/HeaderContent.css">
+    <link rel="stylesheet" href="./css/contentintro.css">
+    <link rel="stylesheet" href="./css/ContentServices.css">
+    <link rel="stylesheet" href="./css/content-introduction.css">
+    <link rel="stylesheet" href="./css/OurLatestProject.css">
+    <link rel="stylesheet" href="./css/NewsLetterSection.css">
+    <link rel="stylesheet" href="./css/PartnersLogoSection.css">
+    <link rel="stylesheet" href="./css/howWeWorks.css">
+    <link rel="stylesheet" href="./css/recentblogpost.css">
+    <link rel="stylesheet" href="./css/content_numbers.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/content-contacts.css">
     <!-- custom -->
-    <link rel="stylesheet" href="./css/custom.css">
-</head>
-
-<body>
+    <link rel="stylesheet" href="./css/custom.css" />
+  </head>
+  <body>
     <!-- header -->
-    <header class="container-fluid">
-        <div class="row">
-            HEADER
-        </div>
+    <main class="bg-blue">
+    <header class="container">
+      <div class="row ht">
+      </div>
     </header>
     <!-- hero -->
+        <div id="container-main" class="container sticky">
+          <div class="row">
+              <div id="logo" class="header-main-font col-2 .col-md-3 col-md-3 col-sm-3">
+                  <a href="#">
+                      <img class="logo-img" src="./img/main-header-line/logo-white.png" alt="Logo-Neuron">
+                  </a>
+              </div>
+            <div class="col-10 .col-md-9 col-md-9 col-sm-9 header-main-font">
+              <div><i class="fa fa-bars icon-bar bar-hide"></i></div>
+              <nav class="nav-menu-items hide">
+                <ul>
+                    <!-- Java script sugeneruoja menu -->
+                </ul>
+              </nav>
+              <div class="box-search">
+                <a href="#" class="">
+                    <i class="fa fa-shopping-bag " aria-hidden="true"></i>                       
+                </a>
+                <a href="#">
+                   <i class="fa fa-search" aria-hidden="true"></i>
+                </a>
+              </div>  
+            </div>
+         </div>     
+        </div>
+    <!-- header main part -->
+<div class="container">
+  <div class="row">
+    <div class="HeaderContentRow col-6 col-lg-6 col-md-8 col-sm-12">
+      <div class="Header-left-column">
+        <h1 class="title">AI & Machine Learning Products Creators</h1>
+        <p class="subtitle">Innovation machine learning products and services on a trusted platform.</p>
+        <div class="LearnMore-btn">
+          learn more
+        </div>
+        <div class="JoinNow-btn">
+          Join now
+        </div>
+      </div>
+    </div>
+    <div class="HeaderContentRow col-3 col-lg-3 col-md-2">
+      <div class="Header-right-column">
+        <img class="sliderRobo" src="./img/sl1-ly1.png" alt="sliderRobo">
+      </div>
+    </div>
+    <div class="HeaderContentRow col-3 col-lg-3 col-md-2">
+      <div class="Header-right-column">
+        <img class="sliderMen" src="./img/sl1-ly2.png" alt="sliderMen">
+      </div>
+    </div>
+  </div>
+</div>
+</main>
+    <!-- intro -->
     <div class="container">
-        <div class="row">
-            HERO
-        </div>
+        <div id="content_intro_block" class="row">
     </div>
-    <!-- clients -->
+  </div>
+    <!-- we create -->
     <div class="container">
-        <div class="row">
-            CLIENTS
-        </div>
+    <div class="row cnt-int">
+      <div id="cnt-int-left-id" class="cnt-int-left col-6 col-md-12 col-sm-12"></div>
+     <div class="cnt-int-right col-6 col-md-12 col-sm-12"></div>
+    </div> 
+  </div>
+    <!-- numbers -->
+    <div class="bg-blue container">
+      <div id="numbers" class="row">
+        <div  class="numbers-list"></div>
+      </div>    
+    </div> 
+    <!-- Servises Section Start -->
+    <div class="container bg-grey">
+      <div id="services_block" class="row"></div>
     </div>
-    <!-- services -->
+    <!-- servises -->
+    <div class="container bg-grey">
+      <div id="services_block" class="row"></div>
+    </div>
+    <!-- Servises Section End -->
+    <!-- Our Latest Project Start -->
     <div class="container">
-        <div class="row">
-            SERVICES
-        </div>
+      <div id="latestProject_block" class="row"></div>
+      <div id="latestProject_block" class="row"></div>
     </div>
-    <!-- our company -->
+    <!-- Our Latest Project End -->  
+    <!-- News Section Start -->
+    <div class="container bg-News">
+      <div id="news_block" class="row newsletter"></div>
+    </div>
+    <!-- News Section End -->
+    <!-- Partners Logo Section Start -->
+    <div class="container bg-partner">
+      <div class="row">
+      <div id="partners_logo" class="partners_logot col-12"></div>
+      </div>
+    </div>
+    <!-- Partners Logo Section End -->
+    <!-- HOW WE WORK + ANIMATIONS -->
     <div class="container">
-        <div class="row">
-            OUR COMPANY
-        </div>
+      <div id="how_weworks_block" class="row">
+      </div>
     </div>
-    <!-- hire us -->
-    <div class="container">
+    <!-- Recent Blog Post -->
+    <div class="container blogpost-bgcolor">
         <div class="row">
-            HIRE US
-        </div>
+          <h1 id="RecentBlogPost" class="col-12">Recent Blog Post</h1>
+          <!-- Sugeneruoja is JavaScripto funkcija renderrecentblogoposts()-->
     </div>
-    <!-- achievements -->
-    <div class="container">
-        <div class="row">
-            ACHIEVEMENTS
-        </div>
     </div>
-    <!-- watch video -->
-    <div class="container-fluid">
-        <div class="row">
-            WATCH VIDEO
-        </div>
-    </div>
-    <!-- case studies -->
-    <div class="container">
-        <div class="row">
-            CASE STUDIES
-        </div>
-    </div>
-    <!-- testimonials -->
-    <div class="container-fluid">
-        <div class="row">
-            TESTIMONIALS
-        </div>
-    </div>
-    <!-- blog -->
-    <div class="container">
-        <div class="row">
-            BLOG
-        </div>
-    </div>
-    <!-- contact -->
-    <div class="container">
-        <div class="row">
-            CONTACT
-        </div>
+    <!-- contacts -->
+    <div class="container contact-bg">
+      <div class="row">
+        <div id="contact-info"  class= "contact-side col-5 col-md-12"></div>
+        <div id ="contact-form" class="form-side col-7 col-md-12 "> </div>
+      </div>
     </div>
     <!-- footer -->
-    <footer class="container">
-        <div class="row">
-            FOOTER
-        </div>
+    <footer class="container bg-footer-image">
+      <div id="main_footer" class="row">
+      </div>
     </footer>
     <script src="./js/main.js" type="module"></script>
-</body>
-
+  </body>
 </html>

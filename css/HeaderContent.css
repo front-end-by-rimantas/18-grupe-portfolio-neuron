@@ -1,0 +1,95 @@
+.bg-blue {
+    background-image: url(../img/contact-bg\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+    .Header-left-column > .title {
+        color: #ffffff;
+        letter-spacing: 1px;
+        font-size: 60px;
+        margin-top: 100px;
+    }
+    .Header-left-column > .subtitle {
+        color: #ffffff;
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+        line-height: 30px;
+        padding: 14px 0 42px;
+    }
+    .LearnMore-btn {
+        display: inline-block;
+        border-radius: 30px;
+        background-color: #ffffff;
+        padding: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+        color: #01a0f9;
+        text-transform: uppercase;
+        font-weight: bold;
+    } 
+    .JoinNow-btn {
+        display: inline-block;
+        border-radius: 30px;
+        background-color: transparent;
+        border: 1px solid #ffffff;
+        color: #ffffff;
+        padding: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-left: 16px;
+    }
+    .sliderRobo {
+        width: 100%;
+    }
+    .sliderMen {
+        width: 100%;
+        margin-top: 150px;
+    }
+@media (max-width: 1300px) {
+    .Header-left-column > .title {
+        font-size: 46px;
+        line-height: 60px;
+    }
+}
+@media (max-width: 1100px) {
+    .Header-left-column > .title {
+        font-size: 35px;
+        line-height: 45px;
+        margin-top: 50px;
+    }
+    .sliderMen { 
+        margin-top: 120px;
+    }
+}
+@media (max-width: 900px) {
+    .Header-right-column {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    .sliderMen { 
+        margin-top: 40px;
+    }
+}
+@media (max-width: 700px) {
+    .Header-left-column > .title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .Header-left-column > .subtitle {
+        padding: 10px 0 30px; 
+    }
+    .Header-right-column {
+        display: none;
+    }
+    .LearnMore-btn {
+        padding: 10px 20px;
+        font-size: 13px;
+    } 
+    .JoinNow-btn {
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+}

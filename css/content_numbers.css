@@ -1,0 +1,41 @@
+.fact {
+    padding: 50px 10px;
+    text-align: center;
+    color: #fff;
+    background: url(../img/count-shape.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+    .fact > .number {
+        margin-bottom: 10px;
+        font-size: 42px;
+        font-weight: 600;
+    }
+    .fact > .description {
+        font-size: 24px;
+        font-weight: 600;
+    }
+        .fact > .number::after {
+            content: '+';
+            margin-left: 5px;
+        }
+        
+    @media (max-width: 1440px) {
+        .fact > .number {
+            font-size: 35px;
+            margin-bottom: 10px;
+            }
+        .fact > .description {
+            font-size: 18px;
+        }
+    }
+    @media (max-width: 767px) {
+        .fact > .number {
+            font-size: 30px;
+            margin-bottom: 10px;
+            }
+        .fact > .description {
+            font-size: 15px;
+        }
+    }
+        

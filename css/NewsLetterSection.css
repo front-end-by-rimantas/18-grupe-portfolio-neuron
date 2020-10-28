@@ -1,0 +1,102 @@
+.bg-News {
+    position: relative;
+    height: 230px;
+}
+    .newsletter {
+        border-radius: 20px;
+        background-color: #ffffff;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        position: absolute;
+        padding: 20px 0;
+        z-index: 1;
+        width: 100%;
+    }
+        #newsletter-flaticon-mail {
+            -webkit-background-clip: text;
+            color: rgba(0, 0, 0, 0);
+            background-image: linear-gradient(0deg, #09c778, #01a0f9);
+            font-size: 300px;
+            margin-left: 10px;
+            padding-left: 80px;
+        }
+        .newsletter-title {
+            font-size: 42px;
+            color: #333333;
+            margin-left: 10px;
+            margin-top: 70px;
+        }
+            #formEmail {
+                font-size: 20px;
+                border: none;
+                border-bottom: 1px solid rgba(1, 160, 249, 0.2);
+                outline: none;
+                width:80%;
+                height: 40px;
+                margin-top: 70px;
+                margin-left: 10px;
+            }
+            #newsletter-flaticon-send {
+                -webkit-transform: rotate(-45deg);
+                background: linear-gradient(#09c778, #01a0f9);
+                font-size: 15px;
+                height: 40px;
+                width: 40px;
+                border-radius: 50px;
+                color: #ffffff;
+                margin-top: 70px;
+                margin-left: -4%;
+                border: none;
+                outline:none;
+            }
+            #newsletter-flaticon-send:hover {
+                background-color: transparent;
+                cursor: pointer;
+                opacity: 0.7;
+            }
+
+@media (max-width: 1300px) {
+.newsletter {
+    padding: 60px 0;
+    }
+.newsletter-title {
+    font-size: 35px;
+    margin-top: 80px;
+    }
+#newsletter-flaticon-mail {
+    font-size: 275px;
+    margin-left: 10px;
+    padding-left: 50px;
+    }
+    
+@media (max-width: 1100px) {
+#newsletter-flaticon-mail {
+    font-size: 200px;
+    padding-left: 40px;
+    }
+.newsletter-title {
+    font-size: 30px;
+    margin-top: 40px;
+    }
+        
+@media (max-width: 900px) {
+.bg-News {
+    height: 550px;
+    }
+#newsletter-flaticon-mail {
+    font-size: 150px;
+    margin-left: 40px;
+    padding: 0px 0px;
+    }
+.newsletter-title {
+    margin-left: 40px;
+    margin-top: 0px;
+    }
+#formEmail {
+    margin-left: 40px;
+    max-width: 90%;
+    }
+@media (max-width: 700px) {
+    #formEmail {
+        max-width: 70%;
+    }
+}
